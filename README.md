@@ -15,7 +15,7 @@
 * Fork boom
 	* fork boom option allows the attack to stuck the victim computer completely, the victim will have to hard restart the computer to use it again
 * Delete all file
-	* No more words ¯\_(ツ)_/¯
+	* No more words ¯\\_(ツ)_/¯
 	
 ## Screenshots
 ![login page](https://raw.githubusercontent.com/oririnat/Ospy_RAT/master/screenshots/1.png)
