@@ -1613,3 +1613,14 @@ Mon Jan 21 16:40:25 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 
 Mon Jan 21 16:40:25 2019 : Adding to list of sockets as 0
 Mon Jan 21 16:40:25 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 53692
 Mon Jan 21 16:40:25 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 18:30:00 2019
+Mon Jan 21 18:30:00 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50857
+Mon Jan 21 18:30:00 2019 : Adding to list of sockets as 0
+Mon Jan 21 18:30:05 2019 : Host disconnected, ip 127.0.0.1 , port 50857 
+Mon Jan 21 18:30:16 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50858
+Mon Jan 21 18:30:16 2019 : Adding to list of sockets as 0
+Mon Jan 21 18:30:17 2019 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 50860
+Mon Jan 21 18:30:17 2019 : Adding to list of sockets as 1
+Mon Jan 21 18:30:27 2019 : New connection , socket fd is 9 , ip is : 127.0.0.1 , port : 50861
+Mon Jan 21 18:30:27 2019 : Adding to list of sockets as 2
+Mon Jan 21 18:36:09 2019 : Host disconnected, ip 127.0.0.1 , port 50861 
