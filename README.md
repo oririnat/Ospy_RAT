@@ -1,7 +1,7 @@
 # Ospy
 > Ospy is a penetration testing tool for macOS, include keylogger, live screen catcher, reveres shell and more. Developed in c
 
-## Feature
+## Features
 
 * Keylogger
 	* the attacker can receive the keylogger history senes the victim has first inspected by Ospy
