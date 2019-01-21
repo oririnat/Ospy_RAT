@@ -1,0 +1,1615 @@
+Ospy server started at : Tue Dec 11 20:26:43 2018
+Tue Dec 11 20:26:43 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 65496
+Tue Dec 11 20:26:43 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:26:43 2018 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 65497
+Tue Dec 11 20:26:43 2018 : Adding to list of sockets as 1
+Tue Dec 11 20:26:43 2018 : Host disconnected , ip 127.0.0.1 , port 65496 
+Tue Dec 11 20:26:43 2018 : Host disconnected , ip 127.0.0.1 , port 65497 
+Ospy server started at : Tue Dec 11 20:27:36 2018
+Tue Dec 11 20:27:36 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 65502
+Tue Dec 11 20:27:36 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:27:36 2018 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 65503
+Tue Dec 11 20:27:36 2018 : Adding to list of sockets as 1
+Ospy server started at : Tue Dec 11 20:34:21 2018
+Tue Dec 11 20:34:21 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49170
+Tue Dec 11 20:34:21 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:34:21 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 49171
+Tue Dec 11 20:34:21 2018 : Adding to list of sockets as 1
+Tue Dec 11 20:34:21 2018 : Host disconnected , ip 127.0.0.1 , port 49170 
+Tue Dec 11 20:34:21 2018 : Host disconnected , ip 127.0.0.1 , port 49171 
+Tue Dec 11 20:34:21 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49216
+Tue Dec 11 20:34:21 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:34:21 2018 : Host disconnected , ip 127.0.0.1 , port 49216 
+Tue Dec 11 20:34:21 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49229
+Tue Dec 11 20:34:21 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:34:21 2018 : Host disconnected , ip 127.0.0.1 , port 49229 
+Tue Dec 11 20:34:21 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49243
+Tue Dec 11 20:34:21 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:34:21 2018 : Host disconnected , ip 127.0.0.1 , port 49243 
+Ospy server started at : Tue Dec 11 20:38:47 2018
+Tue Dec 11 20:38:47 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49275
+Tue Dec 11 20:38:47 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:38:47 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 49276
+Tue Dec 11 20:38:47 2018 : Adding to list of sockets as 1
+Tue Dec 11 20:38:47 2018 : Host disconnected, ip 127.0.0.1 , port 49275 
+Tue Dec 11 20:38:47 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49282
+Tue Dec 11 20:38:47 2018 : Adding to list of sockets as 0
+Ospy server started at : Tue Dec 11 20:39:11 2018
+Tue Dec 11 20:39:11 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49312
+Tue Dec 11 20:39:11 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:39:17 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 49313
+Tue Dec 11 20:39:17 2018 : Adding to list of sockets as 1
+Ospy server started at : Tue Dec 11 20:39:26 2018
+Tue Dec 11 20:39:26 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49314
+Tue Dec 11 20:39:26 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:39:26 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 49315
+Tue Dec 11 20:39:26 2018 : Adding to list of sockets as 1
+Ospy server started at : Tue Dec 11 20:39:50 2018
+Tue Dec 11 20:39:50 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49341
+Tue Dec 11 20:39:50 2018 : Adding to list of sockets as 0
+Tue Dec 11 20:39:51 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 49342
+Tue Dec 11 20:39:51 2018 : Adding to list of sockets as 1
+Tue Dec 11 20:40:00 2018 : Host disconnected, ip 127.0.0.1 , port 49341 
+Tue Dec 11 20:40:34 2018 : Host disconnected, ip 127.0.0.1 , port 49342 
+Ospy server started at : Wed Dec 12 08:23:59 2018
+Wed Dec 12 08:23:59 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53936
+Wed Dec 12 08:23:59 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:24:01 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53943
+Wed Dec 12 08:24:01 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 08:38:54 2018
+Ospy server started at : Wed Dec 12 08:40:42 2018
+Wed Dec 12 08:40:42 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 56078
+Wed Dec 12 08:40:42 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:40:44 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 56085
+Wed Dec 12 08:40:44 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 08:43:18 2018
+Wed Dec 12 08:43:18 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 56427
+Wed Dec 12 08:43:18 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:43:20 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 56428
+Wed Dec 12 08:43:20 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 08:43:59 2018
+Wed Dec 12 08:43:59 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 56502
+Wed Dec 12 08:43:59 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:44:00 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 56503
+Wed Dec 12 08:44:00 2018 : Adding to list of sockets as 1
+Wed Dec 12 08:44:04 2018 : New connection , socket fd is 18 , ip is : 127.0.0.1 , port : 56648
+Wed Dec 12 08:44:04 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 08:45:11 2018
+Wed Dec 12 08:45:11 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 56649
+Wed Dec 12 08:45:11 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:45:11 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 56662
+Wed Dec 12 08:45:11 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 08:45:55 2018
+Wed Dec 12 08:45:55 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 56768
+Wed Dec 12 08:45:55 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:45:55 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 56769
+Wed Dec 12 08:45:55 2018 : Adding to list of sockets as 1
+Wed Dec 12 08:45:56 2018 : Host disconnected, ip 127.0.0.1 , port 56769 
+Wed Dec 12 08:45:57 2018 : Host disconnected, ip 127.0.0.1 , port 56768 
+Wed Dec 12 08:45:57 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 56770
+Wed Dec 12 08:45:57 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:45:57 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 56771
+Wed Dec 12 08:45:57 2018 : Adding to list of sockets as 1
+Wed Dec 12 08:46:01 2018 : Host disconnected, ip 127.0.0.1 , port 56771 
+Ospy server started at : Wed Dec 12 08:47:13 2018
+Wed Dec 12 08:47:13 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 56908
+Wed Dec 12 08:47:13 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:47:14 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 56931
+Wed Dec 12 08:47:14 2018 : Adding to list of sockets as 1
+Wed Dec 12 08:47:20 2018 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 56951
+Wed Dec 12 08:47:20 2018 : Adding to list of sockets as 2
+Wed Dec 12 08:47:31 2018 : Host disconnected, ip 127.0.0.1 , port 56908 
+Wed Dec 12 08:47:34 2018 : Host disconnected, ip 127.0.0.1 , port 56951 
+Wed Dec 12 08:47:35 2018 : Host disconnected, ip 127.0.0.1 , port 56931 
+Ospy server started at : Wed Dec 12 08:48:07 2018
+Wed Dec 12 08:48:07 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 57030
+Wed Dec 12 08:48:07 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:48:08 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 57031
+Wed Dec 12 08:48:08 2018 : Adding to list of sockets as 1
+Wed Dec 12 08:48:10 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 57050
+Wed Dec 12 08:48:10 2018 : Adding to list of sockets as 2
+Wed Dec 12 08:48:24 2018 : Host disconnected, ip 127.0.0.1 , port 57030 
+Wed Dec 12 08:48:29 2018 : Host disconnected, ip 127.0.0.1 , port 57031 
+Wed Dec 12 08:48:30 2018 : Host disconnected, ip 127.0.0.1 , port 57050 
+Ospy server started at : Wed Dec 12 08:56:22 2018
+Wed Dec 12 08:56:22 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 58069
+Wed Dec 12 08:56:22 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:56:25 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 58070
+Wed Dec 12 08:56:25 2018 : Adding to list of sockets as 1
+Wed Dec 12 08:56:26 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 58071
+Wed Dec 12 08:56:26 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 08:59:34 2018
+Wed Dec 12 08:59:34 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 58463
+Wed Dec 12 08:59:34 2018 : Adding to list of sockets as 0
+Wed Dec 12 08:59:35 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 58464
+Wed Dec 12 08:59:35 2018 : Adding to list of sockets as 1
+Wed Dec 12 08:59:37 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 58465
+Wed Dec 12 08:59:37 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 09:12:18 2018
+Wed Dec 12 09:12:18 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 59974
+Wed Dec 12 09:12:18 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:12:20 2018 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 59984
+Wed Dec 12 09:12:20 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:12:24 2018 : New connection , socket fd is 18 , ip is : 127.0.0.1 , port : 59994
+Wed Dec 12 09:12:24 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 09:13:18 2018
+Wed Dec 12 09:13:18 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 60085
+Wed Dec 12 09:13:18 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:13:19 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 60086
+Wed Dec 12 09:13:19 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:13:22 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 60096
+Wed Dec 12 09:13:22 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 09:21:53 2018
+Wed Dec 12 09:21:53 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 61139
+Wed Dec 12 09:21:53 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:21:55 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 61140
+Wed Dec 12 09:21:55 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:21:57 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 61141
+Wed Dec 12 09:21:57 2018 : Adding to list of sockets as 2
+Wed Dec 12 09:22:01 2018 : Host disconnected, ip 127.0.0.1 , port 61140 
+Wed Dec 12 09:22:01 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 61151
+Wed Dec 12 09:22:01 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:22:18 2018 : Host disconnected, ip 127.0.0.1 , port 61139 
+Ospy server started at : Wed Dec 12 09:24:29 2018
+Wed Dec 12 09:24:29 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 61447
+Wed Dec 12 09:24:29 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:24:30 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 61448
+Wed Dec 12 09:24:30 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:24:32 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 61455
+Wed Dec 12 09:24:32 2018 : Adding to list of sockets as 2
+Wed Dec 12 09:24:40 2018 : Host disconnected, ip 127.0.0.1 , port 61447 
+Ospy server started at : Wed Dec 12 09:27:35 2018
+Wed Dec 12 09:27:35 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 61834
+Wed Dec 12 09:27:35 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:27:35 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 61835
+Wed Dec 12 09:27:35 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:27:37 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 61836
+Wed Dec 12 09:27:37 2018 : Adding to list of sockets as 2
+Wed Dec 12 09:27:44 2018 : Host disconnected, ip 127.0.0.1 , port 61834 
+Wed Dec 12 09:27:50 2018 : Host disconnected, ip 127.0.0.1 , port 61835 
+Wed Dec 12 09:27:51 2018 : Host disconnected, ip 127.0.0.1 , port 61836 
+Ospy server started at : Wed Dec 12 09:29:31 2018
+Wed Dec 12 09:29:31 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 62093
+Wed Dec 12 09:29:31 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:29:44 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 62097
+Wed Dec 12 09:29:44 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 09:30:13 2018
+Wed Dec 12 09:30:13 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 62140
+Wed Dec 12 09:30:13 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:30:14 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 62155
+Wed Dec 12 09:30:14 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:30:18 2018 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 62157
+Wed Dec 12 09:30:18 2018 : Adding to list of sockets as 2
+Wed Dec 12 09:30:36 2018 : Host disconnected, ip 127.0.0.1 , port 62157 
+Wed Dec 12 09:30:44 2018 : Host disconnected, ip 127.0.0.1 , port 62155 
+Wed Dec 12 09:30:51 2018 : Host disconnected, ip 127.0.0.1 , port 62140 
+Ospy server started at : Wed Dec 12 09:36:02 2018
+Wed Dec 12 09:36:02 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 62836
+Wed Dec 12 09:36:02 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:36:03 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 62852
+Wed Dec 12 09:36:03 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:36:05 2018 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 62853
+Wed Dec 12 09:36:05 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 09:38:53 2018
+Wed Dec 12 09:38:53 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 63230
+Wed Dec 12 09:38:53 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:38:55 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 63231
+Wed Dec 12 09:38:55 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:38:56 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 63232
+Wed Dec 12 09:38:56 2018 : Adding to list of sockets as 2
+Wed Dec 12 09:38:59 2018 : Host disconnected, ip 127.0.0.1 , port 63230 
+Wed Dec 12 09:39:01 2018 : Host disconnected, ip 127.0.0.1 , port 63231 
+Ospy server started at : Wed Dec 12 09:41:10 2018
+Wed Dec 12 09:41:10 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 63541
+Wed Dec 12 09:41:10 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:41:11 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 63545
+Wed Dec 12 09:41:11 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:41:12 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 63555
+Wed Dec 12 09:41:12 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 09:41:40 2018
+Wed Dec 12 09:41:40 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 63601
+Wed Dec 12 09:41:40 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:41:41 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 63602
+Wed Dec 12 09:41:41 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:41:42 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 63603
+Wed Dec 12 09:41:42 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 09:41:57 2018
+Wed Dec 12 09:41:57 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 63655
+Wed Dec 12 09:41:57 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:41:58 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 63656
+Wed Dec 12 09:41:58 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:41:59 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 63657
+Wed Dec 12 09:41:59 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 09:43:52 2018
+Wed Dec 12 09:43:52 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 63889
+Wed Dec 12 09:43:52 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:43:53 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 63902
+Wed Dec 12 09:43:53 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:43:54 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 63903
+Wed Dec 12 09:43:54 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 09:45:28 2018
+Wed Dec 12 09:45:28 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 64086
+Wed Dec 12 09:45:28 2018 : Adding to list of sockets as 0
+Wed Dec 12 09:45:29 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 64087
+Wed Dec 12 09:45:29 2018 : Adding to list of sockets as 1
+Wed Dec 12 09:45:30 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 64088
+Wed Dec 12 09:45:30 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 10:09:37 2018
+Wed Dec 12 10:09:37 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50764
+Wed Dec 12 10:09:37 2018 : Adding to list of sockets as 0
+Wed Dec 12 10:09:38 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50777
+Wed Dec 12 10:09:38 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 10:33:54 2018
+Wed Dec 12 10:33:54 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53885
+Wed Dec 12 10:33:54 2018 : Adding to list of sockets as 0
+Wed Dec 12 10:33:55 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53892
+Wed Dec 12 10:33:55 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 10:35:05 2018
+Wed Dec 12 10:35:05 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 54033
+Wed Dec 12 10:35:05 2018 : Adding to list of sockets as 0
+Wed Dec 12 10:35:06 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 54034
+Wed Dec 12 10:35:06 2018 : Adding to list of sockets as 1
+Wed Dec 12 10:35:07 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 54035
+Wed Dec 12 10:35:07 2018 : Adding to list of sockets as 2
+Ospy server started at : Wed Dec 12 10:36:38 2018
+Wed Dec 12 10:36:38 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 54211
+Wed Dec 12 10:36:38 2018 : Adding to list of sockets as 0
+Wed Dec 12 10:36:38 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 54212
+Wed Dec 12 10:36:38 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 10:37:19 2018
+Wed Dec 12 10:37:19 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 54293
+Wed Dec 12 10:37:19 2018 : Adding to list of sockets as 0
+Wed Dec 12 10:37:20 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 54294
+Wed Dec 12 10:37:20 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 10:38:37 2018
+Wed Dec 12 10:38:37 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 54466
+Wed Dec 12 10:38:37 2018 : Adding to list of sockets as 0
+Wed Dec 12 10:38:38 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 54467
+Wed Dec 12 10:38:38 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 11:41:27 2018
+Wed Dec 12 11:41:27 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 56747
+Wed Dec 12 11:41:27 2018 : Adding to list of sockets as 0
+Wed Dec 12 11:41:30 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 56748
+Wed Dec 12 11:41:30 2018 : Adding to list of sockets as 1
+Wed Dec 12 11:42:18 2018 : Host disconnected, ip 127.0.0.1 , port 56747 
+Ospy server started at : Wed Dec 12 12:23:40 2018
+Wed Dec 12 12:23:40 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 62352
+Wed Dec 12 12:23:40 2018 : Adding to list of sockets as 0
+Wed Dec 12 12:23:40 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 62353
+Wed Dec 12 12:23:40 2018 : Adding to list of sockets as 1
+Wed Dec 12 12:23:46 2018 : Host disconnected, ip 127.0.0.1 , port 62352 
+Wed Dec 12 12:46:22 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 65342
+Wed Dec 12 12:46:22 2018 : Adding to list of sockets as 0
+Wed Dec 12 12:48:57 2018 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 65361
+Wed Dec 12 12:48:57 2018 : Adding to list of sockets as 2
+Wed Dec 12 12:49:05 2018 : Host disconnected, ip 127.0.0.1 , port 62353 
+Wed Dec 12 12:49:16 2018 : Host disconnected, ip 127.0.0.1 , port 65361 
+Ospy server started at : Wed Dec 12 14:20:24 2018
+Ospy server started at : Wed Dec 12 14:21:43 2018
+Wed Dec 12 14:21:43 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49443
+Wed Dec 12 14:21:43 2018 : Adding to list of sockets as 0
+Wed Dec 12 14:22:53 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49444
+Wed Dec 12 14:22:53 2018 : Adding to list of sockets as 1
+Wed Dec 12 14:25:01 2018 : Host disconnected, ip 127.0.0.1 , port 49443 
+Wed Dec 12 14:26:34 2018 : Host disconnected, ip 127.0.0.1 , port 49444 
+Ospy server started at : Wed Dec 12 15:46:37 2018
+Wed Dec 12 15:46:37 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50307
+Wed Dec 12 15:46:37 2018 : Adding to list of sockets as 0
+Ospy server started at : Wed Dec 12 15:47:06 2018
+Ospy server started at : Wed Dec 12 15:47:51 2018
+Ospy server started at : Wed Dec 12 15:48:48 2018
+Wed Dec 12 15:48:48 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50355
+Wed Dec 12 15:48:48 2018 : Adding to list of sockets as 0
+Ospy server started at : Wed Dec 12 15:48:56 2018
+Ospy server started at : Wed Dec 12 15:49:19 2018
+Ospy server started at : Wed Dec 12 15:49:34 2018
+Ospy server started at : Wed Dec 12 15:49:44 2018
+Ospy server started at : Wed Dec 12 15:50:42 2018
+Ospy server started at : Wed Dec 12 15:51:38 2018
+Ospy server started at : Wed Dec 12 15:51:52 2018
+Ospy server started at : Wed Dec 12 15:52:44 2018
+Wed Dec 12 15:52:44 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50388
+Wed Dec 12 15:52:44 2018 : Adding to list of sockets as 0
+Wed Dec 12 15:52:45 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50389
+Wed Dec 12 15:52:45 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 16:02:24 2018
+Wed Dec 12 16:02:24 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50473
+Wed Dec 12 16:02:24 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:02:25 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50474
+Wed Dec 12 16:02:25 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:02:50 2018 : Host disconnected, ip 127.0.0.1 , port 50473 
+Ospy server started at : Wed Dec 12 16:10:28 2018
+Wed Dec 12 16:10:28 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50627
+Wed Dec 12 16:10:28 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:10:28 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50628
+Wed Dec 12 16:10:28 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:10:35 2018 : Host disconnected, ip 127.0.0.1 , port 50627 
+Ospy server started at : Wed Dec 12 16:10:46 2018
+Wed Dec 12 16:10:46 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50630
+Wed Dec 12 16:10:46 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:10:46 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50631
+Wed Dec 12 16:10:46 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:10:52 2018 : Host disconnected, ip 127.0.0.1 , port 50631 
+Wed Dec 12 16:10:53 2018 : Host disconnected, ip 127.0.0.1 , port 50630 
+Ospy server started at : Wed Dec 12 16:13:06 2018
+Wed Dec 12 16:13:06 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50704
+Wed Dec 12 16:13:06 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:13:07 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50705
+Wed Dec 12 16:13:07 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:13:16 2018 : Host disconnected, ip 127.0.0.1 , port 50705 
+Wed Dec 12 16:13:16 2018 : Host disconnected, ip 127.0.0.1 , port 50704 
+Ospy server started at : Wed Dec 12 16:14:09 2018
+Wed Dec 12 16:14:09 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50718
+Wed Dec 12 16:14:09 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:14:10 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50719
+Wed Dec 12 16:14:10 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:14:18 2018 : Host disconnected, ip 127.0.0.1 , port 50719 
+Wed Dec 12 16:14:18 2018 : Host disconnected, ip 127.0.0.1 , port 50718 
+Ospy server started at : Wed Dec 12 16:53:45 2018
+Wed Dec 12 16:53:45 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50961
+Wed Dec 12 16:53:45 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:53:46 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50962
+Wed Dec 12 16:53:46 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:53:54 2018 : Host disconnected, ip 127.0.0.1 , port 50961 
+Ospy server started at : Wed Dec 12 16:55:17 2018
+Wed Dec 12 16:55:17 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50965
+Wed Dec 12 16:55:17 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:55:18 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50966
+Wed Dec 12 16:55:18 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:55:42 2018 : Host disconnected, ip 127.0.0.1 , port 50966 
+Ospy server started at : Wed Dec 12 16:58:31 2018
+Wed Dec 12 16:58:31 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 50989
+Wed Dec 12 16:58:31 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:58:31 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 50990
+Wed Dec 12 16:58:31 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:58:42 2018 : Host disconnected, ip 127.0.0.1 , port 50989 
+Wed Dec 12 16:58:44 2018 : Host disconnected, ip 127.0.0.1 , port 50990 
+Wed Dec 12 16:58:45 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 50991
+Wed Dec 12 16:58:45 2018 : Adding to list of sockets as 0
+Wed Dec 12 16:59:21 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 50992
+Wed Dec 12 16:59:21 2018 : Adding to list of sockets as 1
+Wed Dec 12 16:59:38 2018 : Host disconnected, ip 127.0.0.1 , port 50991 
+Wed Dec 12 16:59:40 2018 : Host disconnected, ip 127.0.0.1 , port 50991 
+Ospy server started at : Wed Dec 12 17:00:45 2018
+Wed Dec 12 17:00:45 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51004
+Wed Dec 12 17:00:45 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:00:46 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51005
+Wed Dec 12 17:00:46 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:00:56 2018 : Host disconnected, ip 127.0.0.1 , port 51005 
+Wed Dec 12 17:00:57 2018 : Host disconnected, ip 127.0.0.1 , port 51005 
+Ospy server started at : Wed Dec 12 17:08:58 2018
+Wed Dec 12 17:08:58 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51062
+Wed Dec 12 17:08:58 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:08:59 2018 : Host disconnected, ip 127.0.0.1 , port 51062 
+Wed Dec 12 17:09:14 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51063
+Wed Dec 12 17:09:14 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:09:23 2018 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 51064
+Wed Dec 12 17:09:23 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:09:54 2018 : Host disconnected, ip 127.0.0.1 , port 51064 
+Wed Dec 12 17:10:04 2018 : Host disconnected, ip 127.0.0.1 , port 51063 
+Ospy server started at : Wed Dec 12 17:10:42 2018
+Wed Dec 12 17:10:42 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51079
+Wed Dec 12 17:10:42 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:10:42 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51080
+Wed Dec 12 17:10:42 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:10:48 2018 : Host disconnected, ip 127.0.0.1 , port 51079 
+Wed Dec 12 17:10:52 2018 : Host disconnected, ip 127.0.0.1 , port 51080 
+Ospy server started at : Wed Dec 12 17:11:41 2018
+Wed Dec 12 17:11:41 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51088
+Wed Dec 12 17:11:41 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:11:42 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51089
+Wed Dec 12 17:11:42 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:11:50 2018 : Host disconnected, ip 127.0.0.1 , port 51089 
+Wed Dec 12 17:11:51 2018 : Host disconnected, ip 127.0.0.1 , port 51088 
+Ospy server started at : Wed Dec 12 17:12:06 2018
+Wed Dec 12 17:12:06 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51090
+Wed Dec 12 17:12:06 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:12:07 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51091
+Wed Dec 12 17:12:07 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:12:17 2018 : Host disconnected, ip 127.0.0.1 , port 51090 
+Wed Dec 12 17:12:23 2018 : Host disconnected, ip 127.0.0.1 , port 51091 
+Ospy server started at : Wed Dec 12 17:13:06 2018
+Wed Dec 12 17:13:06 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51103
+Wed Dec 12 17:13:06 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:13:06 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51104
+Wed Dec 12 17:13:06 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:13:13 2018 : Host disconnected, ip 127.0.0.1 , port 51103 
+Ospy server started at : Wed Dec 12 17:14:01 2018
+Wed Dec 12 17:14:01 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51107
+Wed Dec 12 17:14:01 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:14:01 2018 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 51108
+Wed Dec 12 17:14:01 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:14:09 2018 : Host disconnected, ip 127.0.0.1 , port 51107 
+Ospy server started at : Wed Dec 12 17:16:05 2018
+Wed Dec 12 17:16:05 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51125
+Wed Dec 12 17:16:05 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:16:07 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51126
+Wed Dec 12 17:16:07 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:16:55 2018
+Wed Dec 12 17:16:55 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51129
+Wed Dec 12 17:16:55 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:16:57 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51130
+Wed Dec 12 17:16:57 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:17:08 2018 : Host disconnected, ip 127.0.0.1 , port 51129 
+Wed Dec 12 17:17:20 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51132
+Wed Dec 12 17:17:20 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:17:34 2018 : Host disconnected, ip 127.0.0.1 , port 51132 
+Wed Dec 12 17:17:36 2018 : Host disconnected, ip 127.0.0.1 , port 51132 
+Ospy server started at : Wed Dec 12 17:19:03 2018
+Wed Dec 12 17:19:03 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51139
+Wed Dec 12 17:19:03 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:19:03 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51140
+Wed Dec 12 17:19:03 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:19:11 2018 : Host disconnected, ip 127.0.0.1 , port 51139 
+Ospy server started at : Wed Dec 12 17:21:47 2018
+Wed Dec 12 17:21:47 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51165
+Wed Dec 12 17:21:47 2018 : Adding to list of sockets as 0
+Ospy server started at : Wed Dec 12 17:23:02 2018
+Ospy server started at : Wed Dec 12 17:23:03 2018
+Wed Dec 12 17:23:03 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51195
+Wed Dec 12 17:23:03 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:23:04 2018 : Host disconnected, ip 127.0.0.1 , port 51195 
+Wed Dec 12 17:23:10 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51196
+Wed Dec 12 17:23:10 2018 : Adding to list of sockets as 0
+Ospy server started at : Wed Dec 12 17:23:16 2018
+Wed Dec 12 17:23:16 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51197
+Wed Dec 12 17:23:16 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:23:16 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51198
+Wed Dec 12 17:23:16 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:23:22 2018 : Host disconnected, ip 127.0.0.1 , port 51197 
+Ospy server started at : Wed Dec 12 17:24:20 2018
+Wed Dec 12 17:24:20 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51210
+Wed Dec 12 17:24:20 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:24:21 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51211
+Wed Dec 12 17:24:21 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:24:42 2018
+Wed Dec 12 17:24:42 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51215
+Wed Dec 12 17:24:42 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:24:43 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51216
+Wed Dec 12 17:24:43 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:24:48 2018 : Host disconnected, ip 127.0.0.1 , port 51215 
+Ospy server started at : Wed Dec 12 17:42:13 2018
+Wed Dec 12 17:42:13 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51528
+Wed Dec 12 17:42:13 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:42:15 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51530
+Wed Dec 12 17:42:15 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:42:47 2018
+Wed Dec 12 17:42:47 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51531
+Wed Dec 12 17:42:47 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:42:49 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51532
+Wed Dec 12 17:42:49 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:43:05 2018
+Wed Dec 12 17:43:05 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51533
+Wed Dec 12 17:43:05 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:43:07 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51534
+Wed Dec 12 17:43:07 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:43:19 2018 : Host disconnected, ip 127.0.0.1 , port 51533 
+Wed Dec 12 17:43:59 2018 : Host disconnected, ip 127.0.0.1 , port 51533 
+Ospy server started at : Wed Dec 12 17:44:23 2018
+Wed Dec 12 17:44:23 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51547
+Wed Dec 12 17:44:23 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:44:25 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51551
+Wed Dec 12 17:44:25 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:45:07 2018
+Wed Dec 12 17:45:07 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51557
+Wed Dec 12 17:45:07 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:45:09 2018 : Host disconnected, ip 127.0.0.1 , port 51557 
+Ospy server started at : Wed Dec 12 17:45:16 2018
+Wed Dec 12 17:45:16 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51564
+Wed Dec 12 17:45:16 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:45:19 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51565
+Wed Dec 12 17:45:19 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:45:47 2018
+Wed Dec 12 17:45:47 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51566
+Wed Dec 12 17:45:47 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:45:50 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51567
+Wed Dec 12 17:45:50 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:46:10 2018
+Wed Dec 12 17:46:10 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51568
+Wed Dec 12 17:46:10 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:46:12 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51569
+Wed Dec 12 17:46:12 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:46:21 2018 : Host disconnected, ip 127.0.0.1 , port 51569 
+Wed Dec 12 17:47:10 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51615
+Wed Dec 12 17:47:10 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:47:10 2018 : Host disconnected, ip 127.0.0.1 , port 51615 
+Wed Dec 12 17:47:22 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51616
+Wed Dec 12 17:47:22 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:47:25 2018
+Wed Dec 12 17:47:25 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51617
+Wed Dec 12 17:47:25 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:47:26 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51618
+Wed Dec 12 17:47:26 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:47:35 2018
+Wed Dec 12 17:47:35 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51619
+Wed Dec 12 17:47:35 2018 : Adding to list of sockets as 0
+Ospy server started at : Wed Dec 12 17:47:39 2018
+Wed Dec 12 17:47:39 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51620
+Wed Dec 12 17:47:39 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:47:40 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51621
+Wed Dec 12 17:47:40 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 17:47:54 2018
+Wed Dec 12 17:47:54 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51623
+Wed Dec 12 17:47:54 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:47:55 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51624
+Wed Dec 12 17:47:55 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:48:22 2018 : Host disconnected, ip 127.0.0.1 , port 51624 
+Wed Dec 12 17:48:23 2018 : Host disconnected, ip 127.0.0.1 , port 51624 
+Ospy server started at : Wed Dec 12 17:49:12 2018
+Wed Dec 12 17:49:12 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51648
+Wed Dec 12 17:49:12 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:49:14 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51649
+Wed Dec 12 17:49:14 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:49:21 2018 : Host disconnected, ip 127.0.0.1 , port 51649 
+Wed Dec 12 17:49:22 2018 : Host disconnected, ip 127.0.0.1 , port 51649 
+Ospy server started at : Wed Dec 12 17:50:15 2018
+Wed Dec 12 17:50:15 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51661
+Wed Dec 12 17:50:15 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:50:16 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51662
+Wed Dec 12 17:50:16 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:50:50 2018 : Host disconnected, ip 127.0.0.1 , port 51661 
+Ospy server started at : Wed Dec 12 17:51:15 2018
+Wed Dec 12 17:51:15 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51665
+Wed Dec 12 17:51:15 2018 : Adding to list of sockets as 0
+Wed Dec 12 17:51:16 2018 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 51666
+Wed Dec 12 17:51:16 2018 : Adding to list of sockets as 1
+Wed Dec 12 17:51:33 2018 : Host disconnected, ip 127.0.0.1 , port 51665 
+Ospy server started at : Wed Dec 12 18:01:19 2018
+Wed Dec 12 18:01:19 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51770
+Wed Dec 12 18:01:19 2018 : Adding to list of sockets as 0
+Wed Dec 12 18:01:20 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51771
+Wed Dec 12 18:01:20 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 18:01:33 2018
+Wed Dec 12 18:01:33 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51772
+Wed Dec 12 18:01:33 2018 : Adding to list of sockets as 0
+Wed Dec 12 18:01:34 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51773
+Wed Dec 12 18:01:34 2018 : Adding to list of sockets as 1
+Wed Dec 12 18:01:39 2018 : Host disconnected, ip 127.0.0.1 , port 51772 
+Wed Dec 12 18:01:41 2018 : Host disconnected, ip 127.0.0.1 , port 51772 
+Ospy server started at : Wed Dec 12 18:03:07 2018
+Wed Dec 12 18:03:07 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51789
+Wed Dec 12 18:03:07 2018 : Adding to list of sockets as 0
+Wed Dec 12 18:03:08 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51790
+Wed Dec 12 18:03:08 2018 : Adding to list of sockets as 1
+Wed Dec 12 18:03:26 2018 : Host disconnected, ip 127.0.0.1 , port 51789 
+Wed Dec 12 18:03:28 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51791
+Wed Dec 12 18:03:28 2018 : Adding to list of sockets as 0
+Wed Dec 12 18:03:29 2018 : Host disconnected, ip 127.0.0.1 , port 51791 
+Ospy server started at : Wed Dec 12 18:03:30 2018
+Wed Dec 12 18:03:30 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51792
+Wed Dec 12 18:03:30 2018 : Adding to list of sockets as 0
+Ospy server started at : Wed Dec 12 18:04:46 2018
+Wed Dec 12 18:04:46 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51836
+Wed Dec 12 18:04:46 2018 : Adding to list of sockets as 0
+Wed Dec 12 18:04:47 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51837
+Wed Dec 12 18:04:47 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 18:04:59 2018
+Wed Dec 12 18:04:59 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 51849
+Wed Dec 12 18:04:59 2018 : Adding to list of sockets as 0
+Wed Dec 12 18:05:00 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 51850
+Wed Dec 12 18:05:00 2018 : Adding to list of sockets as 1
+Ospy server started at : Wed Dec 12 18:06:38 2018
+Wed Dec 12 18:06:38 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 52031
+Wed Dec 12 18:06:38 2018 : Adding to list of sockets as 0
+Wed Dec 12 18:06:39 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 52044
+Wed Dec 12 18:06:39 2018 : Adding to list of sockets as 1
+Wed Dec 12 18:06:50 2018 : Host disconnected, ip 127.0.0.1 , port 52044 
+Ospy server started at : Thu Dec 13 18:31:02 2018
+Thu Dec 13 18:31:02 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 52155
+Thu Dec 13 18:31:02 2018 : Adding to list of sockets as 0
+Thu Dec 13 18:31:02 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 52156
+Thu Dec 13 18:31:02 2018 : Adding to list of sockets as 1
+Thu Dec 13 18:31:09 2018 : Host disconnected, ip 127.0.0.1 , port 52156 
+Thu Dec 13 18:31:25 2018 : Host disconnected, ip 127.0.0.1 , port 52155 
+Ospy server started at : Fri Dec 14 12:57:22 2018
+Ospy server started at : Fri Dec 14 13:02:39 2018
+Fri Dec 14 13:02:39 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 54414
+Fri Dec 14 13:02:39 2018 : Adding to list of sockets as 0
+Fri Dec 14 13:02:40 2018 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 54415
+Fri Dec 14 13:02:40 2018 : Adding to list of sockets as 1
+Fri Dec 14 13:03:56 2018 : Host disconnected, ip 127.0.0.1 , port 54414 
+Fri Dec 14 13:04:04 2018 : Host disconnected, ip 127.0.0.1 , port 54415 
+Ospy server started at : Fri Dec 14 13:08:32 2018
+Fri Dec 14 13:08:32 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 54466
+Fri Dec 14 13:08:32 2018 : Adding to list of sockets as 0
+Fri Dec 14 13:08:33 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 54467
+Fri Dec 14 13:08:33 2018 : Adding to list of sockets as 1
+Fri Dec 14 13:08:58 2018 : Host disconnected, ip 127.0.0.1 , port 54466 
+Ospy server started at : Sun Dec 16 20:01:20 2018
+Sun Dec 16 20:01:20 2018 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 54472
+Sun Dec 16 20:01:20 2018 : Adding to list of sockets as 0
+Sun Dec 16 20:01:21 2018 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 54486
+Sun Dec 16 20:01:21 2018 : Adding to list of sockets as 1
+Sun Dec 16 20:02:06 2018 : Host disconnected, ip 127.0.0.1 , port 54472 
+Sun Dec 16 20:02:08 2018 : Host disconnected, ip 127.0.0.1 , port 54486 
+Ospy server started at : Mon Dec 17 09:06:22 2018
+Mon Dec 17 09:06:22 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 54935
+Mon Dec 17 09:06:22 2018 : Adding to list of sockets as 0
+Mon Dec 17 09:06:22 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 54936
+Mon Dec 17 09:06:22 2018 : Adding to list of sockets as 1
+Mon Dec 17 09:27:08 2018 : Host disconnected, ip 127.0.0.1 , port 54936 
+Mon Dec 17 09:27:09 2018 : Host disconnected, ip 127.0.0.1 , port 54936 
+Ospy server started at : Mon Dec 17 09:38:04 2018
+Mon Dec 17 09:38:04 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 55260
+Mon Dec 17 09:38:04 2018 : Adding to list of sockets as 0
+Mon Dec 17 09:38:05 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 55261
+Mon Dec 17 09:38:05 2018 : Adding to list of sockets as 1
+Mon Dec 17 09:38:24 2018 : Host disconnected, ip 127.0.0.1 , port 55261 
+Mon Dec 17 09:38:24 2018 : Host disconnected, ip 127.0.0.1 , port 55260 
+Ospy server started at : Mon Dec 17 09:39:22 2018
+Mon Dec 17 09:39:22 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 55266
+Mon Dec 17 09:39:22 2018 : Adding to list of sockets as 0
+Mon Dec 17 09:39:23 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 55267
+Mon Dec 17 09:39:23 2018 : Adding to list of sockets as 1
+Mon Dec 17 09:39:26 2018 : Host disconnected, ip 127.0.0.1 , port 55267 
+Mon Dec 17 09:39:27 2018 : Host disconnected, ip 127.0.0.1 , port 55266 
+Ospy server started at : Mon Dec 17 09:41:57 2018
+Mon Dec 17 09:41:57 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 55297
+Mon Dec 17 09:41:57 2018 : Adding to list of sockets as 0
+Mon Dec 17 09:41:58 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 55298
+Mon Dec 17 09:41:58 2018 : Adding to list of sockets as 1
+Mon Dec 17 09:42:06 2018 : Host disconnected, ip 127.0.0.1 , port 55298 
+Mon Dec 17 09:42:07 2018 : Host disconnected, ip 127.0.0.1 , port 55297 
+Ospy server started at : Mon Dec 17 09:42:19 2018
+Mon Dec 17 09:42:19 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 55300
+Mon Dec 17 09:42:19 2018 : Adding to list of sockets as 0
+Mon Dec 17 09:42:20 2018 : New connection , socket fd is 9 , ip is : 127.0.0.1 , port : 55302
+Mon Dec 17 09:42:20 2018 : Adding to list of sockets as 1
+Mon Dec 17 09:44:13 2018 : Host disconnected, ip 127.0.0.1 , port 55300 
+Ospy server started at : Mon Dec 17 09:44:40 2018
+Mon Dec 17 09:44:40 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 55310
+Mon Dec 17 09:44:40 2018 : Adding to list of sockets as 0
+Mon Dec 17 09:45:07 2018 : Host disconnected, ip 127.0.0.1 , port 55310 
+Ospy server started at : Mon Dec 17 09:45:22 2018
+Mon Dec 17 09:45:22 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 55311
+Mon Dec 17 09:45:22 2018 : Adding to list of sockets as 0
+Mon Dec 17 09:45:23 2018 : Host disconnected, ip 127.0.0.1 , port 55311 
+Ospy server started at : Mon Dec 17 09:48:42 2018
+Mon Dec 17 09:48:42 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 55335
+Mon Dec 17 09:48:42 2018 : Adding to list of sockets as 0
+Mon Dec 17 09:48:43 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 55336
+Mon Dec 17 09:48:43 2018 : Adding to list of sockets as 1
+Ospy server started at : Mon Dec 17 10:01:19 2018
+Mon Dec 17 10:01:19 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 55456
+Mon Dec 17 10:01:19 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:01:20 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 55457
+Mon Dec 17 10:01:20 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:01:27 2018 : Host disconnected, ip 127.0.0.1 , port 55456 
+Mon Dec 17 10:01:28 2018 : Host disconnected, ip 127.0.0.1 , port 55457 
+Ospy server started at : Mon Dec 17 10:10:52 2018
+Mon Dec 17 10:10:52 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 55510
+Mon Dec 17 10:10:52 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:10:52 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 55511
+Mon Dec 17 10:10:52 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:11:04 2018 : Host disconnected, ip 127.0.0.1 , port 55510 
+Ospy server started at : Mon Dec 17 10:12:27 2018
+Mon Dec 17 10:12:27 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 55530
+Mon Dec 17 10:12:27 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:12:28 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 55531
+Mon Dec 17 10:12:28 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:12:35 2018 : Host disconnected, ip 127.0.0.1 , port 55530 
+Mon Dec 17 10:12:36 2018 : Host disconnected, ip 127.0.0.1 , port 55531 
+Ospy server started at : Mon Dec 17 10:13:18 2018
+Mon Dec 17 10:13:18 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 55534
+Mon Dec 17 10:13:18 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:13:18 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 55536
+Mon Dec 17 10:13:18 2018 : Adding to list of sockets as 1
+Ospy server started at : Mon Dec 17 10:17:47 2018
+Mon Dec 17 10:17:47 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49353
+Mon Dec 17 10:17:47 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:17:48 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49354
+Mon Dec 17 10:17:48 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:17:57 2018 : Host disconnected, ip 127.0.0.1 , port 49353 
+Ospy server started at : Mon Dec 17 10:19:28 2018
+Mon Dec 17 10:19:28 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49357
+Mon Dec 17 10:19:28 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:19:29 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49358
+Mon Dec 17 10:19:29 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:19:52 2018 : Host disconnected, ip 127.0.0.1 , port 49357 
+Mon Dec 17 10:20:22 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49361
+Mon Dec 17 10:20:22 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:20:25 2018 : Host disconnected, ip 127.0.0.1 , port 49361 
+Mon Dec 17 10:20:25 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49362
+Mon Dec 17 10:20:25 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:23:06 2018 : Host disconnected, ip 127.0.0.1 , port 49362 
+Mon Dec 17 10:23:19 2018 : Host disconnected, ip 127.0.0.1 , port 49358 
+Mon Dec 17 10:35:03 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49446
+Mon Dec 17 10:35:03 2018 : Adding to list of sockets as 0
+Ospy server started at : Mon Dec 17 10:35:57 2018
+Mon Dec 17 10:35:57 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49453
+Mon Dec 17 10:35:57 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:35:58 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49454
+Mon Dec 17 10:35:58 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:36:44 2018 : Host disconnected, ip 127.0.0.1 , port 49454 
+Mon Dec 17 10:36:46 2018 : Host disconnected, ip 127.0.0.1 , port 49453 
+Ospy server started at : Mon Dec 17 10:39:33 2018
+Mon Dec 17 10:39:33 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 49461
+Mon Dec 17 10:39:33 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:39:34 2018 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 49462
+Mon Dec 17 10:39:34 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:40:10 2018 : Host disconnected, ip 127.0.0.1 , port 49462 
+Mon Dec 17 10:40:18 2018 : Host disconnected, ip 127.0.0.1 , port 49462 
+Ospy server started at : Mon Dec 17 10:45:08 2018
+Mon Dec 17 10:45:08 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49492
+Mon Dec 17 10:45:08 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:45:09 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49493
+Mon Dec 17 10:45:09 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:45:17 2018 : Host disconnected, ip 127.0.0.1 , port 49493 
+Ospy server started at : Mon Dec 17 10:55:09 2018
+Mon Dec 17 10:55:09 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49509
+Mon Dec 17 10:55:09 2018 : Adding to list of sockets as 0
+Mon Dec 17 10:55:21 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 49516
+Mon Dec 17 10:55:21 2018 : Adding to list of sockets as 1
+Mon Dec 17 10:56:46 2018 : Host disconnected, ip 127.0.0.1 , port 49516 
+Ospy server started at : Mon Dec 17 11:00:34 2018
+Mon Dec 17 11:00:34 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49526
+Mon Dec 17 11:00:34 2018 : Adding to list of sockets as 0
+Mon Dec 17 11:00:34 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49527
+Mon Dec 17 11:00:34 2018 : Adding to list of sockets as 1
+Ospy server started at : Mon Dec 17 11:22:45 2018
+Mon Dec 17 11:22:45 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49740
+Mon Dec 17 11:22:45 2018 : Adding to list of sockets as 0
+Mon Dec 17 11:22:46 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49741
+Mon Dec 17 11:22:46 2018 : Adding to list of sockets as 1
+Mon Dec 17 11:22:58 2018 : Host disconnected, ip 127.0.0.1 , port 49741 
+Ospy server started at : Mon Dec 17 11:24:27 2018
+Mon Dec 17 11:24:27 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49748
+Mon Dec 17 11:24:27 2018 : Adding to list of sockets as 0
+Mon Dec 17 11:24:27 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49749
+Mon Dec 17 11:24:27 2018 : Adding to list of sockets as 1
+Mon Dec 17 11:24:37 2018 : Host disconnected, ip 127.0.0.1 , port 49749 
+Ospy server started at : Mon Dec 17 11:24:56 2018
+Mon Dec 17 11:24:56 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49755
+Mon Dec 17 11:24:56 2018 : Adding to list of sockets as 0
+Mon Dec 17 11:24:57 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49756
+Mon Dec 17 11:24:57 2018 : Adding to list of sockets as 1
+Mon Dec 17 11:25:04 2018 : Host disconnected, ip 127.0.0.1 , port 49756 
+Mon Dec 17 11:26:07 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49757
+Mon Dec 17 11:26:07 2018 : Adding to list of sockets as 0
+Mon Dec 17 11:26:11 2018 : Host disconnected, ip 127.0.0.1 , port 49756 
+Mon Dec 17 11:26:11 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49758
+Mon Dec 17 11:26:11 2018 : Adding to list of sockets as 1
+Ospy server started at : Mon Dec 17 11:26:17 2018
+Mon Dec 17 11:26:17 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49759
+Mon Dec 17 11:26:17 2018 : Adding to list of sockets as 0
+Mon Dec 17 11:26:18 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49760
+Mon Dec 17 11:26:18 2018 : Adding to list of sockets as 1
+Mon Dec 17 11:26:41 2018 : Host disconnected, ip 127.0.0.1 , port 49760 
+Mon Dec 17 11:26:41 2018 : Host disconnected, ip 127.0.0.1 , port 49760 
+Ospy server started at : Mon Dec 17 11:48:19 2018
+Mon Dec 17 11:48:19 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49910
+Mon Dec 17 11:48:19 2018 : Adding to list of sockets as 0
+Mon Dec 17 11:48:27 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 49911
+Mon Dec 17 11:48:27 2018 : Adding to list of sockets as 1
+Ospy server started at : Mon Dec 17 12:08:23 2018
+Mon Dec 17 12:08:23 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50004
+Mon Dec 17 12:08:23 2018 : Adding to list of sockets as 0
+Mon Dec 17 12:08:24 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50005
+Mon Dec 17 12:08:24 2018 : Adding to list of sockets as 1
+Mon Dec 17 12:08:32 2018 : Host disconnected, ip 127.0.0.1 , port 50004 
+Mon Dec 17 12:08:40 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50006
+Mon Dec 17 12:08:40 2018 : Adding to list of sockets as 0
+Ospy server started at : Mon Dec 17 12:09:58 2018
+Mon Dec 17 12:09:58 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50009
+Mon Dec 17 12:09:58 2018 : Adding to list of sockets as 0
+Mon Dec 17 12:09:59 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50010
+Mon Dec 17 12:09:59 2018 : Adding to list of sockets as 1
+Ospy server started at : Mon Dec 17 12:12:23 2018
+Mon Dec 17 12:12:23 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50036
+Mon Dec 17 12:12:23 2018 : Adding to list of sockets as 0
+Mon Dec 17 12:12:24 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50037
+Mon Dec 17 12:12:24 2018 : Adding to list of sockets as 1
+Mon Dec 17 12:12:29 2018 : Host disconnected, ip 127.0.0.1 , port 50037 
+Mon Dec 17 12:12:29 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50038
+Mon Dec 17 12:12:29 2018 : Adding to list of sockets as 1
+Mon Dec 17 12:12:53 2018 : Host disconnected, ip 127.0.0.1 , port 50038 
+Mon Dec 17 12:12:53 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50039
+Mon Dec 17 12:12:53 2018 : Adding to list of sockets as 1
+Ospy server started at : Mon Dec 17 12:12:59 2018
+Mon Dec 17 12:12:59 2018 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 50040
+Mon Dec 17 12:12:59 2018 : Adding to list of sockets as 0
+Mon Dec 17 12:13:00 2018 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 50041
+Mon Dec 17 12:13:00 2018 : Adding to list of sockets as 1
+Mon Dec 17 12:13:16 2018 : Host disconnected, ip 127.0.0.1 , port 50040 
+Mon Dec 17 12:14:03 2018 : Host disconnected, ip 127.0.0.1 , port 50041 
+Ospy server started at : Mon Dec 17 12:14:07 2018
+Mon Dec 17 12:14:07 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50046
+Mon Dec 17 12:14:07 2018 : Adding to list of sockets as 0
+Mon Dec 17 12:14:23 2018 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 50047
+Mon Dec 17 12:14:23 2018 : Adding to list of sockets as 1
+Ospy server started at : Mon Dec 17 12:57:42 2018
+Mon Dec 17 12:57:42 2018 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 50824
+Mon Dec 17 12:57:42 2018 : Adding to list of sockets as 0
+Mon Dec 17 12:57:43 2018 : Host disconnected, ip 127.0.0.1 , port 50824 
+Ospy server started at : Mon Dec 17 22:43:50 2018
+Ospy server started at : Mon Dec 31 10:22:57 2018
+Mon Dec 31 10:22:57 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49951
+Mon Dec 31 10:22:57 2018 : Adding to list of sockets as 0
+Mon Dec 31 10:23:00 2018 : Host disconnected, ip 127.0.0.1 , port 49951 
+Ospy server started at : Mon Dec 31 10:44:46 2018
+Ospy server started at : Mon Dec 31 12:16:44 2018
+Mon Dec 31 12:16:44 2018 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 52764
+Mon Dec 31 12:16:44 2018 : Adding to list of sockets as 0
+Mon Dec 31 12:16:45 2018 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 52765
+Mon Dec 31 12:16:45 2018 : Adding to list of sockets as 1
+Ospy server started at : Thu Jan  3 14:33:04 2019
+Thu Jan  3 14:33:04 2019 : New connection , socket fd is 5 , ip is : 20.20.20.115 , port : 57664
+Thu Jan  3 14:33:04 2019 : Adding to list of sockets as 0
+Thu Jan  3 14:33:57 2019 : New connection , socket fd is 6 , ip is : 20.20.20.115 , port : 57666
+Thu Jan  3 14:33:57 2019 : Adding to list of sockets as 1
+Thu Jan  3 14:34:20 2019 : Host disconnected, ip 20.20.20.115 , port 57664 
+Thu Jan  3 14:34:59 2019 : Host disconnected, ip 20.20.20.115 , port 57666 
+Ospy server started at : Thu Jan  3 14:47:37 2019
+Thu Jan  3 14:47:37 2019 : New connection , socket fd is 5 , ip is : 20.20.20.115 , port : 57949
+Thu Jan  3 14:47:37 2019 : Adding to list of sockets as 0
+Thu Jan  3 14:47:39 2019 : Host disconnected, ip 20.20.20.115 , port 57949 
+Thu Jan  3 14:47:46 2019 : New connection , socket fd is 5 , ip is : 20.20.20.115 , port : 57950
+Thu Jan  3 14:47:46 2019 : Adding to list of sockets as 0
+Thu Jan  3 14:47:48 2019 : Host disconnected, ip 20.20.20.115 , port 57950 
+Ospy server started at : Thu Jan  3 18:37:38 2019
+Ospy server started at : Thu Jan  3 18:41:15 2019
+Thu Jan  3 18:41:15 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59010
+Thu Jan  3 18:41:15 2019 : Adding to list of sockets as 0
+Thu Jan  3 18:41:16 2019 : Host disconnected, ip 120.130.1.152 , port 59010 
+Ospy server started at : Thu Jan  3 18:43:10 2019
+Thu Jan  3 18:43:10 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59027
+Thu Jan  3 18:43:10 2019 : Adding to list of sockets as 0
+Thu Jan  3 18:43:10 2019 : Host disconnected, ip 120.130.1.152 , port 59027 
+Thu Jan  3 18:43:26 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59092
+Thu Jan  3 18:43:26 2019 : Adding to list of sockets as 0
+Thu Jan  3 18:50:43 2019 : Host disconnected, ip 120.130.1.152 , port 59092 
+Ospy server started at : Thu Jan  3 20:15:33 2019
+Thu Jan  3 20:15:33 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59368
+Thu Jan  3 20:15:33 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:15:35 2019 : Host disconnected, ip 120.130.1.152 , port 59368 
+Thu Jan  3 20:16:03 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59395
+Thu Jan  3 20:16:03 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:16:44 2019 : Host disconnected, ip 120.130.1.152 , port 59395 
+Thu Jan  3 20:16:56 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59399
+Thu Jan  3 20:16:56 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:17:21 2019 : Host disconnected, ip 120.130.1.152 , port 59399 
+Ospy server started at : Thu Jan  3 20:24:10 2019
+Thu Jan  3 20:24:10 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59537
+Thu Jan  3 20:24:10 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:24:11 2019 : Host disconnected, ip 120.130.1.152 , port 59537 
+Thu Jan  3 20:24:30 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59544
+Thu Jan  3 20:24:30 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:25:28 2019 : Host disconnected, ip 120.130.1.152 , port 59544 
+Thu Jan  3 20:25:46 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59557
+Thu Jan  3 20:25:46 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:27:17 2019 : Host disconnected, ip 120.130.1.152 , port 59557 
+Thu Jan  3 20:27:21 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59670
+Thu Jan  3 20:27:21 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:34:36 2019 : Host disconnected, ip 120.130.1.152 , port 59670 
+Thu Jan  3 20:34:39 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59689
+Thu Jan  3 20:34:39 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:35:48 2019 : Host disconnected, ip 120.130.1.152 , port 59689 
+Thu Jan  3 20:36:03 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59690
+Thu Jan  3 20:36:03 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:36:04 2019 : Host disconnected, ip 120.130.1.152 , port 59690 
+Thu Jan  3 20:36:12 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59717
+Thu Jan  3 20:36:12 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:37:27 2019 : Host disconnected, ip 120.130.1.152 , port 59717 
+Thu Jan  3 20:37:33 2019 : New connection , socket fd is 5 , ip is : 120.130.1.152 , port : 59736
+Thu Jan  3 20:37:33 2019 : Adding to list of sockets as 0
+Thu Jan  3 20:38:24 2019 : Host disconnected, ip 120.130.1.152 , port 59736 
+Ospy server started at : Sat Jan  5 16:36:12 2019
+Sat Jan  5 16:36:12 2019 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49326
+Sat Jan  5 16:36:12 2019 : Adding to list of sockets as 0
+Sat Jan  5 16:36:19 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 49327
+Sat Jan  5 16:36:19 2019 : Adding to list of sockets as 1
+Sat Jan  5 16:37:25 2019 : Host disconnected, ip 127.0.0.1 , port 49327 
+Sat Jan  5 16:37:26 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 49328
+Sat Jan  5 16:37:26 2019 : Adding to list of sockets as 1
+Sat Jan  5 16:37:31 2019 : Host disconnected, ip 127.0.0.1 , port 49326 
+Sat Jan  5 16:37:31 2019 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49329
+Sat Jan  5 16:37:31 2019 : Adding to list of sockets as 0
+Ospy server started at : Sat Jan  5 16:37:42 2019
+Sat Jan  5 16:37:42 2019 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 49330
+Sat Jan  5 16:37:42 2019 : Adding to list of sockets as 0
+Sat Jan  5 16:37:43 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 49331
+Sat Jan  5 16:37:43 2019 : Adding to list of sockets as 1
+Sat Jan  5 16:56:45 2019 : Host disconnected, ip 127.0.0.1 , port 49330 
+Sat Jan  5 16:56:57 2019 : Host disconnected, ip 127.0.0.1 , port 49331 
+Ospy server started at : Sat Jan 19 15:08:11 2019
+Sat Jan 19 15:08:11 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49168
+Sat Jan 19 15:08:11 2019 : Adding to list of sockets as 0
+Sat Jan 19 15:08:13 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49169
+Sat Jan 19 15:08:13 2019 : Adding to list of sockets as 1
+Sat Jan 19 15:57:15 2019 : Host disconnected, ip 127.0.0.1 , port 49168 
+Sat Jan 19 16:01:32 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49351
+Sat Jan 19 16:01:32 2019 : Adding to list of sockets as 0
+Sat Jan 19 16:02:48 2019 : Host disconnected, ip 127.0.0.1 , port 49351 
+Sat Jan 19 16:02:55 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49397
+Sat Jan 19 16:02:55 2019 : Adding to list of sockets as 0
+Sat Jan 19 16:05:20 2019 : Host disconnected, ip 127.0.0.1 , port 49169 
+Sat Jan 19 16:06:08 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 49502
+Sat Jan 19 16:06:08 2019 : Adding to list of sockets as 1
+Sat Jan 19 16:10:27 2019 : Host disconnected, ip 127.0.0.1 , port 49502 
+Sat Jan 19 16:10:27 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 49731
+Sat Jan 19 16:10:27 2019 : Adding to list of sockets as 0
+Sat Jan 19 16:23:16 2019 : Host disconnected, ip 127.0.0.1 , port 49731 
+Ospy server started at : Sun Jan 20 18:02:27 2019
+Sun Jan 20 18:02:27 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 63987
+Sun Jan 20 18:02:27 2019 : Adding to list of sockets as 0
+Sun Jan 20 18:02:27 2019 : Host disconnected, ip 127.0.0.1 , port 63987 
+Sun Jan 20 18:02:32 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 63990
+Sun Jan 20 18:02:32 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:03:32 2019
+Sun Jan 20 18:03:32 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64007
+Sun Jan 20 18:03:32 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:04:43 2019
+Sun Jan 20 18:04:43 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64024
+Sun Jan 20 18:04:43 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:07:38 2019
+Sun Jan 20 18:07:38 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64062
+Sun Jan 20 18:07:38 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:08:17 2019
+Sun Jan 20 18:08:17 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64080
+Sun Jan 20 18:08:17 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:37:22 2019
+Sun Jan 20 18:37:22 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64375
+Sun Jan 20 18:37:22 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:38:17 2019
+Sun Jan 20 18:38:17 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64377
+Sun Jan 20 18:38:17 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:41:56 2019
+Sun Jan 20 18:41:56 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64430
+Sun Jan 20 18:41:56 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:43:58 2019
+Sun Jan 20 18:43:58 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64453
+Sun Jan 20 18:43:58 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:44:24 2019
+Ospy server started at : Sun Jan 20 18:44:41 2019
+Ospy server started at : Sun Jan 20 18:45:19 2019
+Sun Jan 20 18:45:19 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64467
+Sun Jan 20 18:45:19 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:53:25 2019
+Sun Jan 20 18:53:25 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64621
+Sun Jan 20 18:53:25 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:54:02 2019
+Sun Jan 20 18:54:02 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64627
+Sun Jan 20 18:54:02 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 18:58:51 2019
+Sun Jan 20 18:58:51 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 64664
+Sun Jan 20 18:58:51 2019 : Adding to list of sockets as 0
+Sun Jan 20 18:58:55 2019 : Host disconnected, ip 127.0.0.1 , port 64664 
+Ospy server started at : Sun Jan 20 20:59:38 2019
+Ospy server started at : Sun Jan 20 21:05:10 2019
+Sun Jan 20 21:05:10 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49233
+Sun Jan 20 21:05:10 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 21:05:41 2019
+Sun Jan 20 21:05:41 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49250
+Sun Jan 20 21:05:41 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 21:12:22 2019
+Sun Jan 20 21:12:22 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49304
+Sun Jan 20 21:12:22 2019 : Adding to list of sockets as 0
+Sun Jan 20 21:12:30 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49305
+Sun Jan 20 21:12:30 2019 : Adding to list of sockets as 1
+Ospy server started at : Sun Jan 20 21:12:52 2019
+Sun Jan 20 21:12:52 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49319
+Sun Jan 20 21:12:52 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 21:19:27 2019
+Sun Jan 20 21:19:27 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49381
+Sun Jan 20 21:19:27 2019 : Adding to list of sockets as 0
+Sun Jan 20 21:19:30 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49382
+Sun Jan 20 21:19:30 2019 : Adding to list of sockets as 1
+Sun Jan 20 21:19:46 2019 : Host disconnected, ip 127.0.0.1 , port 49382 
+Sun Jan 20 21:19:46 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49383
+Sun Jan 20 21:19:46 2019 : Adding to list of sockets as 1
+Ospy server started at : Sun Jan 20 21:21:20 2019
+Ospy server started at : Sun Jan 20 21:22:11 2019
+Ospy server started at : Sun Jan 20 21:22:45 2019
+Sun Jan 20 21:22:45 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49385
+Sun Jan 20 21:22:45 2019 : Adding to list of sockets as 0
+Sun Jan 20 21:22:48 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49386
+Sun Jan 20 21:22:48 2019 : Adding to list of sockets as 1
+Sun Jan 20 21:22:51 2019 : Host disconnected, ip 127.0.0.1 , port 49386 
+Ospy server started at : Sun Jan 20 21:25:47 2019
+Sun Jan 20 21:25:47 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49440
+Sun Jan 20 21:25:47 2019 : Adding to list of sockets as 0
+Sun Jan 20 21:25:50 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49441
+Sun Jan 20 21:25:50 2019 : Adding to list of sockets as 1
+Ospy server started at : Sun Jan 20 21:26:58 2019
+Sun Jan 20 21:26:58 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49455
+Sun Jan 20 21:26:58 2019 : Adding to list of sockets as 0
+Sun Jan 20 21:27:01 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49456
+Sun Jan 20 21:27:01 2019 : Adding to list of sockets as 1
+Ospy server started at : Sun Jan 20 21:27:25 2019
+Sun Jan 20 21:27:25 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49457
+Sun Jan 20 21:27:25 2019 : Adding to list of sockets as 0
+Sun Jan 20 21:27:27 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49458
+Sun Jan 20 21:27:27 2019 : Adding to list of sockets as 1
+Ospy server started at : Sun Jan 20 21:37:51 2019
+Sun Jan 20 21:37:51 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49575
+Sun Jan 20 21:37:51 2019 : Adding to list of sockets as 0
+Sun Jan 20 21:37:54 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49576
+Sun Jan 20 21:37:54 2019 : Adding to list of sockets as 1
+Ospy server started at : Sun Jan 20 21:57:17 2019
+Sun Jan 20 21:57:17 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49631
+Sun Jan 20 21:57:17 2019 : Adding to list of sockets as 0
+Sun Jan 20 21:57:21 2019 : New connection , socket fd is 14 , ip is : 127.0.0.1 , port : 49632
+Sun Jan 20 21:57:21 2019 : Adding to list of sockets as 1
+Ospy server started at : Sun Jan 20 21:57:29 2019
+Ospy server started at : Sun Jan 20 21:57:44 2019
+Sun Jan 20 21:57:44 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49639
+Sun Jan 20 21:57:44 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 21:59:10 2019
+Sun Jan 20 21:59:10 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49657
+Sun Jan 20 21:59:10 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 22:01:36 2019
+Ospy server started at : Sun Jan 20 22:01:44 2019
+Sun Jan 20 22:01:44 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49699
+Sun Jan 20 22:01:44 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 22:01:58 2019
+Sun Jan 20 22:01:58 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 49700
+Sun Jan 20 22:01:58 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 23:12:13 2019
+Sun Jan 20 23:12:13 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 50434
+Sun Jan 20 23:12:13 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 23:14:51 2019
+Sun Jan 20 23:14:51 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 50567
+Sun Jan 20 23:14:51 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 23:17:39 2019
+Sun Jan 20 23:17:39 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 50697
+Sun Jan 20 23:17:39 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 23:18:42 2019
+Sun Jan 20 23:18:42 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 50751
+Sun Jan 20 23:18:42 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 23:19:00 2019
+Sun Jan 20 23:19:00 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 50767
+Sun Jan 20 23:19:00 2019 : Adding to list of sockets as 0
+Ospy server started at : Sun Jan 20 23:24:38 2019
+Sun Jan 20 23:24:38 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 51004
+Sun Jan 20 23:24:38 2019 : Adding to list of sockets as 0
+Sun Jan 20 23:26:57 2019 : Host disconnected, ip 127.0.0.1 , port 51004 
+Ospy server started at : Sun Jan 20 23:28:16 2019
+Sun Jan 20 23:28:16 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 51130
+Sun Jan 20 23:28:16 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 09:54:07 2019
+Mon Jan 21 09:54:07 2019 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 51565
+Mon Jan 21 09:54:07 2019 : Adding to list of sockets as 0
+Mon Jan 21 09:54:10 2019 : Host disconnected, ip 127.0.0.1 , port 51565 
+Ospy server started at : Mon Jan 21 09:57:05 2019
+Mon Jan 21 09:57:05 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51624
+Mon Jan 21 09:57:05 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 09:57:34 2019
+Mon Jan 21 09:57:34 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51627
+Mon Jan 21 09:57:34 2019 : Adding to list of sockets as 0
+Mon Jan 21 09:57:36 2019 : Host disconnected, ip 127.0.0.1 , port 51627 
+Ospy server started at : Mon Jan 21 09:58:27 2019
+Mon Jan 21 09:58:27 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51629
+Mon Jan 21 09:58:27 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:00:23 2019
+Mon Jan 21 10:00:23 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51631
+Mon Jan 21 10:00:23 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:00:51 2019
+Mon Jan 21 10:00:51 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51632
+Mon Jan 21 10:00:51 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:01:44 2019
+Mon Jan 21 10:01:44 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51634
+Mon Jan 21 10:01:44 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:02:29 2019
+Mon Jan 21 10:02:29 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51636
+Mon Jan 21 10:02:29 2019 : Adding to list of sockets as 0
+Mon Jan 21 10:17:18 2019 : Host disconnected, ip 127.0.0.1 , port 51636 
+Mon Jan 21 10:17:18 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51669
+Mon Jan 21 10:17:18 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:18:11 2019
+Mon Jan 21 10:18:11 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51671
+Mon Jan 21 10:18:11 2019 : Adding to list of sockets as 0
+Mon Jan 21 10:18:28 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 51672
+Mon Jan 21 10:18:28 2019 : Adding to list of sockets as 1
+Mon Jan 21 10:18:37 2019 : Host disconnected, ip 127.0.0.1 , port 51672 
+Ospy server started at : Mon Jan 21 10:18:50 2019
+Mon Jan 21 10:18:50 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51673
+Mon Jan 21 10:18:50 2019 : Adding to list of sockets as 0
+Mon Jan 21 10:18:55 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 51674
+Mon Jan 21 10:18:55 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 10:19:22 2019
+Mon Jan 21 10:19:22 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 51675
+Mon Jan 21 10:19:22 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:19:45 2019
+Mon Jan 21 10:19:45 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51682
+Mon Jan 21 10:19:45 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:20:05 2019
+Mon Jan 21 10:20:05 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 51687
+Mon Jan 21 10:20:05 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:22:24 2019
+Mon Jan 21 10:22:24 2019 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 51691
+Mon Jan 21 10:22:24 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:23:21 2019
+Mon Jan 21 10:23:21 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51692
+Mon Jan 21 10:23:21 2019 : Adding to list of sockets as 0
+Mon Jan 21 10:23:26 2019 : Host disconnected, ip 127.0.0.1 , port 51692 
+Mon Jan 21 10:23:27 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51693
+Mon Jan 21 10:23:27 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:23:55 2019
+Mon Jan 21 10:23:55 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51696
+Mon Jan 21 10:23:55 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:24:07 2019
+Ospy server started at : Mon Jan 21 10:26:32 2019
+Ospy server started at : Mon Jan 21 10:26:47 2019
+Ospy server started at : Mon Jan 21 10:28:23 2019
+Mon Jan 21 10:28:23 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 51701
+Mon Jan 21 10:28:23 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:28:34 2019
+Mon Jan 21 10:28:34 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51702
+Mon Jan 21 10:28:34 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:32:54 2019
+Mon Jan 21 10:32:54 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 51706
+Mon Jan 21 10:32:54 2019 : Adding to list of sockets as 0
+Mon Jan 21 10:33:00 2019 : Host disconnected, ip 127.0.0.1 , port 51706 
+Ospy server started at : Mon Jan 21 10:33:13 2019
+Mon Jan 21 10:33:13 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51707
+Mon Jan 21 10:33:13 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:33:42 2019
+Mon Jan 21 10:33:42 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 51708
+Mon Jan 21 10:33:42 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:36:11 2019
+Ospy server started at : Mon Jan 21 10:36:12 2019
+Mon Jan 21 10:36:12 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51714
+Mon Jan 21 10:36:12 2019 : Adding to list of sockets as 0
+Mon Jan 21 10:36:17 2019 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 51715
+Mon Jan 21 10:36:17 2019 : Adding to list of sockets as 1
+Mon Jan 21 10:37:03 2019 : Host disconnected, ip 127.0.0.1 , port 51714 
+Ospy server started at : Mon Jan 21 10:37:07 2019
+Mon Jan 21 10:37:07 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51716
+Mon Jan 21 10:37:07 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:39:13 2019
+Mon Jan 21 10:39:13 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51720
+Mon Jan 21 10:39:13 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:46:18 2019
+Mon Jan 21 10:46:18 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51728
+Mon Jan 21 10:46:18 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:46:55 2019
+Mon Jan 21 10:46:55 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51729
+Mon Jan 21 10:46:55 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:47:06 2019
+Mon Jan 21 10:47:06 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51730
+Mon Jan 21 10:47:06 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:47:21 2019
+Mon Jan 21 10:47:21 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51731
+Mon Jan 21 10:47:21 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:49:55 2019
+Mon Jan 21 10:49:55 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51763
+Mon Jan 21 10:49:55 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 10:50:05 2019
+Mon Jan 21 10:50:05 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51765
+Mon Jan 21 10:50:05 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:00:04 2019
+Ospy server started at : Mon Jan 21 11:00:29 2019
+Mon Jan 21 11:00:29 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 51781
+Mon Jan 21 11:00:29 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:01:28 2019
+Mon Jan 21 11:01:28 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51782
+Mon Jan 21 11:01:28 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:01:37 2019
+Mon Jan 21 11:01:37 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51784
+Mon Jan 21 11:01:37 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:02:55 2019
+Mon Jan 21 11:02:55 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51786
+Mon Jan 21 11:02:55 2019 : Adding to list of sockets as 0
+Mon Jan 21 11:03:05 2019 : Host disconnected, ip 127.0.0.1 , port 51786 
+Ospy server started at : Mon Jan 21 11:03:22 2019
+Mon Jan 21 11:03:22 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51787
+Mon Jan 21 11:03:22 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:03:42 2019
+Mon Jan 21 11:03:42 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 51788
+Mon Jan 21 11:03:42 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:06:53 2019
+Mon Jan 21 11:06:53 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 51794
+Mon Jan 21 11:06:53 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:13:06 2019
+Mon Jan 21 11:13:06 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 51803
+Mon Jan 21 11:13:06 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:14:13 2019
+Mon Jan 21 11:14:13 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 51807
+Mon Jan 21 11:14:13 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:14:47 2019
+Mon Jan 21 11:14:47 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51811
+Mon Jan 21 11:14:47 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:14:58 2019
+Mon Jan 21 11:14:58 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51812
+Mon Jan 21 11:14:58 2019 : Adding to list of sockets as 0
+Mon Jan 21 11:15:00 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 51813
+Mon Jan 21 11:15:00 2019 : Adding to list of sockets as 1
+Mon Jan 21 11:16:35 2019 : Host disconnected, ip 127.0.0.1 , port 51813 
+Ospy server started at : Mon Jan 21 11:17:32 2019
+Mon Jan 21 11:17:32 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51815
+Mon Jan 21 11:17:32 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:18:55 2019
+Ospy server started at : Mon Jan 21 11:18:57 2019
+Mon Jan 21 11:18:57 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51817
+Mon Jan 21 11:18:57 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:27:35 2019
+Mon Jan 21 11:27:35 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 51889
+Mon Jan 21 11:27:35 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:28:06 2019
+Ospy server started at : Mon Jan 21 11:28:14 2019
+Mon Jan 21 11:28:14 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51890
+Mon Jan 21 11:28:14 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:30:08 2019
+Mon Jan 21 11:30:08 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51895
+Mon Jan 21 11:30:08 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:35:43 2019
+Ospy server started at : Mon Jan 21 11:35:48 2019
+Mon Jan 21 11:35:48 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51910
+Mon Jan 21 11:35:48 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:38:15 2019
+Ospy server started at : Mon Jan 21 11:38:47 2019
+Mon Jan 21 11:38:47 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51924
+Mon Jan 21 11:38:47 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:39:11 2019
+Ospy server started at : Mon Jan 21 11:39:27 2019
+Mon Jan 21 11:39:27 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51926
+Mon Jan 21 11:39:27 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:39:59 2019
+Mon Jan 21 11:39:59 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51928
+Mon Jan 21 11:39:59 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:40:48 2019
+Mon Jan 21 11:40:48 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51930
+Mon Jan 21 11:40:48 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:41:01 2019
+Mon Jan 21 11:41:01 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51931
+Mon Jan 21 11:41:01 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:41:41 2019
+Ospy server started at : Mon Jan 21 11:42:03 2019
+Ospy server started at : Mon Jan 21 11:42:05 2019
+Mon Jan 21 11:42:05 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51941
+Mon Jan 21 11:42:05 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:42:54 2019
+Mon Jan 21 11:42:54 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51946
+Mon Jan 21 11:42:54 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:45:43 2019
+Mon Jan 21 11:45:43 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51954
+Mon Jan 21 11:45:43 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:46:16 2019
+Mon Jan 21 11:46:16 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51955
+Mon Jan 21 11:46:16 2019 : Adding to list of sockets as 0
+Mon Jan 21 11:46:19 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 51956
+Mon Jan 21 11:46:19 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 11:56:32 2019
+Mon Jan 21 11:56:32 2019 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 52027
+Mon Jan 21 11:56:32 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:56:46 2019
+Mon Jan 21 11:56:46 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52028
+Mon Jan 21 11:56:46 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 11:58:27 2019
+Mon Jan 21 11:58:27 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52038
+Mon Jan 21 11:58:27 2019 : Adding to list of sockets as 0
+Mon Jan 21 11:58:30 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52039
+Mon Jan 21 11:58:30 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 11:59:16 2019
+Mon Jan 21 11:59:16 2019 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 52041
+Mon Jan 21 11:59:16 2019 : Adding to list of sockets as 0
+Mon Jan 21 11:59:18 2019 : New connection , socket fd is 17 , ip is : 127.0.0.1 , port : 52042
+Mon Jan 21 11:59:18 2019 : Adding to list of sockets as 1
+Mon Jan 21 11:59:31 2019 : Host disconnected, ip 127.0.0.1 , port 52042 
+Ospy server started at : Mon Jan 21 12:19:41 2019
+Mon Jan 21 12:19:41 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52161
+Mon Jan 21 12:19:41 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:19:44 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52175
+Mon Jan 21 12:19:44 2019 : Adding to list of sockets as 1
+Mon Jan 21 12:20:13 2019 : Host disconnected, ip 127.0.0.1 , port 52175 
+Mon Jan 21 12:20:18 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52176
+Mon Jan 21 12:20:18 2019 : Adding to list of sockets as 1
+Mon Jan 21 12:20:45 2019 : Host disconnected, ip 127.0.0.1 , port 52176 
+Ospy server started at : Mon Jan 21 12:21:30 2019
+Mon Jan 21 12:21:30 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52179
+Mon Jan 21 12:21:30 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:21:32 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52180
+Mon Jan 21 12:21:32 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:23:59 2019
+Mon Jan 21 12:23:59 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52191
+Mon Jan 21 12:23:59 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 12:24:21 2019
+Mon Jan 21 12:24:21 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52192
+Mon Jan 21 12:24:21 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:24:22 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52193
+Mon Jan 21 12:24:22 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:28:00 2019
+Mon Jan 21 12:28:00 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52197
+Mon Jan 21 12:28:00 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:28:02 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52198
+Mon Jan 21 12:28:02 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:29:13 2019
+Ospy server started at : Mon Jan 21 12:30:14 2019
+Mon Jan 21 12:30:14 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52202
+Mon Jan 21 12:30:14 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:30:16 2019 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 52203
+Mon Jan 21 12:30:16 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:30:40 2019
+Mon Jan 21 12:30:40 2019 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 52205
+Mon Jan 21 12:30:40 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:30:42 2019 : New connection , socket fd is 10 , ip is : 127.0.0.1 , port : 52206
+Mon Jan 21 12:30:42 2019 : Adding to list of sockets as 1
+Mon Jan 21 12:30:48 2019 : Host disconnected, ip 127.0.0.1 , port 52206 
+Ospy server started at : Mon Jan 21 12:31:13 2019
+Ospy server started at : Mon Jan 21 12:31:14 2019
+Mon Jan 21 12:31:14 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52213
+Mon Jan 21 12:31:14 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 12:31:17 2019
+Mon Jan 21 12:31:17 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52215
+Mon Jan 21 12:31:17 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:31:18 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52216
+Mon Jan 21 12:31:18 2019 : Adding to list of sockets as 1
+Mon Jan 21 12:31:25 2019 : Host disconnected, ip 127.0.0.1 , port 52216 
+Mon Jan 21 12:31:29 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52219
+Mon Jan 21 12:31:29 2019 : Adding to list of sockets as 1
+Mon Jan 21 12:31:31 2019 : Host disconnected, ip 127.0.0.1 , port 52219 
+Mon Jan 21 12:31:35 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52221
+Mon Jan 21 12:31:35 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:32:13 2019
+Mon Jan 21 12:32:13 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52223
+Mon Jan 21 12:32:13 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:32:15 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52224
+Mon Jan 21 12:32:15 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:33:50 2019
+Mon Jan 21 12:33:50 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52228
+Mon Jan 21 12:33:50 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:33:51 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52229
+Mon Jan 21 12:33:51 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:34:03 2019
+Mon Jan 21 12:34:03 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52230
+Mon Jan 21 12:34:03 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:34:04 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52231
+Mon Jan 21 12:34:04 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:34:38 2019
+Mon Jan 21 12:34:38 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52239
+Mon Jan 21 12:34:38 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:34:39 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52240
+Mon Jan 21 12:34:39 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:39:35 2019
+Mon Jan 21 12:39:35 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52262
+Mon Jan 21 12:39:35 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:39:38 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52263
+Mon Jan 21 12:39:38 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:39:46 2019
+Mon Jan 21 12:39:46 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52264
+Mon Jan 21 12:39:46 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:39:48 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52265
+Mon Jan 21 12:39:48 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:41:47 2019
+Mon Jan 21 12:41:47 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52297
+Mon Jan 21 12:41:47 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:41:48 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52298
+Mon Jan 21 12:41:48 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:43:29 2019
+Mon Jan 21 12:43:29 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52333
+Mon Jan 21 12:43:29 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 12:43:31 2019
+Mon Jan 21 12:43:31 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52334
+Mon Jan 21 12:43:31 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:43:33 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52335
+Mon Jan 21 12:43:33 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:48:06 2019
+Mon Jan 21 12:48:06 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52394
+Mon Jan 21 12:48:06 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:48:08 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52395
+Mon Jan 21 12:48:08 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:49:11 2019
+Mon Jan 21 12:49:11 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52396
+Mon Jan 21 12:49:11 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:49:12 2019 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 52397
+Mon Jan 21 12:49:12 2019 : Adding to list of sockets as 1
+Mon Jan 21 12:49:18 2019 : Host disconnected, ip 127.0.0.1 , port 52397 
+Ospy server started at : Mon Jan 21 12:50:43 2019
+Mon Jan 21 12:50:43 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52416
+Mon Jan 21 12:50:43 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:50:45 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52417
+Mon Jan 21 12:50:45 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:50:57 2019
+Mon Jan 21 12:50:57 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52418
+Mon Jan 21 12:50:57 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:50:59 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52419
+Mon Jan 21 12:50:59 2019 : Adding to list of sockets as 1
+Mon Jan 21 12:51:01 2019 : Host disconnected, ip 127.0.0.1 , port 52419 
+Ospy server started at : Mon Jan 21 12:51:43 2019
+Mon Jan 21 12:51:43 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52442
+Mon Jan 21 12:51:43 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:51:46 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52443
+Mon Jan 21 12:51:46 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:56:26 2019
+Ospy server started at : Mon Jan 21 12:56:29 2019
+Mon Jan 21 12:56:29 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52556
+Mon Jan 21 12:56:29 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:56:33 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52557
+Mon Jan 21 12:56:33 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:56:43 2019
+Mon Jan 21 12:56:43 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52558
+Mon Jan 21 12:56:43 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:56:43 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52559
+Mon Jan 21 12:56:43 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:56:59 2019
+Mon Jan 21 12:56:59 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52560
+Mon Jan 21 12:56:59 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:57:01 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52561
+Mon Jan 21 12:57:01 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:58:21 2019
+Ospy server started at : Mon Jan 21 12:58:23 2019
+Mon Jan 21 12:58:23 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52582
+Mon Jan 21 12:58:23 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:58:24 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52583
+Mon Jan 21 12:58:24 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 12:58:51 2019
+Mon Jan 21 12:58:51 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52585
+Mon Jan 21 12:58:51 2019 : Adding to list of sockets as 0
+Mon Jan 21 12:58:53 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52586
+Mon Jan 21 12:58:53 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:01:48 2019
+Mon Jan 21 13:01:48 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52616
+Mon Jan 21 13:01:48 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:01:49 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52617
+Mon Jan 21 13:01:49 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:02:01 2019
+Mon Jan 21 13:02:01 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52618
+Mon Jan 21 13:02:01 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:02:02 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52619
+Mon Jan 21 13:02:02 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:03:05 2019
+Mon Jan 21 13:03:05 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52634
+Mon Jan 21 13:03:05 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:03:06 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52635
+Mon Jan 21 13:03:06 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:03:19 2019
+Mon Jan 21 13:03:19 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52636
+Mon Jan 21 13:03:19 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:03:20 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52637
+Mon Jan 21 13:03:20 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:03:47 2019
+Mon Jan 21 13:03:47 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52639
+Mon Jan 21 13:03:47 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:03:47 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52640
+Mon Jan 21 13:03:47 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:07:43 2019
+Mon Jan 21 13:07:43 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52749
+Mon Jan 21 13:07:43 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:07:43 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52750
+Mon Jan 21 13:07:43 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:09:00 2019
+Mon Jan 21 13:09:00 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52778
+Mon Jan 21 13:09:00 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:09:01 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52779
+Mon Jan 21 13:09:01 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:10:12 2019
+Mon Jan 21 13:10:12 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52799
+Mon Jan 21 13:10:12 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:10:14 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52800
+Mon Jan 21 13:10:14 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:12:51 2019
+Ospy server started at : Mon Jan 21 13:16:57 2019
+Mon Jan 21 13:16:57 2019 : New connection , socket fd is 5 , ip is : 127.0.0.1 , port : 52856
+Mon Jan 21 13:16:57 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:17:01 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52857
+Mon Jan 21 13:17:01 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 13:17:56 2019
+Mon Jan 21 13:17:56 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52886
+Mon Jan 21 13:17:56 2019 : Adding to list of sockets as 0
+Mon Jan 21 13:17:58 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52887
+Mon Jan 21 13:17:58 2019 : Adding to list of sockets as 1
+Mon Jan 21 13:18:09 2019 : Host disconnected, ip 127.0.0.1 , port 52887 
+Ospy server started at : Mon Jan 21 14:42:53 2019
+Mon Jan 21 14:42:53 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 52979
+Mon Jan 21 14:42:53 2019 : Adding to list of sockets as 0
+Mon Jan 21 14:42:57 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52981
+Mon Jan 21 14:42:57 2019 : Adding to list of sockets as 1
+Mon Jan 21 14:43:37 2019 : Host disconnected, ip 127.0.0.1 , port 52981 
+Mon Jan 21 14:44:08 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 52991
+Mon Jan 21 14:44:08 2019 : Adding to list of sockets as 1
+Mon Jan 21 14:44:20 2019 : Host disconnected, ip 127.0.0.1 , port 52979 
+Mon Jan 21 14:44:43 2019 : Host disconnected, ip 127.0.0.1 , port 52991 
+Ospy server started at : Mon Jan 21 14:48:04 2019
+Mon Jan 21 14:48:04 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53016
+Mon Jan 21 14:48:04 2019 : Adding to list of sockets as 0
+Mon Jan 21 14:48:07 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53017
+Mon Jan 21 14:48:07 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 14:48:13 2019
+Mon Jan 21 14:48:13 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53018
+Mon Jan 21 14:48:13 2019 : Adding to list of sockets as 0
+Mon Jan 21 14:48:15 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53019
+Mon Jan 21 14:48:15 2019 : Adding to list of sockets as 1
+Mon Jan 21 14:48:27 2019 : Host disconnected, ip 127.0.0.1 , port 53018 
+Ospy server started at : Mon Jan 21 14:48:39 2019
+Mon Jan 21 14:48:39 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53020
+Mon Jan 21 14:48:39 2019 : Adding to list of sockets as 0
+Mon Jan 21 14:48:42 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53021
+Mon Jan 21 14:48:42 2019 : Adding to list of sockets as 1
+Mon Jan 21 14:48:43 2019 : Host disconnected, ip 127.0.0.1 , port 53021 
+Mon Jan 21 14:48:45 2019 : New connection , socket fd is 8 , ip is : 127.0.0.1 , port : 53022
+Mon Jan 21 14:48:45 2019 : Adding to list of sockets as 1
+Mon Jan 21 14:48:56 2019 : Host disconnected, ip 127.0.0.1 , port 53022 
+Ospy server started at : Mon Jan 21 14:50:45 2019
+Mon Jan 21 14:50:45 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53033
+Mon Jan 21 14:50:45 2019 : Adding to list of sockets as 0
+Mon Jan 21 14:50:47 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53034
+Mon Jan 21 14:50:47 2019 : Adding to list of sockets as 1
+Mon Jan 21 14:52:00 2019 : Host disconnected, ip 127.0.0.1 , port 53034 
+Mon Jan 21 14:52:54 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53053
+Mon Jan 21 14:52:54 2019 : Adding to list of sockets as 1
+Mon Jan 21 14:55:24 2019 : Host disconnected, ip 127.0.0.1 , port 53053 
+Mon Jan 21 14:55:24 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53057
+Mon Jan 21 14:55:24 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 15:01:32 2019
+Mon Jan 21 15:01:32 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53092
+Mon Jan 21 15:01:32 2019 : Adding to list of sockets as 0
+Mon Jan 21 15:01:34 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53093
+Mon Jan 21 15:01:34 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 15:20:16 2019
+Mon Jan 21 15:20:16 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53278
+Mon Jan 21 15:20:16 2019 : Adding to list of sockets as 0
+Mon Jan 21 15:20:17 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53279
+Mon Jan 21 15:20:17 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 15:21:39 2019
+Mon Jan 21 15:21:39 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53298
+Mon Jan 21 15:21:39 2019 : Adding to list of sockets as 0
+Mon Jan 21 15:21:41 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53299
+Mon Jan 21 15:21:41 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 15:26:20 2019
+Mon Jan 21 15:26:20 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53328
+Mon Jan 21 15:26:20 2019 : Adding to list of sockets as 0
+Mon Jan 21 15:26:22 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53329
+Mon Jan 21 15:26:22 2019 : Adding to list of sockets as 1
+Mon Jan 21 15:26:33 2019 : Host disconnected, ip 127.0.0.1 , port 53328 
+Ospy server started at : Mon Jan 21 15:27:20 2019
+Mon Jan 21 15:27:20 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53330
+Mon Jan 21 15:27:20 2019 : Adding to list of sockets as 0
+Mon Jan 21 15:27:21 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53331
+Mon Jan 21 15:27:21 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 15:28:05 2019
+Mon Jan 21 15:28:05 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53334
+Mon Jan 21 15:28:05 2019 : Adding to list of sockets as 0
+Mon Jan 21 15:28:06 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53335
+Mon Jan 21 15:28:06 2019 : Adding to list of sockets as 1
+Mon Jan 21 15:28:06 2019 : Host disconnected, ip 127.0.0.1 , port 53335 
+Mon Jan 21 15:28:16 2019 : New connection , socket fd is 7 , ip is : 127.0.0.1 , port : 53337
+Mon Jan 21 15:28:16 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 15:33:02 2019
+Mon Jan 21 15:33:02 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 53394
+Mon Jan 21 15:33:02 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 15:33:31 2019
+Mon Jan 21 15:33:31 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53409
+Mon Jan 21 15:33:31 2019 : Adding to list of sockets as 0
+Mon Jan 21 15:33:32 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 53410
+Mon Jan 21 15:33:32 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 16:12:28 2019
+Mon Jan 21 16:12:28 2019 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 53543
+Mon Jan 21 16:12:28 2019 : Adding to list of sockets as 0
+Mon Jan 21 16:12:30 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53544
+Mon Jan 21 16:12:30 2019 : Adding to list of sockets as 1
+Mon Jan 21 16:12:47 2019 : Host disconnected, ip 127.0.0.1 , port 53543 
+Ospy server started at : Mon Jan 21 16:16:22 2019
+Mon Jan 21 16:16:22 2019 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 53558
+Mon Jan 21 16:16:22 2019 : Adding to list of sockets as 0
+Mon Jan 21 16:16:23 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53559
+Mon Jan 21 16:16:23 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 16:18:27 2019
+Mon Jan 21 16:18:27 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53567
+Mon Jan 21 16:18:27 2019 : Adding to list of sockets as 0
+Mon Jan 21 16:18:28 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 53568
+Mon Jan 21 16:18:28 2019 : Adding to list of sockets as 1
+Mon Jan 21 16:18:35 2019 : Host disconnected, ip 127.0.0.1 , port 53567 
+Mon Jan 21 16:21:36 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53583
+Mon Jan 21 16:21:36 2019 : Adding to list of sockets as 0
+Ospy server started at : Mon Jan 21 16:21:38 2019
+Mon Jan 21 16:21:38 2019 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 53584
+Mon Jan 21 16:21:38 2019 : Adding to list of sockets as 0
+Mon Jan 21 16:21:39 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53585
+Mon Jan 21 16:21:39 2019 : Adding to list of sockets as 1
+Mon Jan 21 16:22:27 2019 : Host disconnected, ip 127.0.0.1 , port 53584 
+Mon Jan 21 16:22:34 2019 : Host disconnected, ip 127.0.0.1 , port 53585 
+Ospy server started at : Mon Jan 21 16:37:29 2019
+Mon Jan 21 16:37:29 2019 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 53666
+Mon Jan 21 16:37:29 2019 : Adding to list of sockets as 0
+Mon Jan 21 16:37:30 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53668
+Mon Jan 21 16:37:30 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 16:38:22 2019
+Mon Jan 21 16:38:22 2019 : New connection , socket fd is 11 , ip is : 127.0.0.1 , port : 53670
+Mon Jan 21 16:38:22 2019 : Adding to list of sockets as 0
+Mon Jan 21 16:38:23 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53671
+Mon Jan 21 16:38:23 2019 : Adding to list of sockets as 1
+Ospy server started at : Mon Jan 21 16:40:25 2019
+Mon Jan 21 16:40:25 2019 : New connection , socket fd is 12 , ip is : 127.0.0.1 , port : 53686
+Mon Jan 21 16:40:25 2019 : Adding to list of sockets as 0
+Mon Jan 21 16:40:25 2019 : New connection , socket fd is 13 , ip is : 127.0.0.1 , port : 53692
+Mon Jan 21 16:40:25 2019 : Adding to list of sockets as 1
