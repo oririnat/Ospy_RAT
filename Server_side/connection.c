@@ -74,12 +74,12 @@ void set_attacker_victim_connection (client * attacker, char * selected_victim_n
 	}
 }
 // AES 256 cbc encryption
-char * encrypt_text (char * text_to_encrypt, int max_len, char * encrypt_key){ 
+char * encrypt_text (char * text_to_encrypt, char * encrypt_key){
+	int max_len = (strlen(text_to_encrypt) * 1.36) + 100;
 	char * encrypted_text = (char *) malloc(max_len * sizeof(char));
 	char sub_buffer[65];
 	char encrypt_commend[40 + strlen(text_to_encrypt) + strlen(encrypt_key)];
 	sprintf(encrypt_commend, "echo %s | openssl aes-256-cbc -base64 -k %s", text_to_encrypt, encrypt_key); // there is injection variability, to be fix
-
 	FILE * aes_encryption_fd = popen(encrypt_commend, "r");
 	while (fgets(sub_buffer, sizeof(sub_buffer), aes_encryption_fd) != NULL) {
 		strtok(sub_buffer, "\n");

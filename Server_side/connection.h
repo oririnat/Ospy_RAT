@@ -144,5 +144,5 @@ fd_set readfds; //set of socket descriptors
 void initialize_connection();
 void add_child_sockets_to_set();
 void set_attacker_victim_connection (client * attacker, char * selected_victim_name);
-char * encrypt_text (char * text_to_encrypt, int max_len, char * encrypt_key);
+char * encrypt_text (char * text_to_encrypt, char * encrypt_key);
 char * decrypt_text (char * text_to_decrypt, char * decryption_key);

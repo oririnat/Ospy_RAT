@@ -136,6 +136,7 @@ void recv_file_and_print_it (){
 	}
 }
 
+// AES 256 cbc encryption
 char * encrypt_text (char * text_to_encrypt, char * encrypt_key){
 	int max_len = (strlen(text_to_encrypt) * 1.36) + 100;
 	char * encrypted_text = (char *) malloc(max_len * sizeof(char));
@@ -149,4 +150,21 @@ char * encrypt_text (char * text_to_encrypt, char * encrypt_key){
 	}
 	pclose(aes_encryption_fd);
 	return encrypted_text;
+}
+
+//AES 256 cbc decryption
+char * decrypt_text (char * text_to_decrypt, char * decryption_key){
+	strtok(text_to_decrypt, "\n");
+	char * decrypted_text = (char *) malloc(strlen(text_to_decrypt) * sizeof(char));
+	char sub_buffer[65];
+	char decrypt_commend[40 + strlen(text_to_decrypt) + strlen(decryption_key)];
+	sprintf(decrypt_commend, "echo %s | openssl aes-256-cbc -d -base64 -k %s", text_to_decrypt, decryption_key);// there is injection variability, to be fix
+
+	FILE * aes_decryption_fd = popen(decrypt_commend, "r");
+	while (fgets(sub_buffer, sizeof(sub_buffer), aes_decryption_fd) != NULL) {
+		strtok(sub_buffer, "\n");
+		strcat(decrypted_text, sub_buffer);
+	}	
+	pclose(aes_decryption_fd);
+	return decrypted_text;
 }

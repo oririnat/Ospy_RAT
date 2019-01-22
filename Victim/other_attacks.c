@@ -6,5 +6,5 @@ void stick_the_cumputer(){
 }
 
 void get_system_profiler(){
-	system("system_profiler > system_profiler.txt");
+	system("system_profiler -detailLevel mini > system_profiler.txt");
 }

