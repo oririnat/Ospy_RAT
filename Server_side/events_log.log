@@ -1635,3 +1635,5 @@ Mon Jan 21 18:47:29 2019 : Host disconnected, ip 127.0.0.1 , port 51044
 Mon Jan 21 18:48:06 2019 : New connection , socket fd is 6 , ip is : 127.0.0.1 , port : 51062
 Mon Jan 21 18:48:06 2019 : Adding to list of sockets as 0
 Mon Jan 21 18:49:30 2019 : Host disconnected, ip 127.0.0.1 , port 51062 
+Mon Jan 21 18:49:47 2019 : Host disconnected, ip 127.0.0.1 , port 51046 
+Mon Jan 21 22:49:40 2019 : Host disconnected, ip 127.0.0.1 , port 51045 

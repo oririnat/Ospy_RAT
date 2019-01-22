@@ -1,9 +1,7 @@
 Ospy uml.xm
 base64_file
-Attacker_main.dSYM
 logos.txt
-Server_main.dSYM
 /payload
 abc.jpg
 Victim_main
-Victim_main.dSYM
+*.dSYM
