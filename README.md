@@ -13,7 +13,6 @@
 	* bind shell allow the attacker to execution command victim machine
 * Fork boom
 	* fork boom option allows the attack to stuck the victim computer completely, the victim will have to hard restart the computer to use it again
-<<<<<<< HEAD
 * Delete all victim's file
 	* No more words (⊙_☉)
 	
