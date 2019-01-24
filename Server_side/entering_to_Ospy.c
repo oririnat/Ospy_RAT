@@ -3,7 +3,6 @@
 #include <stdbool.h>
 //* registration handling  *//
 
-
 bool valid_attacker_name (char * victim_name){
 	for (int i = 0; i < strlen(victim_name); i++){
 		if (!((victim_name[i] >= 'a' && victim_name[i] <= 'z') || (victim_name[i] >= 'A' && victim_name[i] <= 'Z') || victim_name[i] == '_' || (victim_name[i] >= '0' && victim_name[i] <= '9')))
@@ -143,7 +142,6 @@ STATUS log_in_attacker(char username_input[], char hashed_password_input[]){
 
 
 //* utilities *//
-
 char * salted_hashed_password(char hashed_password_input[]){
 	char salted_hashed_password[HASH_LEN + HASH_SALT_LEN];
 	strcpy(salted_hashed_password, hashed_password_input);

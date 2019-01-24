@@ -34,7 +34,7 @@ main_data data;
 void stop_keystrokes_stream_loop ();
 void stop_screen_stream_sig();
 
-//tish is a test
+//tish is a test tih is a ti west to me ori hash here to day ori test it todat
 
 int main (){
 	char encrypted_keystroke[ENCRYPTED_TEXT_LEN(LICENSE_KEY_LENGTH)];

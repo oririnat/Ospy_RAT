@@ -1154,13 +1154,4 @@ Thu Jan 24 15:23:34 2019
 [return]ori[return]pass[return]1[return]ori[return]pass[return]Ospay Keylogger are now being recorded
 Thu Jan 24 15:24:31 2019
 
-[return]ori[return]pass[return]3[return]a[return]a[return][return]2[return][left-cmd]v[left-cmd]ori[return]pass[return]pass[return][return]1[return]ori[return]pass[return]0[return]1[return][ ][ ][return]2[return]av[left-ctrl]c[left-ctrl]3[return][right][ ][ ][up][up][down][ ][down][down][down][right][down][down][down][down][down][down][ ][down][ ][ ][down][up][up][down][down][up][up][up][down][left-ctrl]c[left-ctrl][left-option][left-ctrl][ ][left-ctrl][left-option][left-option][ ][left-option]te[return][left-ctrl][left-ctrl][down][down][up][ ][ ][left-cmd][del][left-cmd][down][down][down][ ][left-cmd][del][left-cmd][up][up][up][up][ ][up][up][up][left-cmd][del][left-cmd][down][down][down][down][down][down][down][ ][down][down][down][down][down][down][down][down][down][down][down][down][down][down][ ][up][up][up][up][up][up][up][up][up][up][up][up][up][up][up][up][ ][ ][left][down][right][down][down][down][down][up][up][down][down][left-cmd][del][left-cmd][up][ ][ ][left-cmd][del][left-cmd][up][left-cmd][del][left-cmd][up][left-cmd][del][left-cmd][up][left-cmd][del][left-cmd]4[return]Ospay Keylogger are now being recorded
-Thu Jan 24 15:31:29 2019
-
-r[return]0[return]4[return]Ospay Keylogger are now being recorded
-Thu Jan 24 15:32:19 2019
-
-1[return]ori[return]pass[return]0[return]4[return][left-cmd]cfv[left-cmd][return][return][return][left-cmd]cfv[left-cmd][return][return][left-cmd]c[left-cmd][left-cmd]c[left-cmd][left-cmd]e[left-cmd][left-cmd]eee[left-cmd][left][return][left-cmd]v[left-cmd][left-cmd][left][left-cmd]case[ ][right-shift];[right-shift][del][left-cmd][right][left-cmd][del][ ][right-shift][right-shift][right-shift];[right-shift][left-cmd]c[left-cmd][return][left-cmd]v[left-cmd]/[right][right][right][right][right][right][right][right][right][right][right][right][right]to[right][right][left]the[ ]attacker[ ][del][del][del][del][del][del][del][del][del][right][right]we[return][up][down][right][right][del][del][up][left-cmd][right][left-cmd][del][del]the[ ][ ][del]encryption[ ]of[ ]the[ ]file[ ]is[ ]in[ ]the[ ][left-cmd]c[left-cmd][left-cmd][left-cmd][right-shift]'[right-shift][left-cmd]v[left-cmd][right-shift]'[right-shift][ ]function[left-cmd]s[left-cmd][left-cmd]rrrOspay Keylogger are now being recorded
-Thu Jan 24 15:35:00 2019
-
-ori[return]pass[return]0[return]4[return][left-cmd][right][left-shift][left][left][left][left-shift][left-cmd][del][del][down][right][down][up][left-cmd][del][left-cmd][ ][ ][return][left-cmd]c[left-cmd][left-cmd]c[left-cmd][left-option][ ][left-option]te[return]
+[return]ori[return]pass[return]3[return]a[return]a[return][return]2[return][left-cmd]v[left-cmd]ori[return]pass[return]pass[return][return]1[return]ori[return]pass[return]0[return]1[return]

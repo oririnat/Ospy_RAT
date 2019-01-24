@@ -10,7 +10,7 @@
 #include <sys/time.h> //FD_SET, FD_ISSET, FD_ZERO macros 
 	
 #define MAX_CLIENTS 30
-#define MAX_INPUT_LEN 40
+#define MAX_USER_NAME_LEN 32
 #define LICENSE_KEY_LENGTH 20
 #define HASH_LEN 34
 #define HASH_SALT_LEN 5
@@ -34,7 +34,7 @@ typedef struct {
 } licenses_key_item;
 
 typedef struct {
-	char username[MAX_INPUT_LEN];
+	char username[MAX_USER_NAME_LEN];
 	char password[HASH_LEN];
 	int active;
 } attacker_info;

