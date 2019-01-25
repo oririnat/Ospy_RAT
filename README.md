@@ -4,21 +4,21 @@
 ## Features
 * Keylogger
 	* the attacker can receive the keylogger history senes the victim has first inspected by Ospy
-	* the attacker can see in live mode the victim ketstroks
+	* the attacker can see in live mode the victim keystrokes
 * Screen capture
 	* the attacker can see in live mode the victim screen
 * System profiler
-	* the attacke can receive the system profiler. The system profiler file provide reports on the hardware and software configuration of the victim system. 
+	* the attacker can receive the system profiler. The system profiler file provides reports on the hardware and software configuration of the victim system. 
 * Bind shell
 	* bind shell allow the attacker to execution command victim machine
 * Fork boom
 	* fork boom option allows the attack to stuck the victim computer completely, the victim will have to hard restart the computer to use it again
 * Delete all victim's file
-	* No more words (⊙_☉)
+	* No more words (⊙_☉)	
 	
 ## Screenshots
 ![login page](https://raw.githubusercontent.com/oririnat/Ospy_RAT/master/screenshots/1.png)
-Log in page. The attacket can register to Ospy by buying license key
+Log in page. The attacker can register to Ospy by buying a license key
 
 
 ![select victim](https://raw.githubusercontent.com/oririnat/Ospy_RAT/master/screenshots/2.png)
@@ -33,7 +33,7 @@ The attacker can perform now a few attacks on the selected victim such as the ab
 
 
 ![exempal](https://raw.githubusercontent.com/oririnat/Ospy_RAT/master/screenshots/5.png)
-For exempal, choosing option 1 will send back to the attacker the keylogger history senes the victim has first inspected by Ospy
+For example, choosing option 1 will send back to the attacker the keylogger history senes the victim has first inspected by Ospy
 
 
 ![folders](https://raw.githubusercontent.com/oririnat/Ospy_RAT/master/screenshots/6.png)
