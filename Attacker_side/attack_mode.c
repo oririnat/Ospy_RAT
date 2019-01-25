@@ -5,17 +5,10 @@
 
 main_data data;
 
-//int num_of_connected_victims;
 int * active_victims;
 char ** name_of_connected_victim;
 
-//typedef struct {
-//	char victim_name[MAX_INPUT_LEN];
-//	int end_of_connected_victims;
-//} connected_victims_protocol;
-
-//connected_victims_protocol connected_victims;
-char connected_victims[MAX_VICTIMS_PER_ATTACKER][MAX_INPUT_LEN];
+char connected_victims[MAX_VICTIMS_PER_ATTACKER][MAX_USER_NAME_LEN];
 
 bool valid_victim_name (char * victim_name){
 	for (int i = 0; i < strlen(victim_name); i++){

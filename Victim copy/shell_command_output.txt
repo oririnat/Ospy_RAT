@@ -1,0 +1,22 @@
+AndroidStudioProjects
+Applications
+Applications (Parallels)
+Desktop
+Documents
+Downloads
+Google Drive
+Library
+Movies
+Music
+Ospy
+Pictures
+Public
+PycharmProjects
+USB-Rubber-Ducky
+VirtualBox VMs
+cms_data
+eclipse-workspace_java
+eeee.txt
+events_log.log
+hashcat
+snapshot.png

