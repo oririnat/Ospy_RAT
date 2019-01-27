@@ -11,12 +11,13 @@
 #include <stdbool.h>
 
 #define AES_KEY "PASS_AES_KEY" // obfuscate it !!!  lol
-#define MTU 1024
 #define PORT 50007
 #define SERVER_IP "127.0.0.1"
+//#define SERVER_IP "37.142.255.229"
 //#define SERVER_IP "192.186.202.137" // my goddady server
 //#define SERVER_IP "120.130.1.152" // my aws server 
 
+#define MTU 1024 // maximum transformation unit
 #define HASH_LEN 34
 #define MAX_KEYSTROKE_LEN 20
 #define LICENES_KEY_LENGTH 20
