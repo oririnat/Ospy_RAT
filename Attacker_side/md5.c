@@ -4,10 +4,9 @@
 uint32_t h0, h1, h2, h3;
 char result[HASH_LEN];
 
-char * md5(const uint8_t * initial_msg, size_t initial_len) {
-	
+char * md5(const char * text){
 	char temp_result[9];
-	
+	size_t text_len = strlen(text);
 	// Message (to prepare)
 	uint8_t *msg = NULL;
 
@@ -51,15 +50,15 @@ char * md5(const uint8_t * initial_msg, size_t initial_len) {
 	// Pre-processing: padding with zeros append "0" bit until message length in bit ≡ 448 (mod 512) append length mod (2 pow 64) to message 
 	
 	int new_len;
-	for(new_len = initial_len*8 + 1; new_len%512!=448; new_len++);
+	for(new_len = text_len*8 + 1; new_len%512!=448; new_len++);
 	new_len /= 8;
 
 	msg = calloc(new_len + 64, 1); // also appends "0" bits 
 								   // (we alloc also 64 extra bytes...)
-	memcpy(msg, initial_msg, initial_len);
-	msg[initial_len] = 128; // write the "1" bit
+	memcpy(msg, text, text_len);
+	msg[text_len] = 128; // write the "1" bit
 
-	uint32_t bits_len = 8 * initial_len; // note, we append the len
+	uint32_t bits_len = 8 * text_len; // note, we append the len
 	memcpy(msg + new_len, &bits_len, 4);           // in bits at the end of the buffer
 
 	// Process the message in successive 512-bit chunks:

