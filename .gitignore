@@ -2,7 +2,12 @@ Ospy uml.xml
 base64_file
 logos.txt
 /payload
-abc.jpg
+.DS_Store
+.shell_command_output.txt
+.temp_screen.jpg
+.keylogger.txt
+/design
+design/
 Victim_main
 Attacket_main
 Server_main

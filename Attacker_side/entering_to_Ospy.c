@@ -60,10 +60,6 @@ ENTERING_STATUS register_attacker(){
 			
 		return ENTERING_ACTION_FAILURE;
 	}
-	
-//	strcpy(data.register_to_Ospay.license_key,license_key_input);
-//	strcpy(data.register_to_Ospay.username,username_input);
-//	strcpy(data.register_to_Ospay.password, md5((const unsigned char *) password_input, strlen(password_input)));
 	A_2_S_encrypted_message_handler(data, REGISTER);
 	recv(attacker_socket, &received_status, sizeof(registration_status),0);
 	
@@ -113,6 +109,9 @@ ENTERING_STATUS register_attacker(){
 	return ENTERING_ACTION_FAILURE;
 }
 void buy_license_key(){
+	char pwd[100];
+	getcwd(pwd, sizeof(pwd)); // set in "pwd" the current path
+
 	FILE * license_key_save;
 	main_data data;
 	licenses_key_item received_license_key;
@@ -134,9 +133,7 @@ void buy_license_key(){
 	copytoclipboard(received_license_key.licenses_key);
 	printf("Please save it and use it when you will register to Ospy\n");
 	printf("Also, you can find the license key in the \033[1m\033[37mclip board and in Ospy folder\033[0m\n");
-	printf("\r[»] Ospy folder path : ");
-	fflush(stdout);
-	system("pwd");
+	printf("\r[»] Ospy folder path : %s/Ospy/n",pwd);
 	system("mkdir -p Ospy");
 	license_key_save = fopen("Ospy/license_key.txt","wt");
 	fputs(received_license_key.licenses_key, license_key_save);

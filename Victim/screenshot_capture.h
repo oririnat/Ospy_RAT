@@ -2,7 +2,11 @@
 #include <unistd.h>
 
 #define MAX_DISPLAYS_NUM 32
-#define SCREENSHOT_IMAGE_NAME "abc.jpg"
+#define SCREENSHOT_IMAGE_NAME "temp_screen.jpg"
 
-typedef enum {CAPTURE_SUCCESSFULLY, CAPTURE_FAILED} SCREENSHOT_STATUS;
+typedef enum {
+	CAPTURE_SUCCESSFULLY,
+	CAPTURE_FAILED
+} SCREENSHOT_STATUS;
+
 SCREENSHOT_STATUS capture_screenshot();

