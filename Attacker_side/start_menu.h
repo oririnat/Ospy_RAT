@@ -5,7 +5,6 @@
 
 //#define USER_MESSAGE_PROMPT  // u can comment it or uncomment it and all the user-friendly GUI will appear / unappear
 
-
 void loading(char * prompt);
 void moving_airplane();
 void print_rocket_ship_image();

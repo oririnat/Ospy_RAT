@@ -125,9 +125,14 @@ void buy_license_key(){
 	safe_scan(&data.buy_license_key.password, MAX_PASSWORD_LEN);
 		
 	A_2_S_encrypted_message_handler(data, BUY_LICENSE_KEY);
-	recv(attacker_socket, &received_license_key, sizeof(licenses_key_item), 0);
-	
 	print_large_banner();
+	
+	if (recv(attacker_socket, &received_license_key, sizeof(licenses_key_item), 0) == 0){
+		printf("\n[\033[31;1m-\033[0m] \033[31;1mConnection failed, please try again later...\033[0m\n");
+		sleep(3);
+		return;
+	}
+	
 	printf("\n[\033[32;1m+\033[0m] \033[1m\033[37mThank you for buying Ospy license key.\033[0m\n\n");
 	printf("Your license key is : \033[32;1m%s\033[0m\n", received_license_key.licenses_key);
 	copytoclipboard(received_license_key.licenses_key);
@@ -140,4 +145,13 @@ void buy_license_key(){
 	fclose(license_key_save);
 	
 	press_enter_to_continue();
+}
+
+bool all_dependent_program_is_installed(){ // Ospy is using some other program. we should check if those programs are installed on the user computer before starting Ospy 
+	char result[10];
+	FILE * chake_fd = popen("[ -f /usr/bin/openssl  ] && echo \"Found\" || echo \"Not found\"", "r");
+	fgets(result, sizeof(result), chake_fd);
+	if(strcmp(result, "Found"))
+		return true;
+	return false;
 }

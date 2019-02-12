@@ -1,5 +1,6 @@
 #include "start_menu.h"
 #include <string.h>
+#include <stdbool.h>
 
 #define LICENSE_KEY_LENGTH 20
 
@@ -14,6 +15,6 @@ ENTERING_STATUS log_in_attacker();
 ENTERING_STATUS register_attacker();
 void buy_license_key();
 void copytoclipboard(const char * str);
-
+bool all_dependent_program_is_installed();
 
 

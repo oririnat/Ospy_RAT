@@ -8,6 +8,7 @@
 #include <sys/socket.h> 
 #include <netinet/in.h> 
 #include <sys/time.h> //FD_SET, FD_ISSET, FD_ZERO macros 
+#include <stdbool.h>
 	
 #define MAX_CLIENTS 30
 #define MAX_USER_NAME_LEN 32

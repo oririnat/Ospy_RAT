@@ -1,8 +1,7 @@
 #include "entering_to_Ospy.h"
 #include "md5.h"
-#include <stdbool.h>
-//* registration handling  *//
 
+//* registration handling  *//
 bool valid_attacker_name (char * victim_name){
 	for (int i = 0; i < strlen(victim_name); i++){
 		if (!((victim_name[i] >= 'a' && victim_name[i] <= 'z') || (victim_name[i] >= 'A' && victim_name[i] <= 'Z') || victim_name[i] == '_' || (victim_name[i] >= '0' && victim_name[i] <= '9')))
@@ -27,19 +26,21 @@ registration_status register_new_attacker(char licenes_key_input[], char usernam
 	return REGISTERED_SUCCESSFULLY;
 }
 
+static char * generate_key(char * key_template){ // exemple :  key_template = XXXXXXXXXXXX OR XXXX-XXXX-XXXX-XXXX
+	char key_dictionary[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890#$%&";
+	char * key = (char *) malloc(strlen(key_template) * sizeof(char));
+	srand(time(0)); // make the random funtion real random
+	for (int i = 0; i < strlen(key_template); i++) 
+		key[i] = key_template[i] == 'X' ? key_dictionary[(rand() % strlen(key_dictionary))] : key_template[i];
+		
+	key[strlen(key_template)] = '\0';
+	return key;
+}
+
 licenses_key_item add_new_license_key () { 	
 	FILE * licenses_key_list =  fopen("licenses_key_list.dat", "a");
-	char characters_dictionary[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*1234567890";
-	const int num_of_segments = 4;
-	int index = 0;
-	char licenses_key_template[] = "XXXX-XXXX-XXXX-XXXX";
-	for (int i = 0; i < num_of_segments; i++) {
-		for (int j = 0; j < num_of_segments; j++, index++)
-			licenses_key_template[index] = characters_dictionary[rand() % 44]; // add random character to the license key
-		index ++;
-	}
 	licenses_key_item licenses_key;
-	strcpy(licenses_key.licenses_key, licenses_key_template);
+	strcpy(licenses_key.licenses_key, generate_key("XXXX-XXXX-XXXX-XXXX"));
 	fwrite(&licenses_key, sizeof(licenses_key_item), 1, licenses_key_list);
 	fclose(licenses_key_list);
 	return licenses_key;
@@ -154,6 +155,7 @@ char * salted_hashed_password(char hashed_password_input[]){
 	strcat(salted_hashed_password, HASH_SALT); // append the salt to the hash
 	return md5(salted_hashed_password);
 }
+
 void print_all_attackers(){
 	attacker_info attacker;
 	FILE * attackers_list;
@@ -178,5 +180,4 @@ void print_all_licenes_key(){
 	}
 	fclose(licenses_key_list);
 }
-
 //* end utilities *//
